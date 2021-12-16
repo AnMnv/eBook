@@ -11,6 +11,7 @@
 *.cb
 *.cb2
 .*.lb
+*.ini
 
 ## Intermediate documents:
 *.dvi
