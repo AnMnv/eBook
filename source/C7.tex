@@ -1,0 +1,37 @@
+%#################### 7.1 ####################
+	\begin{table}[h!]
+	\begin{tabular}{c | c}
+	\begin{minipage}[m]{0.4\textwidth}
+	\enum{ 
+	\begin{tikzpicture}[thick,scale=0.6, every node/.style={transform shape}] 
+\pie{22.97/Los Angeles Lakers,
+22.97/Boston,
+8.11/Golden State,
+8.11/Chicago,
+6.76/San ,
+31.07/Other Teams}
+\end{tikzpicture}}{7.1}
+	\end{minipage}
+	&
+	\begin{minipage}[m]{0.55\textwidth}
+	\begin{lstlisting}[basicstyle=\scriptsize]
+\documentclass[border=0.2cm]{standalone} 
+\usepackage{pgf-pie}  
+
+\begin{document}
+
+\begin{tikzpicture}
+\pie{22.97/Los Angeles Lakers,
+22.97/Boston Celtics,
+8.11/Golden State Warriors,
+8.11/Chicago Bulls,
+6.76/San Antonio Spurs,
+31.07/Other Teams}
+\end{tikzpicture}
+
+\end{document}
+	\end{lstlisting}
+	\end{minipage}
+	\end{tabular}
+	\end{table}
+

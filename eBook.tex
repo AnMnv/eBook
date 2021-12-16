@@ -1,0 +1,74 @@
+\PassOptionsToPackage{svgnames}{xcolor}
+\documentclass[14pt]{extreport}
+	\usepackage[left=1.5cm,right=1.0cm,top=1.5cm,bottom=1.5cm,bindingoffset=0cm]{geometry}
+\input{source/preambula.tex}
+
+
+
+\begin{document}
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
+
+%--------------COVER_PAGE
+\begin{titlepage}
+\newgeometry{top=1in,bottom=1in,right=0in,left=0in}
+\thispagestyle{empty}
+
+\begin{center}
+\pagecolor{black}
+\color{white}
+
+\noindent
+{\Huge{Latex in Examples}} 
+\vspace{1cm}
+\vskip\baselineskip
+\center{\includegraphics[width=1\linewidth]{title.jpg}}
+\vskip\baselineskip
+\vspace{2cm}
+\noindent{\Huge{\texttt{Thanks to me}}}\\
+\vspace{2cm}
+\noindent{\Huge{\texttt{Examples in this book is updated every week.}}}
+%-------------
+
+\end{center}
+\end{titlepage}
+%------------------------------------------------------------------------------------------------------------------
+\pagecolor{white}
+\tableofcontents
+
+
+%------------------C1-Math Tips
+\chapter{Math Tips}
+\input{source/C1.tex}
+
+
+%------------------C2-Sybols
+\chapter{Symbols}
+\input{source/C2.tex}
+
+
+%------------------C3-Listing
+\chapter{Code, listings, minted \dots}
+\input{source/C3.tex}
+
+
+%------------------C4-Tables, boxes and so on
+\chapter{Tables, boxes and so on}
+\input{source/C4.tex}
+
+
+%------------------C5-Figures
+\chapter{Figures}
+\input{source/C5.tex}
+
+%------------------C6
+\chapter{Numbering}
+%\input{source/C6.tex}
+
+%------------------C7
+\chapter{Plots, tikz, pie charts ...}
+\input{source/C7.tex}
+
+
+\end{document}
+

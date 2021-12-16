@@ -1,0 +1,146 @@
+\usepackage{scrextend}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+	\usepackage[russian,english]{babel}
+	\usepackage{amsmath,amssymb}
+	\usepackage{array,tabularx}
+	\usepackage{graphicx}
+	\graphicspath{{C:/Users/anmnm/Desktop/TeX/images/}}
+	\usepackage{moreverb}
+	\usepackage{xcolor}
+	\usepackage{color}
+	\usepackage{hyperref}
+	\hypersetup{%
+		colorlinks=true,
+		linkbordercolor= red,
+		urlbordercolor=green,
+    }%for hyperrefs
+%------------------ 
+\usepackage[many]{tcolorbox}
+	\newtcbox{\mylib}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
+	  right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
+	  colframe=green!50!black,coltext=green!25!black,colback=green!10!white,
+	  overlay={\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+	    rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {TYP} ([xshift=4mm]frame.north west);\end{tcbclipinterior}}}
+
+%------------------  
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+%------------------  
+\usepackage{lstautogobble}  % Fix relative indenting
+%\usepackage{color}          % Code coloring
+\usepackage{zi4}            % Nice font
+	\definecolor{bluekeywords}{rgb}{0.13, 0.13, 1}
+	\definecolor{greencomments}{rgb}{0, 0.5, 0}
+	\definecolor{redstrings}{rgb}{0.9, 0, 0}
+	\definecolor{graynumbers}{rgb}{0.5, 0.5, 0.5}
+
+	\usepackage{listings}
+	\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  }
+%------------------
+\usepackage[object=vectorian]{pgfornament} %%  http://altermundus.com/pages/tkz/ornament/index.html
+		\usepackage{tikz}
+		\newcommand{\sectionlinetwo}[2]{%
+		\nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+		{\color{#1}
+		\resizebox{0.5\linewidth}{2ex}
+		{{{\begin{tikzpicture}
+		\node  (C) at (0,0) {};\node (D) at (9,0) {};
+		\path (C) to [ornament=#2] (D);
+		\end{tikzpicture}}}}}%
+		\hspace{\fill}
+		\par\nointerlineskip \vspace{.5\baselineskip}}
+
+  %\newcommand{\img}[4]{\center{\includegraphics[width=#1\linewidth]{#2}}\captionof{figure}{#3}\label{#4}}
+\newcommand{\img}[4]{\includegraphics[width=#1\linewidth]{#2}\caption{#3}\label{#4}}
+
+
+%-----------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}%preambule
+%-----------------------------
+\newtcbox{\mybox}[1][red]{on line,
+arc=0pt,outer arc=0pt,colback=#1!10!white,colframe=#1!50!black,
+boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
+boxrule=0pt,bottomrule=1pt,toprule=1pt}
+
+\newtcbox{\xmybox}[1][red]{on line,
+arc=7pt,colback=#1!10!white,colframe=#1!50!black,
+before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt,
+boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
+%-----------------------------
+\usepackage{tikz}
+\usetikzlibrary{shapes.callouts}
+%-----------------------------
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
+%-----------------------------
+
+	\usepackage[framemethod=TikZ]{mdframed}
+	\usetikzlibrary{calc}
+	\makeatletter
+	\newlength{\mylength}
+	\xdef\CircleFactor{1.1}
+	\setlength\mylength{\dimexpr\f@size pt}
+	\newsavebox{\myboxx}
+	\newcommand*\circled[2][draw=blue]{\savebox\myboxx{\vbox{\vphantom{WL1/}#1}}\setlength\mylength{\dimexpr\CircleFactor\dimexpr\ht\myboxx+\dp\myboxx\relax\relax}\tikzset{mystyle/.style={circle,#1,minimum height={\mylength}}}
+	\tikz[baseline=(char.base)]
+	\node[mystyle] (char) {#2};}
+	\makeatother
+%-----------------------------
+\usepackage{verbatim}
+
+\usetikzlibrary{arrows,shapes,backgrounds}
+%-----------------------------
+\usepackage{multicol}
+%-----------------------------
+%\usepackage[most]{tcolorbox}
+	\definecolor{orang}{RGB}{255,155,0}
+	\newtcolorbox[auto counter,number within=section]{caja}[1][]{
+	enhanced jigsaw,colback=white,colframe=orang,coltitle=orang,
+	fonttitle=\bfseries\sffamily,
+	sharp corners,
+	detach title,
+	leftrule=10mm,
+	% What you need %%%%%%%%%%%%
+	underlay unbroken and first={\node[below,text=black,anchor=east]
+	at ([xshift=-5.5pt]interior.base west) {\Huge  \textbf{!}};},
+	%%%%%%%%%%%%%%%%%%%%%%%%
+	breakable,pad at break=1mm,
+	#1,
+	code={\ifdefempty{\tcbtitletext}{}{\tcbset{before upper={\tcbtitle\par\medskip}}}},}
+%-----------------------------
+\newcommand{\enum}[2]{\begin{tikzpicture}
+\node (0,0) {\begin{minipage}[m]{0.95\textwidth}
+#1
+\end{minipage} };
+\node [opacity=0.05] (0,0) {\scalebox{10.0}{\textcolor{red}{\emph{#2}}}};
+\end{tikzpicture}}
+%-----------------------------
+
+\usepackage{array, makecell}
+ \setcellgapes{5pt}
+%-----------------------------
+\usepackage{pgf-pie}
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------
+%-----------------------------

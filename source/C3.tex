@@ -1,0 +1,36 @@
+%-------------------3.1
+	Code listing using \textit{minted} in \mybox[red]{beamer}
+	\begin{table}[h!]
+	\begin{tabular}{c | c}
+	\begin{minipage}[m]{0.4\textwidth}
+	\enum{\includegraphics[width=1\linewidth]{3.1.png}}{3.1}
+	\end{minipage}
+	&
+	\begin{minipage}[m]{0.55\textwidth}
+	\begin{lstlisting}[basicstyle=\scriptsize]{tex}
+	\documentclass{beamer}
+	\usepackage{amsmath}
+	\usepackage{tcolorbox}
+	\tcbuselibrary{minted,skins,breakable}
+	\newtcblisting{pythoncode}[2][]{
+	  listing engine=minted, breakable,  colback=bg,
+	  colframe=black!70,  listing only,
+	  minted style=colorful,  minted language=python,
+	  minted options={numbersep=3mm,texcl=true,#1},
+	  left=5mm,enhanced,
+	  overlay={\begin{tcbclipinterior}\fill[black!25] (frame.south west)
+	rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}},
+	#2,}
+	\begin{document}
+	\begin{frame}[fragile]
+	    \frametitle{Premature Optimization}
+	    \begin{pythoncode}[linenos=true,]{title=Python Code Example}
+	    import glob
+	    \end{pythoncode}
+	\end{frame}
+	\end{document}
+	\end{lstlisting}
+	\end{minipage}
+	\end{tabular}
+	\end{table}
+%-------------------3.2
