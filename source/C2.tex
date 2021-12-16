@@ -1,28 +1,28 @@
 \section{New section symbol}
 %-------------------2.1
-	\begin{table}[h!]
-	\begin{tabular}{c | c}
-	\begin{minipage}[m]{0.4\textwidth}
-	\sectionlinetwo{orange}{88}
-	\end{minipage}
-	&
-	\begin{minipage}[m]{0.55\textwidth}
-	\begin{lstlisting}[basicstyle=\footnotesize]{tex}
-	\usepackage[object=vectorian]{pgfornament}  
-	\usepackage{lipsum,tikz}
-	\newcommand{\sectionlinetwo}[2]{%
-	\nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
-	{\color{#1}\resizebox{0.5\linewidth}{2ex}
-	{{{\begin{tikzpicture}
-	\node  (C) at (0,0) {};\node (D) at (9,0) {};
-	\path (C) to [ornament=#2] (D);
-	\end{tikzpicture}}}}}%
-	\hspace{\fill}\par\nointerlineskip 
-	\vspace{.5\baselineskip}}
-	%usage---> \sectionlinetwo{orange}{88}
-	\end{lstlisting}
-	\end{minipage}
-	\end{tabular}
-	\end{table}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\sectionlinetwo{orange}{88}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\begin{lstlisting}[numberstyle=\zebra{red!15}{white!15},numbers=left,basicstyle=\footnotesize]{tex}
+\usepackage[object=vectorian]{pgfornament}  
+\usepackage{lipsum,tikz}
+\newcommand{\sectionlinetwo}[2]{%
+\nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+{\color{#1}\resizebox{0.5\linewidth}{2ex}
+{{{\begin{tikzpicture}
+\node  (C) at (0,0) {};\node (D) at (9,0) {};
+\path (C) to [ornament=#2] (D);
+\end{tikzpicture}}}}}%
+\hspace{\fill}\par\nointerlineskip 
+\vspace{.5\baselineskip}}
+%usage---> \sectionlinetwo{orange}{88}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %-------------------2.2
 	
