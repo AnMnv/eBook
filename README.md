@@ -11,10 +11,4 @@
 ![](/images/myBook-11.png)
 ![](/images/myBook-12.png)
 ![](/images/myBook-13.png)
-![](/images/myBook-14.png)
-![](/images/myBook-15.png)
-![](/images/myBook-16.png)
-![](/images/myBook-17.png)
-![](/images/myBook-18.png)
-![](/images/myBook-19.png)
-![](/images/myBook-20.png)
+
