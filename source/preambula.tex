@@ -7,7 +7,7 @@
 	\usepackage{graphicx}
 	\graphicspath{{C:/Users/anmnm/Desktop/TeX/images/}}
 	\usepackage{moreverb}
-	\usepackage{xcolor}
+	 \usepackage[table]{xcolor}
 	\usepackage{color}
 	\usepackage{hyperref}
 	\hypersetup{%
@@ -16,6 +16,9 @@
 		urlbordercolor=green,
     }%for hyperrefs
 %------------------ 
+ 
+
+
 \usepackage[many]{tcolorbox}
 	\newtcbox{\mylib}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
 	  right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
@@ -136,10 +139,10 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
 	code={\ifdefempty{\tcbtitletext}{}{\tcbset{before upper={\tcbtitle\par\medskip}}}},}
 %-----------------------------
 \newcommand{\enum}[2]{\begin{tikzpicture}
-\node (0,0) {\begin{minipage}[m]{0.95\textwidth}
+\node (0,0) {\begin{minipage}[m]{0.90\textwidth}
 #1
 \end{minipage} };
-\node [opacity=0.05] (0,0) {\scalebox{10.0}{\textcolor{red}{\emph{#2}}}};
+\node [opacity=0.05] (0,0) {\scalebox{8.0}{\textcolor{red}{\emph{#2}}}};
 \end{tikzpicture}}
 %-----------------------------
 
@@ -148,6 +151,9 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
 %-----------------------------
 \usepackage{pgf-pie}
 %-----------------------------
+ \usepackage[table]{xcolor}
+\usepackage{nicematrix}
+\NiceMatrixOptions{cell-space-top-limit=5pt,cell-space-bottom-limit=5pt}
 %-----------------------------
 %-----------------------------
 %-----------------------------

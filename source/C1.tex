@@ -1,14 +1,71 @@
 %-------------------1.1
 \section{Auto-resizing equation}
 \begin{tabular}{l | c}
-\resizebox{.4\textwidth}{!}{$\dot{\rho}=
-\dfrac{x^3}{45a^9-23b}$}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{
+\resizebox{.6\textwidth}{!}{$\dot{\rho}=
+\dfrac{x^3}{45a^9-23b}$}}{1.1}
+\end{minipage}
 & \begin{minipage}[m]{0.5\textwidth}
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\footnotesize]{tex}
 \begin{equation*}\label{eq1}
-\resizebox{.4\textwidth}{!}{
+\resizebox{.4\textwidth}{!}{ % change .4 to 0.5...
 $\dot{\rho}=\dfrac{x^3}{45a^9-23b}$}
 \end{equation*}
     \end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+
+%-------------------1.2
+\section{Form for simplest calculation}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \newcommand{\sss}[1]{this.getField("#1").value}
+\begin{Form}
+\noindent%
+Fill with number \\ 
+\small{\mybox[red]{if it does't work try another PDF viewer}}\\ 
+
+\TextField[name=a]{a:} \\
+
+\TextField[name=b]{b:} \\
+
+\TextField[name=c]{c:} \\
+
+\noindent%
+$\sum = $ \TextField[name=AvgStat, calculate={
+  event.value = ( 
+    \sss{a} +
+    \sss{b} +
+    \sss{c}) ;
+}, readonly, value=0]{} 
+\end{Form}}{1.2}
+\end{minipage}
+& \begin{minipage}[m]{0.5\textwidth}
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass{article}
+\usepackage{hyperref}
+\begin{document}
+\newcommand{\sss}[1]{this.getField("#1").value}
+\begin{Form}
+\noindent%
+Fill with number\\ 
+
+\TextField[name=a]{a:} \\
+
+\TextField[name=b]{b:} \\
+
+\TextField[name=c]{c:} \\
+\noindent%
+$\sum = $ \TextField[name=AvgStat, calculate={
+  event.value = ( 
+    \sss{a} +
+    \sss{b} +
+    \sss{c}) ;
+}, readonly, value=0]{} 
+\end{Form}
+\end{document}
+\end{lstlisting}
 \end{minipage}
 \end{tabular}

@@ -147,6 +147,8 @@ usage -->  \circled[fill=amber,draw=black]{1}
 \end{tabular}
 \end{table}
 
+\vspace{0.2cm}  
+\clearpage
 %#################### 4.6 ####################
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -302,7 +304,38 @@ $d_{n+1}$ &         &    &   & = $\pm 2ad_n$ = 0     \\
 \end{minipage}
 \end{tabular}
 
+%#################### 4.10 ####################
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \begin{NiceTabular}{|c|c|c|} 
+\hline
+\cellcolor{red}1& \cellcolor{green}1 & \cellcolor{black!10}EVERY\\\hline 
+\cellcolor{orange}1 & \cellcolor{red!35}1 & \cellcolor{brown!50}CELL \\ \hline
+\cellcolor{green!35}1 & \cellcolor{blue!45}1 & \cellcolor{yellow}CENTERED \\ \hline
+\end{NiceTabular}  }{4.10}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage[table]{xcolor}
+\usepackage{nicematrix}
+\NiceMatrixOptions{cell-space-top-limit=5pt,cell-space-bottom-limit=5pt}
 
+\begin{document}
+\begin{table}[htbp]
+\centering
+\begin{NiceTabular}{|c|c|c|} 
+\hline
+\cellcolor{red}1& \cellcolor{green}1 & \cellcolor{black!10}1 \\ \hline 
+\cellcolor{orange}1 & \cellcolor{red!35}1 & \cellcolor{brown!50}1 \\ \hline
+\cellcolor{green!35}1 & \cellcolor{blue!45}1 & \cellcolor{yellow}1 \\ \hline
+\end{NiceTabular}
+\end{table}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 
 
 
