@@ -7,6 +7,7 @@ Code listing using \textit{minted} in \mybox[red]{beamer}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{pink!15}{green!15},numbers=left,basicstyle=\footnotesize]{tex}
 \documentclass{beamer}
 \usepackage{amsmath}
@@ -33,6 +34,7 @@ rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}},
 \end{minipage}
 \end{tabular}
 \end{table}
+
 %-------------------3.2
 \begin{table}[h!]
 \begin{tabular}{c | c}
@@ -51,6 +53,7 @@ int main(void) {
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{footnotesize}
 \begin{verbatim}
 \documentclass{article}
@@ -99,3 +102,56 @@ int main(void) {
 \end{minipage}
 \end{tabular}
 \end{table}
+
+%-------------------3.3
+Code listing using \textit{minted} in \mybox[red]{beamer}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq }{3.3}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{pink!15}{green!15},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{listings} 
+\usepackage{xcolor}
+
+\begin{document}
+\lstset{ keepspaces=true, 
+backgroundcolor=\color{blue},  
+showstringspaces=false,% for spaces between rus. words
+language=C, 
+extendedchars=\true,%for russian
+framexrightmargin=0pt,
+framexleftmargin=0pt,
+framextopmargin=15pt,
+framexbottommargin=15pt, 
+frame=tb, framerule=0pt,
+basicstyle=\color{yellow}\ttfamily\small}
+
+begin{lstlisting}% <<<<<<<<< add /
+print("English comment"); // English comment
+print("Russian comment"); // %here can be russian words
+end{lstlisting}%   <<<<<<<<< add /
+
+\end{document}
+
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+
+

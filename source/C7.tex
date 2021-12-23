@@ -14,6 +14,7 @@
 	\end{minipage}
 	&
 	\begin{minipage}[m]{0.55\textwidth}
+	\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 	\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
 \documentclass[border=0.2cm]{standalone} 
 \usepackage{pgf-pie}  
@@ -35,3 +36,73 @@
 	\end{tabular}
 	\end{table}
 
+%#################### 7.2 ####################
+	\begin{table}[h!]
+	\begin{tabular}{c | c}
+	\begin{minipage}[m]{0.4\textwidth}
+	\enum{   \begin{tikzpicture}
+     
+    \node[diamond,
+    font=\small,
+    line width=0.4mm,
+    scale=0.7,
+        draw = cyan,   
+        %text = red,
+        minimum width = 7.5cm,
+        minimum height = 9cm] (d) at (0,0) { };
+          \node [above=0.5cm] (a) at (d.90) {$w = f(x,y)$};
+          \node [above=0.5cm,right=0.1cm] (b) at (d.45) {$\dfrac{\partial w}{\partial y}$};
+          \node [above=0.5cm,left=0.1cm] (c) at (d.135) {$\dfrac{\partial w}{\partial x}$};
+          \node [left=0.1cm] (dd) at (d.180) {$x$};
+          \node [right=0.1cm] (e) at (d.0) {$y$};
+          \node [below=0.1cm] (f) at (d.270) {$t$};
+          \node [below=0.9cm,right=-0.3cm] (g) at (d.-30) {$\dfrac{\partial y}{\partial t}$};
+          \node [below=0.5cm,left=0.1cm] (h) at (d.220) {$\dfrac{\partial x}{\partial t}$};
+          \node at (d.90) [cyan,circle,fill,inner sep=3pt]{};
+          \node at (d.180) [cyan,circle,fill,inner sep=3pt]{};
+          \node at (d.0) [cyan,circle,fill,inner sep=3pt]{};
+          \node at (d.270) [cyan,circle,fill,inner sep=3pt]{};
+    \end{tikzpicture} }{7.1}
+	\end{minipage}
+	&
+	\begin{minipage}[m]{0.55\textwidth}
+	\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+	\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass[a4paper,14pt]{extreport}
+\usepackage[left=1.5cm,right=1.5cm,
+    top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{amsmath}
+ 
+ 
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+ 
+\begin{document}
+\begin{tikzpicture}
+ 
+\node[diamond,
+font=\small,
+line width=0.4mm,
+scale=0.7,
+    draw = cyan,   
+    %text = red,
+    minimum width = 7.5cm,
+    minimum height = 9cm] (d) at (0,0) { };
+      \node [above=0.5cm] (a) at (d.90) {$w = f(x,y)$};
+      \node [above=0.5cm,right=0.1cm] (b) at (d.45) {$\dfrac{\partial w}{\partial y}$};
+      \node [above=0.5cm,left=0.1cm] (c) at (d.135) {$\dfrac{\partial w}{\partial x}$};
+      \node [left=0.1cm] (dd) at (d.180) {$x$};
+      \node [right=0.1cm] (e) at (d.0) {$y$};
+      \node [below=0.1cm] (f) at (d.270) {$t$};
+      \node [below=0.9cm,right=-0.3cm] (g) at (d.-30) {$\dfrac{\partial y}{\partial t}$};
+      \node [below=0.5cm,left=0.1cm] (h) at (d.220) {$\dfrac{\partial x}{\partial t}$};
+      \node at (d.90) [cyan,circle,fill,inner sep=3pt]{};
+      \node at (d.180) [cyan,circle,fill,inner sep=3pt]{};
+      \node at (d.0) [cyan,circle,fill,inner sep=3pt]{};
+      \node at (d.270) [cyan,circle,fill,inner sep=3pt]{};
+\end{tikzpicture}
+\end{document}
+	\end{lstlisting}
+	\end{minipage}
+	\end{tabular}
+	\end{table}
