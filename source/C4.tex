@@ -84,12 +84,13 @@ Here You can see \mylib{\href{https://texdoc.org/serve/tcolorbox.pdf/0}{more exa
 \end{table}
 
 %#################### 4.4 ####################
+\section{\textit{\small{table with the desired length, a command was also created to create a new cell view in the table.}}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{
 \includegraphics[width=1\linewidth]{4.5.png}
-\textit{\small{table with the desired length, a command was also created to create a new cell view in the table.}}}{4.4}
+}{4.4}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -348,4 +349,105 @@ $d_{n+1}$ &         &    &   & = $\pm 2ad_n$ = 0     \\
 \end{tabular}
 
 
+%#################### 4.11 ####################
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1.\linewidth]{4.11.png}}{4.11}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage[left=1.5cm,right=1.5cm,
+top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{float}
+\usepackage{array, makecell}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{booktabs}
 
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{longtable, array}
+
+
+\begin{document}
+
+\begin{landscape}
+\begin{longtable}{@{} *{2}{m{.15\paperwidth}} *{1}{m{.40\paperwidth}} @{}}
+\endfirsthead
+\endhead
+\toprule
+\textbf{Enum} & \textbf{Example} & \textbf{Description} \\
+\midrule
+1 & test & \lipsum[50]\\
+\midrule
+2a & test & \lipsum[50]\\
+2b & test & \lipsum[50]\\
+\bottomrule
+\end{longtable}
+\end{landscape}
+
+\end{document}          
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\documentclass{article}
+\usepackage[left=1.5cm,right=1.5cm,
+top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\begin{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+\begin{table}[!ht] 
+\caption{Vertical and lateral stresses of mortar.}  
+\vspace{0.5cm}
+\begin{tabularx}{\textwidth}{X  X  X  X}
+       & Item1 & Item2 & Item3 \\ \midrule
+Group1 & 0.8   & 0.1   & 0.1  \\
+Group2 & 0.1   & 0.8   & 0.1  \\
+Group3 & 0.1   & 0.1   & 0.8  \\
+Group4 & 0.34  & 0.33  & 0.33 \\ \bottomrule
+\end{tabularx}
+\label{c}
+\end{table}
+
+
+
+\end{document}
+\end{comment}
