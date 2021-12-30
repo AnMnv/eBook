@@ -394,19 +394,23 @@ top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \end{minipage}
 \end{tabular}
 
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{comment}
+%#################### 4.12 ####################
+\section{If table is not wide enough}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ 
+\begin{tabularx}{\textwidth}{X  X  X  X}
+       & Item1 & Item2 & Item3 \\ \midrule
+Group1 & 0.8   & 0.1   & 0.1  \\
+Group2 & 0.1   & 0.8   & 0.1  \\
+Group3 & 0.1   & 0.1   & 0.8  \\
+Group4 & 0.34  & 0.33  & 0.33 \\ \bottomrule
+\end{tabularx}}{4.12}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize] 
 \documentclass{article}
 \usepackage[left=1.5cm,right=1.5cm,
 top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
@@ -415,24 +419,6 @@ top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \usepackage{tabularx}
 
 \begin{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
            
 \begin{table}[!ht] 
 \caption{Vertical and lateral stresses of mortar.}  
@@ -447,7 +433,22 @@ Group4 & 0.34  & 0.33  & 0.33 \\ \bottomrule
 \label{c}
 \end{table}
 
+\end{document}        
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 
 
-\end{document}
-\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
