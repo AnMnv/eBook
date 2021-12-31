@@ -1,4 +1,5 @@
 %#################### 7.1 ####################
+\section{Simple pie chart}
 	\begin{table}[h!]
 	\begin{tabular}{c | c}
 	\begin{minipage}[m]{0.4\textwidth}
@@ -20,7 +21,6 @@
 \usepackage{pgf-pie}  
 
 \begin{document}
-
 \begin{tikzpicture}
 \pie{22.97/Los Angeles Lakers,
 22.97/Boston Celtics,
@@ -29,14 +29,52 @@
 6.76/San Antonio Spurs,
 31.07/Other Teams}
 \end{tikzpicture}
-
 \end{document}
 	\end{lstlisting}
 	\end{minipage}
 	\end{tabular}
 	\end{table}
 
-%#################### 7.2 ####################
+	%#################### 7.2 ####################
+\section{Circled arrows with text}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ 
+\begin{center}
+\begin{tikzpicture}[->,scale=.9]
+\node (i) at (90:1cm)  {$T$};
+\node (j) at (-30:1cm) {$D$};
+\node (k) at (210:1cm) {$R$};
+\draw (70:1cm)  arc (70:-10:1cm) node[midway, right] {{\footnotesize 1}};
+\draw (-50:1cm) arc (-50:-130:1cm) node[midway, below] {{\footnotesize 1}};
+\draw (190:1cm) arc (190:110:1cm) node[midway, left] {{\footnotesize -1}};
+\end{tikzpicture}\end{center} }{7.2}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\documentclass{article} 
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}[->,scale=.7]
+\node (i) at (90:1cm)  {$T$};
+\node (j) at (-30:1cm) {$D$};
+\node (k) at (210:1cm) {$R$};
+\draw (70:1cm)  arc (70:-10:1cm) node[midway, right] {{\footnotesize 1}};
+\draw (-50:1cm) arc (-50:-130:1cm) node[midway, below] {{\footnotesize 1}};
+\draw (190:1cm) arc (190:110:1cm) node[midway, left] {{\footnotesize -1}};
+\end{tikzpicture}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+%#################### 7.3 ####################
+\section{Diamond with text}
 	\begin{table}[h!]
 	\begin{tabular}{c | c}
 	\begin{minipage}[m]{0.4\textwidth}
@@ -44,9 +82,7 @@
      
     \node[diamond,
     font=\small,
-    line width=0.4mm,
-    scale=0.7,
-        draw = cyan,   
+    line width=0.4mm, scale=0.7, draw = cyan,   
         %text = red,
         minimum width = 7.5cm,
         minimum height = 9cm] (d) at (0,0) { };
@@ -62,31 +98,23 @@
           \node at (d.180) [cyan,circle,fill,inner sep=3pt]{};
           \node at (d.0) [cyan,circle,fill,inner sep=3pt]{};
           \node at (d.270) [cyan,circle,fill,inner sep=3pt]{};
-    \end{tikzpicture} }{7.1}
+    \end{tikzpicture} }{7.3}
 	\end{minipage}
 	&
 	\begin{minipage}[m]{0.55\textwidth}
 	\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-	\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
+	\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
 \documentclass[a4paper,14pt]{extreport}
-\usepackage[left=1.5cm,right=1.5cm,
-    top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \usepackage{amsmath}
- 
- 
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric}
  
 \begin{document}
 \begin{tikzpicture}
- 
-\node[diamond,
-font=\small,
-line width=0.4mm,
-scale=0.7,
-    draw = cyan,   
-    %text = red,
-    minimum width = 7.5cm,
+\node[diamond,font=\small,
+line width=0.4mm,scale=0.7,
+    draw = cyan, minimum width = 7.5cm, %text = red,
     minimum height = 9cm] (d) at (0,0) { };
       \node [above=0.5cm] (a) at (d.90) {$w = f(x,y)$};
       \node [above=0.5cm,right=0.1cm] (b) at (d.45) {$\dfrac{\partial w}{\partial y}$};
@@ -106,3 +134,18 @@ scale=0.7,
 	\end{minipage}
 	\end{tabular}
 	\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,52 +1,49 @@
-
-
-
--------------------------------------------- 5.1 --------------------------------------------
+%--------------------------- 5.1 
+\section{Comment to figure} 
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
+\enum{
 \begin{tikzpicture}
-        \node [anchor=south west] at (0, 0) (cartoon) {\includegraphics[width=.15\textwidth,height=.15\textwidth]{example-image-a}};
-        \node [anchor=north west,rectangle callout,draw=black,
-        callout absolute pointer=(cartoon.east), 
-        rounded corners=3pt,text width=0.7\textwidth, inner sep=2ex] at (.19\textwidth,.125\textwidth) {This is an example.};
-    \end{tikzpicture}
+    \node [anchor=south west] at (0, 0) (cartoon) {\includegraphics[width=.15\textwidth,height=.15\textwidth]{example-image-a}};
+    \node [anchor=north west,rectangle callout,draw=black,
+    callout absolute pointer=(cartoon.east), 
+    rounded corners=3pt,text width=0.7\textwidth, inner sep=2ex] at (.19\textwidth,.125\textwidth) {This is an example.};
+\end{tikzpicture}}{5.1}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\footnotesize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\scriptsize] 
+\documentclass{article}
 \usepackage{tikz}
-\usepackage[framemethod=TikZ]{mdframed}
-\usepackage{xcolor}
-\usetikzlibrary{calc}
-\makeatletter
-\newlength{\mylength}
-\xdef\CircleFactor{1.1}
-\setlength\mylength{\dimexpr\f@size pt}
-\newsavebox{\mybox}
-\newcommand*\circled[2][draw=blue]{\savebox\mybox{\vbox{\vphantom{WL1/}#1}}\setlength\mylength{\dimexpr\CircleFactor\dimexpr\ht\mybox+\dp\mybox\relax\relax}\tikzset{mystyle/.style={circle,#1,minimum height={\mylength}}}
-\tikz[baseline=(char.base)]
-\node[mystyle] (char) {#2};}
-\makeatother
-\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
-\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}	
+\usetikzlibrary{shapes.callouts}
+ 
+\begin{document}
+\begin{tikzpicture}
+    \node [anchor=south west] at (0, 0) (cartoon) {\includegraphics[width=.15\textwidth,height=.15\textwidth]{example-image-a}};
+    \node [anchor=north west,rectangle callout,draw=black,
+    callout absolute pointer=(cartoon.east), 
+    rounded corners=3pt,text width=0.7\textwidth, inner sep=2ex] at (.19\textwidth,.125\textwidth) {This is an example.};
+\end{tikzpicture}
+\end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
 \end{table}
 
 %-------------------5.2
--------------------------------------------- 5.2 --------------------------------------------
+\section{Positioning 1 | 2}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\includegraphics[width=1\linewidth]{5.2.png}
+\enum{
+\includegraphics[width=1\linewidth]{5.2.png}}{5.2}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\footnotesize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\scriptsize]{tex}
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{subfig}
@@ -70,10 +67,12 @@
 \end{table}
 
 \newpage
--------------------------------------------- 5.3 --------------------------------------------
+%-------------------5.3
+\section{Placing image \xmybox[red!70!white]{anywhere} You want}
 \begin{table}[ht!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
+\enum{
  \begin{tikzpicture}
 \node[ above left,
       xshift=5cm, %shifting around
@@ -81,7 +80,7 @@
 {\includegraphics[width=3cm]{example-image-a.png}};
   % define destination coordinates
   \path (5,-3) coordinate (anode);
-\end{tikzpicture}
+\end{tikzpicture}}{5.3}
 
 \end{minipage}
 &
@@ -98,11 +97,19 @@ at (current page.north west)
 \end{tikzpicture}
 \end{document}
 \end{lstlisting}
-\tikz[na] \coordinate (s-anode); \xmybox[red!70!white]{place image anywhere You want}
+\tikz[na] \coordinate (s-anode);  
 \end{minipage}
 \end{tabular}
 \end{table}
 \begin{tikzpicture}[overlay]
 \path[->,red,thick] (s-anode) edge [bend left] (anode);
 \end{tikzpicture}
--------------------------------------------- 5.4 --------------------------------------------
+ %-------------------5.4
+ %-------------------5.5
+ %-------------------5.6
+ %-------------------5.7
+ %-------------------5.8
+ %-------------------5.9
+ %-------------------5.10
+ %-------------------5.11
+

@@ -1,5 +1,5 @@
 %-------------------3.1
-Code listing using \textit{minted} in \mybox[red]{beamer}
+\section{Code listing using \textit{minted} in \mybox[red]{beamer}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -33,9 +33,10 @@ rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}},
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
-\end{table}
+\end{table}\newpage
 
 %-------------------3.2
+\section{"Zebra" style listing}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -54,17 +55,14 @@ int main(void) {
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{footnotesize}
+\begin{tiny}
 \begin{verbatim}
 \documentclass{article}
-
 \usepackage[T1]{fontenc}
 \usepackage{beramono}
 \usepackage{listings}
 \usepackage{xcolor}
-
 \newcommand\realnumberstyle[1]{}
-
 \makeatletter
 \newcommand{\zebra}[3]{%
     {\realnumberstyle{#3}}%
@@ -78,42 +76,39 @@ int main(void) {
         \rlap{\hspace*{\lst@numbersep}%
         \color@block{\linewidth}{\ht\strutbox}{\dp\strutbox}%
         }%
-    \endgroup
-}
+    \endgroup}
 \makeatother
 \begin{document}
-
 \begin{lstlisting}[language=C,basicstyle=\ttfamily,
 numberstyle=\zebra{green!35}{yellow!35},numbers=left]
 /**
 * Prints Hello World.
 **/
 #include <stdio.h>
-
 int main(void) {
    printf("Hello World!");
    return 0;
 }
 \end{lstlisting}
-
 \end{document}
 \end{verbatim}
-\end{footnotesize}
+\end{tiny}
 \end{minipage}
 \end{tabular}
 \end{table}
 
 %-------------------3.3
-Code listing using \textit{minted} in \mybox[red]{beamer}
+
+\section{Listing with russian language}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{ qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq }{3.3}
+\enum{ \includegraphics[width=1\linewidth]{3.3.png} }{3.3}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{pink!15}{green!15},numbers=left,basicstyle=\footnotesize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{pink!15}{green!15},numbers=left,basicstyle=\footnotesize] 
 \documentclass{article}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -124,9 +119,9 @@ Code listing using \textit{minted} in \mybox[red]{beamer}
 \begin{document}
 \lstset{ keepspaces=true, 
 backgroundcolor=\color{blue},  
-showstringspaces=false,% for spaces between rus. words
+showstringspaces=false, 
 language=C, 
-extendedchars=\true,%for russian
+extendedchars=\true, 
 framexrightmargin=0pt,
 framexleftmargin=0pt,
 framextopmargin=15pt,
@@ -134,10 +129,10 @@ framexbottommargin=15pt,
 frame=tb, framerule=0pt,
 basicstyle=\color{yellow}\ttfamily\small}
 
-begin{lstlisting}% <<<<<<<<< add /
+begin{lstlisting}% <<<<<<<<< add "/"
 print("English comment"); // English comment
 print("Russian comment"); // %here can be russian words
-end{lstlisting}%   <<<<<<<<< add /
+end{lstlisting}%   <<<<<<<<< add "/"
 
 \end{document}
 
@@ -145,6 +140,7 @@ end{lstlisting}%   <<<<<<<<< add /
 \end{minipage}
 \end{tabular}
 \end{table}
+ 
 
 
 
