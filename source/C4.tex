@@ -446,6 +446,50 @@ Group4 & 0.34  & 0.33  & 0.33 \\ \bottomrule
 \end{tabular}
 
 
+%#################### 4.13 ####################
+\section{Text next to a table}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\begin{minipage}[m]{0.4\textwidth}
+text  text text
+\end{minipage}
+\hfill
+\begin{minipage}[m]{0.5\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+1 & 22 & 333  \\ \hline
+  &    &      \\ \hline
+  &    &      \\ \hline
+  &    &      \\ \hline
+\end{tabular}
+\end{minipage}}{4.13}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass[a4paper,14pt]{extreport}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{lipsum}
+
+\begin{document}
+\begin{minipage}[m]{0.58\textwidth}
+text text text
+\end{minipage}
+\hspace{0.2cm}
+\begin{minipage}[m]{0.40\textwidth}
+\begin{tabular}{|c|c|c|}
+\hline
+1 & 22 & 333 &  \\ \hline
+  &    &     &  \\ \hline
+  &    &     &  \\ \hline
+  &    &     &  \\ \hline
+\end{tabular}
+\end{minipage}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 
 
 
