@@ -107,3 +107,73 @@ $\sum = $ \TextField[name=AvgStat, calculate={
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
+
+%-------------------1.4
+\section{One number for multiline equation}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \begin{equation}
+\begin{aligned}
+x_{ij} &= d_{ijk}E_k, \\ 
+x_{ij} &= \varsigma_{ijk}H_k,\\ 
+x_{ij} &= s_{ijkl}X_{kl},\\ 
+x_{ij} &= \xi_{ij}\delta p,\\ 
+x_{ij} &= \alpha_{ij}\delta T
+\end{aligned}
+\end{equation}}{1.4}
+\end{minipage}
+& \begin{minipage}[m]{0.5\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\begin{equation}
+\begin{aligned}
+x_{ij} &= d_{ijk}E_k, \\ 
+x_{ij} &= \varsigma_{ijk}H_k,\\ 
+x_{ij} &= s_{ijkl}X_{kl},\\ 
+x_{ij} &= \xi_{ij}\delta p,\\ 
+x_{ij} &= \alpha_{ij}\delta T
+\end{aligned}
+\end{equation}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+%-------------------1.5
+\section{Matrix in \textbf{standalone} documentclass}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \begin{equation*}
+\begin{matrix} 
+a_{11} & a_{12} & a_{13}  \\
+a_{21} & a_{22} & a_{23}  \\
+a_{31} & a_{32} & a_{33}  \\
+\end{matrix} 
+\end{equation*} }{1.5}
+\end{minipage}
+& \begin{minipage}[m]{0.5\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass[preview,border={-5cm 0cm -5cm -0.1cm}]{standalone}
+\usepackage{amsmath}
+\begin{document}
+\begin{equation*}
+\begin{matrix} 
+a_{11} & a_{12} & a_{13}  \\
+a_{21} & a_{22} & a_{23}  \\
+a_{31} & a_{32} & a_{33}  \\
+\end{matrix} 
+\end{equation*}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+
+
+
+
+ 
