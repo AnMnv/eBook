@@ -1,23 +1,27 @@
-
-	\begin{table}[h!]
-	\begin{tabular}{c | c}
-	\begin{minipage}[m]{0.4\textwidth}
-	\begin{multicols}{2}%change it 2,3,4... 
-	\begin{enumerate}
-	\item c
-	\item g
-	\item d
-	\item f
-	\end{enumerate}
-	\end{multicols}
-	\end{minipage}
-	&
-	\begin{minipage}[m]{0.55\textwidth}
-	\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-	\begin{lstlisting}[numberstyle=\zebra{blue!15}{orange!15},numbers=left,basicstyle=\footnotesize]{tex}
+%-------------------------------------------- 6.1  
+\section{Numbering in few columns}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{
+\begin{multicols}{2}%change to have more columns 
+\begin{enumerate}
+\item c
+\item g
+\item d
+\item f
+\end{enumerate}
+\end{multicols}}{6.1}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{blue!15}{orange!15},numbers=left,basicstyle=\scriptsize]{tex}
+\documentclass{article}
 \usepackage{multicol} 
+
 \begin{document}
-\begin{multicols}{2}%change it 2,3,4... 
+\begin{multicols}{2}%change to have more columns 
 \begin{enumerate}
 \item c
 \item g
@@ -26,10 +30,51 @@
 \end{enumerate}
 \end{multicols}
 \end{document}
-	\end{lstlisting}
-	\xmybox[green!70!white]{Numbering in few columns}
-	\end{minipage}
-	\end{tabular}
-	\end{table}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 
--------------------------------------------- 6.1 --------------------------------------------
+%-------------------------------------------- 6.2
+\section{Enumeration environment with position number in the format (i, j)}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=0.9\linewidth]{6.2.png}}{6.2}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{blue!15}{orange!15},numbers=left,basicstyle=\scriptsize] 
+\documentclass{article}
+\renewcommand{\theenumi}{(\arabic{enumi})}
+\renewcommand{\theenumii}{(\arabic{enumi},\arabic{enumii})}
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\labelenumii}{\theenumii}
+\makeatletter
+\renewcommand{\p@enumii}{}
+\makeatother
+
+\begin{document}
+\begin{enumerate}
+\item First level-one item 
+  \begin{enumerate}
+  \item First level-two item 
+  \item Second level-two item
+  \end{enumerate}
+\item Second level-one item 
+  \begin{enumerate}
+  \item Still another level-two item 
+  \end{enumerate}
+\end{enumerate}
+\end{document} 
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+%-------------------------------------------- 6.3  
+%-------------------------------------------- 6.4  
+%-------------------------------------------- 6.5  
+%-------------------------------------------- 6.6  
+%-------------------------------------------- 6.7  
+  
