@@ -13,7 +13,7 @@
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
 \PassOptionsToPackage{svgnames}{xcolor}
 \documentclass[twocolumn,a4paper]{article}
 \usepackage{tcolorbox}
@@ -30,11 +30,69 @@
 \end{table} 
 
 %#################### 4.2 ####################
-\section{empty}
+\section{Color box with yellow border}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\begin{mycolorbox}{Remarque}
+Some text inside
+\end{mycolorbox}}{4.4}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\documentclass[border=2mm]{standalone}
+\usepackage[most]{tcolorbox}
+\usepackage{lipsum}
+
+\newtcolorbox{mycolorbox}[1]{
+    enhanced,    breakable,
+    title=#1,    colback=white,
+    colbacktitle=green!20!white,
+    coltitle=black,
+    fonttitle=\bfseries,
+    boxrule=.5pt,    arc=0pt,
+    outer arc=0pt,
+    colframe=yellow!80!orange,
+    borderline west={2pt}{0pt}{red}   }
+
+\begin{document}
+\begin{mycolorbox}{Remarque}
+\lipsum[1]
+\end{mycolorbox}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
  
 
 %#################### 4.3 ####################
-\section{empty}
+\section{A drop capital in a tcolorbox}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\begin{tcolorbox}
+\lettrine{S}{ome} text. \lipsum[1][1]\par
+\end{tcolorbox}}{4.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass{article}
+\usepackage{lettrine}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+
+\begin{document}
+\begin{tcolorbox}
+\lettrine{S}{ome} text. \lipsum[1]
+\end{tcolorbox}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
  
 
 %#################### 4.4 ####################
@@ -73,7 +131,8 @@
 \end{table}
 
 %#################### 4.5 ####################
- \section{empty}
+ \section{qqqqqqqqqqqqq}
+
 
 \vspace{0.2cm}  
 \clearpage

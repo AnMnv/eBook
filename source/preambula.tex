@@ -169,10 +169,66 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
 %-----------------------------8.4
 \newcommand{\hly}[2]{\colorbox{#1!80}{\parbox{\textwidth}{#2}}}
 
+%-----------------------------4.2
+\newtcolorbox{mycolorbox}[1]{
+    enhanced,
+    breakable,
+    title=#1,
+    colback=white,
+    colbacktitle=green!20!white,
+    coltitle=black,
+    fonttitle=\bfseries,
+    boxrule=.5pt,
+    arc=0pt,
+    outer arc=0pt,
+    colframe=yellow!80!orange,
+    borderline west={2pt}{0pt}{red}   }
+%-----------------------------4.5
+\usepackage{lettrine}
 %-----------------------------
-%-----------------------------
-%-----------------------------
-%-----------------------------
+\usepackage{coffee4}
+
+%-----------------------------9.2
+\usetikzlibrary{fadings, shadings}
+\newcounter{fadcnt}\setcounter{fadcnt}{0}
+\newcommand\fadingtext[3][]{%
+\stepcounter{fadcnt}
+  \begin{tikzfadingfrompicture}[name=fading letter\thefadcnt]
+    \node[text=transparent!0,inner xsep=0pt,outer xsep=0pt,#1] {#3};
+  \end{tikzfadingfrompicture}%
+  \begin{tikzpicture}[baseline=(textnode.base)]
+    \node[inner sep=0pt,outer sep=0pt,#1](textnode){\phantom{#3}}; 
+    \shade[path fading=fading letter\thefadcnt,#2,fit fading=false]
+    (textnode.south west) rectangle (textnode.north east);% 
+  \end{tikzpicture}% 
+}
+\usetikzlibrary{calc}
+\newbox\shbox
+\tikzset{%
+  path picture shading/.style={%
+  path picture={%
+%
+\pgfpointdiff{\pgfpointanchor{path picture bounding box}{south west}}%
+  {\pgfpointanchor{path picture bounding box}{north east}}%
+\pgfgetlastxy\pathwidth\pathheight%
+\pgfinterruptpicture%
+   \global\setbox\shbox=\hbox{\pgfuseshading{#1}}%
+ \endpgfinterruptpicture%
+\pgftransformshift{\pgfpointanchor{path picture bounding box}{center}}%
+\pgftransformxscale{\pathwidth/(\wd\shbox)}%
+\pgftransformyscale{\pathheight/(\ht\shbox)}% \dp will (should) be 0pt
+\pgftext{\box\shbox}%
+%
+    }
+  }
+}
+\pgfdeclarehorizontalshading{rainbow}{10bp}{color(0bp)=(violet);
+            color(1.6667bp)=(blue);
+            color(3.3333bp)=(cyan);
+            color(5bp)=(green);
+            color(6.6667bp)=(yellow);
+            color(8.3333bp)=(orange);
+            color(10bp)=(red)}
 %-----------------------------
 %-----------------------------
 %-----------------------------

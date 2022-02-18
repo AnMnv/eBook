@@ -1,0 +1,113 @@
+%#################### 9.1 ####################
+\section{LaTeX Coffee Stains}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\cofeAm{1}{0.6}{0}{0.cm}{6.5cm} 
+
+\cofeCm{0.9}{0.5}{180}{-7.cm}{11cm}
+
+Download \fbox{coffee4.sty} and put in the same directory
+
+\cofeDm{0.2}{0.2}{90}{0.5cm}{2.5cm}
+ \cofeBm{0.5}{0.5}{0}{-3.cm}{10cm}
+
+ }{\href{https://www.overleaf.com/latex/examples/latex-coffee-stains/qsjjwwsrmwnc}{9.1}}
+
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\footnotesize]
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes}
+\usepackage{coffee4}
+\enum{\cofeAm{1}{0.6}{0}{0.cm}{6cm} 
+\cofeCm{0.9}{0.5}{180}{-7.cm}{11cm}
+some example of dummy text
+\cofeDm{0.4}{0.2}{90}{1.0cm}{3.0cm}
+\cofeBm{0.5}{0.5}{0}{-3.cm}{10cm}
+
+%\cofeAm{alpha}{scale}{angle}{xoff}{yoff} <-- usage
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+\newpage
+%#################### 9.2 ####################
+\section{\fadingtext[scale=1, font=\bfseries]{path picture shading=rainbow}{Rainbow text}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \fadingtext[scale=2, font=\bfseries]{upper left=red, upper right=green, lower left=blue,lower right=yellow}{\LaTeX} \fadingtext[scale=2, font=\bfseries]{path picture shading=rainbow}{\LaTeX} \\
+
+\noindent\fadingtext[scale=0.7, font=\bfseries]{path picture shading=rainbow}{\parbox[b]{1.5\linewidth}{\strut\lipsum[1]}}
+
+ }{\href{https://tex.stackexchange.com/questions/344260/rainbow-colored-one-letter-with-tikz-and-xcolor}{9.2}}
+
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article} 
+\usepackage{tikz}
+\usetikzlibrary{fadings, shadings}
+\newcounter{fadcnt}\setcounter{fadcnt}{0}
+\newcommand\fadingtext[3][]{%
+\stepcounter{fadcnt}
+  \begin{tikzfadingfrompicture}[name=fading letter\thefadcnt]
+    \node[text=transparent!0,inner xsep=0pt,outer xsep=0pt,#1] {#3};
+  \end{tikzfadingfrompicture}%
+  \begin{tikzpicture}[baseline=(textnode.base)]
+    \node[inner sep=0pt,outer sep=0pt,#1](textnode){\phantom{#3}}; 
+    \shade[path fading=fading letter\thefadcnt,#2,fit fading=false]
+    (textnode.south west) rectangle (textnode.north east);% 
+  \end{tikzpicture}% 
+}
+\usetikzlibrary{calc}
+\newbox\shbox
+\tikzset{%
+  path picture shading/.style={%
+  path picture={%
+%
+\pgfpointdiff{\pgfpointanchor{path picture bounding box}{south west}}%
+  {\pgfpointanchor{path picture bounding box}{north east}}%
+\pgfgetlastxy\pathwidth\pathheight%
+\pgfinterruptpicture%
+   \global\setbox\shbox=\hbox{\pgfuseshading{#1}}%
+ \endpgfinterruptpicture%
+\pgftransformshift{\pgfpointanchor{path picture bounding box}{center}}%
+\pgftransformxscale{\pathwidth/(\wd\shbox)}%
+\pgftransformyscale{\pathheight/(\ht\shbox)}% \dp will (should) be 0pt
+\pgftext{\box\shbox}%
+%
+    }
+  }
+}
+\pgfdeclarehorizontalshading{rainbow}{10bp}{color(0bp)=(violet);
+            color(1.6667bp)=(blue);
+            color(3.3333bp)=(cyan);
+            color(5bp)=(green);
+            color(6.6667bp)=(yellow);
+            color(8.3333bp)=(orange);
+            color(10bp)=(red)}
+\begin{document} 
+ \fadingtext[scale=10, font=\bfseries]{upper left=red, upper right=green, lower left=blue,lower right=yellow}{\LaTeX}
+
+\fadingtext[scale=10, font=\bfseries]{path picture shading=rainbow}{\LaTeX}
+
+\noindent\fadingtext[scale=0.7, font=\bfseries]{path picture shading=rainbow}{\parbox[b]{1.5\linewidth}{\strut\lipsum[1]}}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+%#################### 9.5 ####################
+%#################### 9.6 ####################
+%#################### 9.7 ####################
+%#################### 9.8 ####################
