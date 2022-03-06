@@ -5,7 +5,7 @@
 	\usepackage{amsmath,amssymb}
 	\usepackage{array,tabularx}
 	\usepackage{graphicx}
-	\graphicspath{{C:/Users/anmnm/Desktop/eBook/images/}}
+	\graphicspath{{images/}}
 	\usepackage{moreverb}
 	 \usepackage[table]{xcolor}
 	\usepackage{color}
@@ -83,7 +83,7 @@
 		\par\nointerlineskip \vspace{.5\baselineskip}}
 
   %\newcommand{\img}[4]{\center{\includegraphics[width=#1\linewidth]{#2}}\captionof{figure}{#3}\label{#4}}
-\newcommand{\img}[4]{\includegraphics[width=#1\linewidth]{#2}\caption{#3}\label{#4}}
+\newcommand{\img}[2]{\includegraphics[width=#1\linewidth]{#2}}
 
 
 %-----------------------------
@@ -229,7 +229,25 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
             color(6.6667bp)=(yellow);
             color(8.3333bp)=(orange);
             color(10bp)=(red)}
-%-----------------------------
+%-----------------------------9.3
+\usepackage{xparse}
+\usepackage{fancypar}
+\usetikzlibrary{calc,shadows}
+ 
+\NewDocumentCommand\StickyNoteP{O{4cm}mO{4cm}}{%
+\begin{tikzpicture}[thick,scale=0.5]
+\node[
+drop shadow={
+  shadow xshift=3pt,
+},
+inner xsep=0pt,
+xslant=-0.1,
+yslant=0.1,
+inner ysep=0pt,
+text depth=\the\dimexpr#1+2.5ex\relax
+] {\parbox[t][#1][c]{#3}{#2}};
+\end{tikzpicture}%
+}
 %-----------------------------
 %-----------------------------
 %-----------------------------
