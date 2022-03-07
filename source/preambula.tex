@@ -7,6 +7,7 @@
 	\usepackage{graphicx}
 	\graphicspath{{images/}}
 	\usepackage{moreverb}
+	%\usepackage[svgnames,dvipsnames,x11names,table]{xcolor}
 	 \usepackage[table]{xcolor}
 	\usepackage{color}
 	\usepackage{lipsum}
@@ -155,7 +156,7 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
 %-----------------------------
 \usepackage{pgf-pie}
 %-----------------------------
- \usepackage[table]{xcolor}
+ 
 \usepackage{nicematrix}
 \NiceMatrixOptions{cell-space-top-limit=5pt,cell-space-bottom-limit=5pt}
 %-----------------------------
@@ -248,7 +249,47 @@ text depth=\the\dimexpr#1+2.5ex\relax
 ] {\parbox[t][#1][c]{#3}{#2}};
 \end{tikzpicture}%
 }
+%-----------------------------2.2
+\usepackage{ulem}
+\usepackage{cancel}
+%-----------------------------4.14
+\usetikzlibrary{chains,patterns,shadows,fit,backgrounds}
+
+\makeatletter
+\tikzset{% customization of pattern
+         % based on <m.wibrow@gm...> - 2013-03-24 07:20: 
+        hatch distance/.store in=\hatchdistance,
+        hatch distance=5pt,
+        hatch thickness/.store in=\hatchthickness,
+        hatch thickness=5pt
+        }
+\pgfdeclarepatternformonly[\hatchdistance,\hatchthickness]{north east hatch}% name
+    {\pgfqpoint{-1pt}{-1pt}}% below left
+    {\pgfqpoint{\hatchdistance}{\hatchdistance}}% above right
+    {\pgfpoint{\hatchdistance-1pt}{\hatchdistance-1pt}}%
+    {
+        \pgfsetcolor{\tikz@pattern@color}
+        \pgfsetlinewidth{\hatchthickness}
+        \pgfpathmoveto{\pgfqpoint{0pt}{0pt}}
+        \pgfpathlineto{\pgfqpoint{\hatchdistance}{\hatchdistance}}
+        \pgfusepath{stroke}
+    }
+\makeatother
 %-----------------------------
+%-----------------------------
+
+%-----------------------------
+%-----------------------------
+%-----------------------------
+
+%-----------------------------
+%-----------------------------
+%-----------------------------
+
+%-----------------------------
+%-----------------------------
+%-----------------------------
+
 %-----------------------------
 %-----------------------------
 %-----------------------------
