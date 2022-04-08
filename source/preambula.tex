@@ -229,8 +229,42 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
             color(6.6667bp)=(yellow);
             color(8.3333bp)=(orange);
             color(10bp)=(red)}
-%-----------------------------
-%-----------------------------
+%-----------------------------6.3
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\definecolor{arylideyellow}{rgb}{0.91, 0.84, 0.42}
+\definecolor{asparagus}{rgb}{0.53, 0.66, 0.42}
+\definecolor{atomictangerine}{rgb}{1.0, 0.6, 0.4}
+\definecolor{bananayellow}{rgb}{1.0, 0.88, 0.21}
+\definecolor{brightgreen}{rgb}{0.4, 1.0, 0.0}
+\definecolor{cambridgeblue}{rgb}{0.64, 0.76, 0.68}
+\definecolor{capri}{rgb}{0.0, 0.75, 1.0}
+\definecolor{carnationpink}{rgb}{1.0, 0.65, 0.79}
+ 
+% from https://tex.stackexchange.com/a/167024/121799
+\newcommand{\ClaudioList}{red,applegreen,amethyst,carnationpink,blue!50!cyan,arylideyellow,asparagus,atomictangerine,bananayellow,brightgreen,cambridgeblue,capri}
+\newcommand{\SebastianoItem}[1]{\foreach \X[count=\Y] in \ClaudioList
+{\ifnum\Y=#1\relax
+\xdef\SebastianoColor{\X}
+\fi
+}
+\tikz[baseline=(SebastianoItem.base),remember
+picture]{%
+\node[fill=\SebastianoColor,inner sep=4pt,font=\sffamily,fill opacity=0.5] (SebastianoItem){#1)};}
+}
+\newcommand{\SebastianoHighlight}{\tikz[overlay,remember picture]{%
+\fill[\SebastianoColor,fill opacity=0.5] ([yshift=4pt,xshift=-\pgflinewidth]SebastianoItem.east) -- ++(4pt,-4pt)
+-- ++(-4pt,-4pt) -- cycle;
+}}
+%-----------------------------2.2
+\usepackage{blindtext}
+\newcommand*\justify{%
+  \fontdimen2\font=0.4em% interword space
+  \fontdimen3\font=0.2em% interword stretch
+  \fontdimen4\font=0.1em% interword shrink
+  \fontdimen7\font=0.1em% extra space
+  \hyphenchar\font=`\-% allowing hyphenation
+}
 %-----------------------------
 %-----------------------------
 %-----------------------------

@@ -26,4 +26,31 @@
 \end{tabular}
 \end{table}
 %-------------------2.2
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\texttt{\small{\justify \blindenumerate[10].} }}{2.2}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{white!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage{lipsum}
+\newcommand*\justify{%
+  \fontdimen2\font=0.4em% interword space
+  \fontdimen3\font=0.2em% interword stretch
+  \fontdimen4\font=0.1em% interword shrink
+  \fontdimen7\font=0.1em% extra space
+  \hyphenchar\font=`\-% allowing hyphenation
+}
+
+\begin{document}
+\texttt{\small{\justify \blindenumerate[10].} }
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
 	

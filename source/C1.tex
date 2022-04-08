@@ -173,6 +173,30 @@ a_{31} & a_{32} & a_{33}  \\
 \end{tabular}
 
 
+%-------------------1.6
+\section{Multiple lines, one centered label}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \begin{equation} \label{eq1}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+ & = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation} }{1.6}
+\end{minipage}
+& \begin{minipage}[m]{0.5\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\footnotesize] 
+\begin{equation} \label{eq1}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+ & = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
 
 
 
