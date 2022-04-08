@@ -108,6 +108,50 @@ some example of dummy text
 \end{tabular}
 \end{table}
 %#################### 9.3 ####################
+\section{Sticky notes}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \href{https://tex.stackexchange.com/questions/26846/how-to-scale-a-tikzpicture-including-texts}{\img{1}{9.3}}}{9.3}
+
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article}
+\usepackage{xparse}
+\usepackage{fancypar}
+\usetikzlibrary{calc,shadows}
+ 
+\NewDocumentCommand\StickyNoteP{O{6cm}mO{6cm}}{%
+\begin{tikzpicture}
+\node[
+drop shadow={
+  shadow xshift=3pt,
+},
+inner xsep=0pt,
+xslant=-0.1,
+yslant=0.1,
+inner ysep=0pt,
+text depth=\the\dimexpr#1+2.5ex\relax
+] {\parbox[t][#1][c]{#3}{#2}};
+\end{tikzpicture}%
+}
+
+\begin{document}
+
+\StickyNoteP[2.5cm]{%
+\NotebookPar[spiral=false]{
+\LARGE first\\  second }}[6.5cm]
+
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+%#################### 9.4 ####################
 \section{\fadingtext[scale=1, font=\bfseries]{path picture shading=rainbow}{Rainbow text}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
@@ -124,6 +168,5 @@ qqqqqqqqqqqqqqqq
 \end{minipage}
 \end{tabular}
 \end{table}
-%#################### 9.4 ####################
-%#################### 9.5 ####################
+%#################### 9.5 #################### 
 %#################### 9.6 ####################

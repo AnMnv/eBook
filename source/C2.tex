@@ -8,7 +8,7 @@
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{red!15}{white!15},numbers=left,basicstyle=\footnotesize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\footnotesize]{tex}
 \usepackage[object=vectorian]{pgfornament}  
 \usepackage{lipsum,tikz}
 \newcommand{\sectionlinetwo}[2]{%
@@ -26,14 +26,33 @@
 \end{tabular}
 \end{table}
 %-------------------2.2
+<<<<<<< HEAD
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\texttt{\small{\justify \blindenumerate[10].} }}{2.2}
+=======
+\section{New section symbol}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\textbf{Ulem:}
+
+\sout{striked out text} \xout{crossed out text}
+\uline{important} \uuline{urgent} \uwave{boat} \dashuline{dashing} \dotuline{dotty} \\
+
+\textbf{Cancel:}
+
+text \cancel{text} \bcancel{text} \xcancel{text}
+
+
+$\cancelto{value}{expression}$ \hspace{1. cm} $\cancelto{\frac{num2}{den2}}{\frac{num1}{den1}} $}{2.1}
+>>>>>>> 9ecf04c70880d4cc1ae635f1b338876afb11cd90
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+<<<<<<< HEAD
 \begin{lstlisting}[numberstyle=\zebra{red!15}{white!15},numbers=left,basicstyle=\footnotesize] 
 \documentclass{article}
 \usepackage{lipsum}
@@ -47,10 +66,39 @@
 
 \begin{document}
 \texttt{\small{\justify \blindenumerate[10].} }
+=======
+\begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{ulem}
+\usepackage{cancel}
+
+\begin{document}
+\textbf{Ulem:}
+\sout{striked out text} \xout{crossed out text}
+\uline{important} \uuline{urgent} \uwave{boat} 
+\dashuline{dashing} \dotuline{dotty} \\
+\textbf{Cancel:}
+text \cancel{text} \bcancel{text} \xcancel{text}
+$\cancelto{value}{expression}$ \hspace{0.5 cm} 
+$\cancelto{\frac{num2}{den2}}{\frac{num1}{den1}} $
+>>>>>>> 9ecf04c70880d4cc1ae635f1b338876afb11cd90
 \end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
 \end{table}
 
+<<<<<<< HEAD
 	
+=======
+%-------------------2.3
+%-------------------2.4
+%-------------------2.5
+%-------------------2.6
+%-------------------2.7
+%-------------------2.8
+%-------------------2.9
+%-------------------2.10
+>>>>>>> 9ecf04c70880d4cc1ae635f1b338876afb11cd90

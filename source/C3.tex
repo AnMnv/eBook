@@ -1,5 +1,5 @@
 %-------------------3.1
-\section{Code listing using \textit{minted} in \mybox[red]{beamer}}
+\section{Code listing using \textit{\fbox{minted}} in \mybox[red]{beamer}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -141,7 +141,45 @@ end{lstlisting}%   <<<<<<<<< add "/"
 \end{tabular}
 \end{table}
  
+%-------------------3.4
 
+\section{Listing with \texttt{\fbox{minted}}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \href{https://tex.stackexchange.com/questions/174455/typeset-source-code-with-tcolorbox}{\includegraphics[width=1\linewidth]{3.4.png}} }{3.4}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{pink!15}{green!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage[many]{tcolorbox}
+\tcbuselibrary{minted}
+\newtcblisting{mylisting}{
+  colframe=cyan,
+  colback=cyan!10,
+  listing only,
+  listing engine=minted,
+  minted language=cpp,
+  minted options={fontsize=\small,linenos,numbersep=3mm},
+}
+
+\begin{document}
+\begin{mylisting}
+some code 
+\end{mylisting}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+%-------------------3.5
+%-------------------3.6
+%-------------------3.7
+%-------------------3.8
+%-------------------3.9
+%-------------------3.10
 
 
 

@@ -129,12 +129,85 @@ Some text inside
 \end{minipage}
 \end{tabular}
 \end{table}
+\clearpage
 
 %#################### 4.5 ####################
- \section{qqqqqqqqqqqqq}
+\section{bclogo – Creating colourful boxes with logos}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\href{https://ctan.org/pkg/bclogo}{\img{1}{source/4.5/4.5.pdf}}}{4.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article}
+\usepackage{geometry}
+\geometry{
+paperwidth=8cm,
+paperheight=14cm,
+margin=0.5cm
+}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[tikz]{bclogo}
 
+\newtcolorbox{framedd}[1][]{
+  colframe=lightgray,
+  colback=yellow!40!white,
+  enhanced jigsaw,
+  sharp corners,
+  lower separated=false,
+  lefthand width=1cm,
+  sidebyside gap=0.5cm,
+  sidebyside,#1}
 
-\vspace{0.2cm}  
+\begin{document}
+\begin{framedd}
+  \bcbombe  \tcblower  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green]
+  \bclampe   \tcblower  Some text inside.
+\end{framedd} 
+
+\begin{framedd}
+  \bcattention  \bcinterdit  \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green]
+   \bcnucleaire  \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green]
+ \bcdanger \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}
+  \bcquestion \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green, lefthand width=2.5cm]
+  \bcsoleil  \bceclaircie \bcpluie  \bcneige \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[lefthand width=3cm]
+  \bccube \bcdodecaedre \bcicosaedre \bcoctaedre \bctetraedre  \tcblower
+  Some text inside.
+\end{framedd}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+  
 \clearpage
 %#################### 4.6 ####################
 \section{Warning banner}
@@ -467,6 +540,125 @@ text text text
 \end{minipage}
 \end{tabular}
 
+%#################### 4.13 ####################
+\section{Text next to a table}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{  \center \begin{tikzpicture}[
+    start chain=going below,
+    node distance=2mm,
+    Node/.style = {minimum width=#1,
+                   shape=rectangle, 
+                   draw, fill=white,
+                   on chain},
+    Pattern/.style = {pattern=north east hatch,
+                    pattern color=teal!30,
+                    hatch distance=7pt, 
+                    hatch thickness=2pt},
+    font=\small\sffamily]
+%----------------
+    \node[Node=24mm, Pattern, 
+            preaction={fill=white}] (a) {without shadow};
+    \begin{scope}[on background layer]
+        \node[fit=(a),fill=red] {};
+    \end{scope}
+
+    \node[Node=24mm, drop shadow,
+            preaction={fill=yellow}, Pattern] (b) {with shadow};
+
+    \node[Node=24mm, preaction={fill=yellow},
+            drop shadow, Pattern] (b) {with shadow};
+
+    \node[Node=24mm, postaction={Pattern},
+            drop shadow] (b) {with shadow};
+
+    \node[Node=24mm, postaction={draw=red, Pattern},
+            drop shadow] (b) {with shadow};
+
+    \node[Node=24mm, drop shadow] (c) {without pattern};
+
+   
+%---
+ \end{tikzpicture} 
+  \href{https://tex.stackexchange.com/questions/154842/using-pattern-inside-tikz-shapes-with-dropped-shadows}{*****} }{4.14}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize] 
+\documentclass[tikz,border=5mm]{standalone}
+\usetikzlibrary{chains,patterns,shadows,fit,backgrounds}
+
+\makeatletter
+\tikzset{% customization of pattern
+         % based on <m.wibrow@gm...> - 2013-03-24 07:20: 
+        hatch distance/.store in=\hatchdistance,
+        hatch distance=5pt,
+        hatch thickness/.store in=\hatchthickness,
+        hatch thickness=5pt
+        }
+\pgfdeclarepatternformonly[\hatchdistance,\hatchthickness]{north east hatch}% name
+    {\pgfqpoint{-1pt}{-1pt}}% below left
+    {\pgfqpoint{\hatchdistance}{\hatchdistance}}% above right
+    {\pgfpoint{\hatchdistance-1pt}{\hatchdistance-1pt}}%
+    {
+        \pgfsetcolor{\tikz@pattern@color}
+        \pgfsetlinewidth{\hatchthickness}
+        \pgfpathmoveto{\pgfqpoint{0pt}{0pt}}
+        \pgfpathlineto{\pgfqpoint{\hatchdistance}{\hatchdistance}}
+        \pgfusepath{stroke}
+    }
+\makeatother
+
+\begin{document}
+ \begin{tikzpicture}[
+    start chain=going below,
+    node distance=2mm,
+    Node/.style = {minimum width=#1,
+                   shape=rectangle, 
+                   draw, fill=white,
+                   on chain},
+    Pattern/.style = {pattern=north east hatch,
+                    pattern color=teal!30,
+                    hatch distance=7pt, 
+                    hatch thickness=2pt},
+    font=\small\sffamily]
+%----------------
+    \node[Node=24mm, Pattern, 
+            preaction={fill=white}] (a) {without shadow};
+    \begin{scope}[on background layer]
+        \node[fit=(a),fill=red] {};
+    \end{scope}
+
+    \node[Node=24mm, drop shadow,
+            preaction={fill=yellow}, Pattern] (b) {with shadow};
+
+    \node[Node=24mm, preaction={fill=yellow},
+            drop shadow, Pattern] (b) {with shadow};
+
+    \node[Node=24mm, postaction={Pattern},
+            drop shadow] (b) {with shadow};
+
+    \node[Node=24mm, postaction={draw=red, Pattern},
+            drop shadow] (b) {with shadow};
+
+    \node[Node=24mm, drop shadow] (c) {without pattern};
+%---
+ \end{tikzpicture}   
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+
+
+
+
+%#################### 4.14 ####################
+%#################### 4.15 ####################
+%#################### 4.16 ####################
+%#################### 4.17 ####################
+%#################### 4.18 ####################
 
 
 
