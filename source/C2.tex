@@ -25,11 +25,39 @@
 \end{minipage}
 \end{tabular}
 \end{table}
+
+
 %-------------------2.2
+\section{Wireframe rendering}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\texttt{\justify\blindenumerate[10]}}{2.2}
+\enum{ \roboto\huge\contourlength{.15em}
+\contour{gray}{boxed} \contour{red}{boxed} \contour{yellow}{boxed}}{2.2}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{roboto}
+\usepackage[outline]{contour}
+\begin{document}
+\roboto\huge\contourlength{.15em}
+\contour{gray}{boxed}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+%-------------------2.3
+\section{Justifyed text}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\texttt{\justify\blindenumerate[10]}}{2.3}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
