@@ -10,7 +10,7 @@
 Download \fbox{coffee4.sty} and put in the same directory
 
 \cofeDm{0.2}{0.2}{90}{0.5cm}{2.5cm}
- \cofeBm{0.5}{0.5}{0}{-3.cm}{10cm}
+\cofeBm{0.5}{0.5}{0}{-3.cm}{10cm}
 
  }{\href{https://www.overleaf.com/latex/examples/latex-coffee-stains/qsjjwwsrmwnc}{9.1}}
 
@@ -26,19 +26,52 @@ Download \fbox{coffee4.sty} and put in the same directory
 \usepackage{coffee4}
 \enum{\cofeAm{1}{0.6}{0}{0.cm}{6cm} 
 \cofeCm{0.9}{0.5}{180}{-7.cm}{11cm}
-some example of dummy text
 \cofeDm{0.4}{0.2}{90}{1.0cm}{3.0cm}
 \cofeBm{0.5}{0.5}{0}{-3.cm}{10cm}
-
 %\cofeAm{alpha}{scale}{angle}{xoff}{yoff} <-- usage
 \end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
 \end{table}
-
-\newpage
 %#################### 9.2 ####################
+\section{Sticky notes}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ \href{https://tex.stackexchange.com/questions/26846/how-to-scale-a-tikzpicture-including-texts}{\img{1}{9.3}}}{9.2}
+
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article}
+\usepackage{xparse}
+\usepackage{fancypar}
+\usetikzlibrary{calc,shadows}
+\NewDocumentCommand\StickyNoteP{O{6cm}mO{6cm}}{%
+\begin{tikzpicture}
+\node[
+drop shadow={shadow xshift=3pt,},
+inner xsep=0pt,
+xslant=-0.1,yslant=0.1,
+inner ysep=0pt,
+text depth=\the\dimexpr#1+2.5ex\relax
+] {\parbox[t][#1][c]{#3}{#2}};
+\end{tikzpicture}}
+
+\begin{document}
+\StickyNoteP[2.5cm]{%
+\NotebookPar[spiral=false]{
+\LARGE first\\  second }}[6.5cm]
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+\clearpage
+%#################### 9.3 ####################
 \section{\fadingtext[scale=1, font=\bfseries]{path picture shading=rainbow}{Rainbow text}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
@@ -47,7 +80,7 @@ some example of dummy text
 
 \noindent\fadingtext[scale=0.7, font=\bfseries]{path picture shading=rainbow}{\parbox[b]{1.5\linewidth}{\strut\lipsum[1]}}
 
- }{\href{https://tex.stackexchange.com/questions/344260/rainbow-colored-one-letter-with-tikz-and-xcolor}{9.2}}
+ }{\href{https://tex.stackexchange.com/questions/344260/rainbow-colored-one-letter-with-tikz-and-xcolor}{9.3}}
 
 \end{minipage}
 &
@@ -107,66 +140,80 @@ some example of dummy text
 \end{minipage}
 \end{tabular}
 \end{table}
-%#################### 9.3 ####################
-\section{Sticky notes}
+\clearpage
+
+%#################### 9.4 ####################
+\section{Single Watermark}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{ \href{https://tex.stackexchange.com/questions/26846/how-to-scale-a-tikzpicture-including-texts}{\img{1}{9.3}}}{9.3}
+\enum{\includegraphics[width=0.9\linewidth]{images/9.4/9.4.pdf}}{9.4}
 
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
-\documentclass{article}
-\usepackage{xparse}
-\usepackage{fancypar}
-\usetikzlibrary{calc,shadows}
- 
-\NewDocumentCommand\StickyNoteP{O{6cm}mO{6cm}}{%
-\begin{tikzpicture}
-\node[
-drop shadow={
-  shadow xshift=3pt,
-},
-inner xsep=0pt,
-xslant=-0.1,
-yslant=0.1,
-inner ysep=0pt,
-text depth=\the\dimexpr#1+2.5ex\relax
-] {\parbox[t][#1][c]{#3}{#2}};
-\end{tikzpicture}%
-}
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[pages=some]{background}% change "some" to "all" to see WM on all pages 
+\usepackage{lipsum}
+\backgroundsetup{color=green, opacity=0.3, scale=10, contents={A n M n V}}
 
 \begin{document}
-
-\StickyNoteP[2.5cm]{%
-\NotebookPar[spiral=false]{
-\LARGE first\\  second }}[6.5cm]
-
+\lipsum[1-5] 
+\BgThispage
+\lipsum[1-5]
 \end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
 \end{table}
-
-%#################### 9.4 ####################
-\section{\fadingtext[scale=1, font=\bfseries]{path picture shading=rainbow}{Rainbow text}}
+%#################### 9.5 #################### 
+\section{Full page of Watermarks}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{ qqqqqqqqq}{9.3}
+\enum{\includegraphics[width=0.9\linewidth]{images/9.5/9.5.pdf}}{9.5}
 
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
-qqqqqqqqqqqqqqqq
+\documentclass[12pt]{book}
+\usepackage{graphicx}
+\usepackage[pages=some]{background}
+\usepackage{lipsum}
+\newcommand\DupImage{%
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill}
+\newlength{\drop}
+\backgroundsetup{  scale=1, angle=45, opacity=.3, 
+  contents={%
+     \begin{minipage}{1.5\paperheight}
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage  \end{minipage}   }  }
+
+\begin{document}
+\drop=0.1\textheight \BgThispage \lipsum[1-8]
+\end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
 \end{table}
-%#################### 9.5 #################### 
 %#################### 9.6 ####################
