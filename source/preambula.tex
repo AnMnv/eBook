@@ -321,7 +321,14 @@ text depth=\the\dimexpr#1+2.5ex\relax
 %-----------------------------9.4
 \usepackage[pages=some]{background}% change "some" to "all" to see WM on all pages 
 \backgroundsetup{color=green,opacity=0.3,scale=10, contents={A n M n V}}
-%-----------------------------
+%-----------------------------2.4
+\usepackage{amsmath,soul}
+\usepackage{soulpos}
+\ulposdef{\ulnumaux}{%
+$\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
+\newcommand{\ulnum}[2]{%
+\def\saveulnum{#1}%
+\ulnumaux{#2}}
 %-----------------------------
  
 %-----------------------------

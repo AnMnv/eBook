@@ -80,3 +80,40 @@
 \end{minipage}
 \end{tabular}
 \end{table}
+
+
+%-------------------2.4
+\section{Text under an underline}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=\linewidth]{2.4.png} }{2.4}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\footnotesize] 
+\documentclass[12pt]{article}
+\usepackage{amsmath,soul}
+\usepackage{soulpos}
+\ulposdef{\ulnumaux}{%
+$\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
+\newcommand{\ulnum}[2]{%
+\def\saveulnum{#1}%
+\ulnumaux{#2}}
+
+\begin{document} 
+\ulnum{\text{(some text)}}{This is short text}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+%-------------------2.5
+%-------------------2.6
+%-------------------2.7
+
+
+
+
+
