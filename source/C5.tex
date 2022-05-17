@@ -160,6 +160,51 @@ at (current page.north west)
 \end{tabular}
 \end{table}
  %-------------------5.5
+\section{Wrapfigure}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1.1\linewidth]{images/5.5/5.5.pdf}}{5.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\scriptsize]
+\documentclass[11pt]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage[demo]{graphicx}
+\usepackage{wrapfig}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{wrapfigure}[11]{l}{0.4\textwidth}
+  \centering  
+  \includegraphics[scale=0.1]{Bild}
+  \caption{FIG 1}
+\end{wrapfigure}
+\blindtext
+
+\begin{wrapfigure}[11]{r}{0.4\textwidth}
+  \centering  
+  \includegraphics[scale=0.1]{Bild}
+  \caption{FIG 2}
+\end{wrapfigure}
+\blindtext
+
+\begin{wrapfigure}[11]{l}{0.4\textwidth}
+  \centering  
+  \includegraphics[scale=0.1]{Bild}
+  \caption{FIG 3}
+\end{wrapfigure}
+\blindtext 
+\blindtext 
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
  %-------------------5.6
  %-------------------5.7
  %-------------------5.8
