@@ -126,6 +126,41 @@ picture]{%
 \end{tabular}
 \end{table}
 %-------------------------------------------- 6.4  
+\section{Leveled arabic enumeration}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=0.9\linewidth]{6.4.png}}{6.4}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{blue!15}{orange!15},numbers=left,basicstyle=\scriptsize] 
+\documentclass{article}
+\renewcommand{\theenumi}{(\arabic{enumi})}
+\renewcommand{\theenumii}{(\arabic{enumi},\arabic{enumii})}
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\labelenumii}{\theenumii}
+\makeatletter
+\renewcommand{\p@enumii}{}
+\makeatother
+\begin{document}
+\begin{enumerate}
+\item First level-one item 
+  \begin{enumerate}
+  \item First level-two item 
+  \item Second level-two item
+  \end{enumerate}
+\item Second level-one item 
+  \begin{enumerate}
+  \item Still another level-two item 
+  \end{enumerate}
+\end{enumerate}
+\end{document} 
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %-------------------------------------------- 6.5  
 %-------------------------------------------- 6.6  
 %-------------------------------------------- 6.7  
