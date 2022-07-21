@@ -197,6 +197,34 @@ A & = \frac{\pi r^2}{2} \\
 \end{minipage}
 \end{tabular}
 
+%-------------------1.7
+\section{Array as a fraction}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ 
+$I-IV-V^{\substack{6-4\\4-3\\6-4\\4-3}}-I-cadence$ \\
+
+$I-IV-V^{\genfrac{}{}{0pt}{}{6-4}{4-3}}-I-cadence$ \\
+
+$I-IV-V^{\begin{array}{c}6-4\\4-3\\ \end{array}}-I-cadence$}{1.7}
+\end{minipage}
+& \begin{minipage}[m]{0.5\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+$I-IV-V^{\substack{6-4\\4-3\\6-4\\4-3}}-I-cadence$ \\
+
+$I-IV-V^{\genfrac{}{}{0pt}{}{6-4}{4-3}}-I-cadence$ \\
+
+$I-IV-V^{\begin{array}{c}6-4\\4-3\\ \end{array}}-I-cadence$
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
 
 
 
