@@ -1,6 +1,7 @@
-## Show your support 🌈
+## Show your support 🌈  
 
-Be sure to drop a 🌟 if you like the project!
+Be sure to drop a 🌟 or <a href="https://www.buymeacoffee.com/anmnv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> if you like the project!  
+ 
 
 # Contents
  - [Specification](#specification) 
