@@ -330,7 +330,21 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 \newcommand{\ulnum}[2]{%
 \def\saveulnum{#1}%
 \ulnumaux{#2}}
-%-----------------------------
+%-----------------------------7.4
+
+	\definecolor{white}{RGB}{255,255,255}
+	\definecolor{gray}{HTML}{4D4D4D}
+	\definecolor{maingray}{HTML}{B9B9B9}
+
+	\newcommand\skills[1]{ 
+	    \begin{tikzpicture}
+	        \foreach [count=\i] \x/\y in {#1}{
+	            \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+	            \draw[fill=white,gray](0,\i) rectangle (\y,\i+0.4);
+	            \node[above right] at (0,\i+0.4) {\x};
+	        }
+	    \end{tikzpicture}
+	}
  
 %-----------------------------
 

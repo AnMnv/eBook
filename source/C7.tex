@@ -114,6 +114,49 @@ line width=0.4mm,scale=0.7,
 	\end{minipage}
 	\end{tabular}
 	\end{table}
+%#################### 7.4 ####################
+\section{Levels of skills }
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{   
+\skills{{Word/1}}\\
+\skills{{\LaTeX/6}}\\
+\skills{{C++/2}}\\
+\skills{{Python/3}}\\
+}{7.4}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+	\documentclass{report}
+	\usepackage[T1]{fontenc}
+	\usepackage{tikz}
+	\usepackage{xcolor}
+
+	\definecolor{white}{RGB}{255,255,255}
+	\definecolor{gray}{HTML}{4D4D4D}
+	\definecolor{maingray}{HTML}{B9B9B9}
+
+	\newcommand\skills[1]{ 
+	    \begin{tikzpicture}
+	        \foreach [count=\i] \x/\y in {#1}{
+	            \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+	            \draw[fill=white,gray](0,\i) rectangle (\y,\i+0.4);
+	            \node[above right] at (0,\i+0.4) {\x};
+	        }
+	    \end{tikzpicture}
+	}
+
+	\begin{document}
+	\skills{{b/2}}
+	\skills{{a/1}}
+	\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 
 
 
