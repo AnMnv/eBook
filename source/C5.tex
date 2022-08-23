@@ -206,6 +206,59 @@ at (current page.north west)
 \end{tabular}
 \end{table}
  %-------------------5.6
+ \section{Figures in landscape mode}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ 
+  \hfill
+  \rotatebox{90}{%
+    \begin{minipage}{0.45\linewidth}
+      \includegraphics[width=\linewidth]{example-image-a}
+      \caption{ }
+      \label{fig:First}
+    \end{minipage}
+  }\hfill
+  \rotatebox{90}{%
+    \begin{minipage}{0.45\linewidth}
+      \includegraphics[width=\linewidth]{example-image-b}
+      \caption{ }
+      \label{fig:First}
+    \end{minipage}
+  }\hfill\strut}{5.6}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\scriptsize]
+\documentclass[12pt]{report} 
+\usepackage{graphicx}
+\usepackage{lipsum}
+\begin{document}
+qqqqqqq
+\begin{figure}[htb]
+  \hfill
+  \rotatebox{90}{%
+    \begin{minipage}{0.45\linewidth}
+      \includegraphics[width=\linewidth]{example-image-a}
+      \caption{Caption1}
+      \label{fig:First}
+    \end{minipage}
+  }\hfill
+  \rotatebox{90}{%
+    \begin{minipage}{0.45\linewidth}
+      \includegraphics[width=\linewidth]{example-image-b}
+      \caption{Caption2}
+      \label{fig:First}
+    \end{minipage}
+  }\hfill\strut
+\end{figure}
+
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
  %-------------------5.7
  %-------------------5.8
  %-------------------5.9

@@ -157,7 +157,60 @@ line width=0.4mm,scale=0.7,
 \end{minipage}
 \end{tabular}
 \end{table}
+%#################### 7.5 ####################
+\section{Levels of skills }
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1\linewidth]{7.5.png}}{7.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\documentclass[svgnames]{article}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{siunitx}% only to force percentages to be integers
+\usepackage{enumitem}
 
+\let\realItem\item% save for later use
+\newcommand\percentageItem[1][10]{%
+  \realItem[\smash{\tikz[baseline]{%
+    \node[minimum width=4em] at (0,0) {\num[round-mode=places,round-precision=0]{#1}\%};
+    \draw[thick,line width=1.5mm,Blue](90:5mm)
+          arc [radius=5mm, start angle=90, delta angle=-#1*3.6];
+    \draw[thick,line width=1.5mm,LightSteelBlue](90-#1*3.6:5mm)
+          arc [radius=5mm, start angle=90-#1*3.6, end angle=-270];
+    }}]%
+}
+\newlist{achievements}{itemize}{1}
+\setlist[achievements]{
+  before=\let\item\percentageItem,%make \item = \percentageItem
+  leftmargin=*,
+  label={},
+  itemsep=3mm,
+}
+
+\begin{document}
+
+\begin{achievements}
+  \item[57]\textbf{Skill \#1}\\info
+  \item[16]\textbf{Skill \#2}\\info
+  \item[77]\textbf{Skill \#3}\\info
+\end{achievements}
+
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+%#################### 7.6 ####################
+%#################### 7.7 ####################
+%#################### 7.8 ####################
+%#################### 7.9 ####################
+%#################### 7.10 ####################
+%#################### 7.11 ####################
 
 
 
