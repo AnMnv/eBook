@@ -229,7 +229,37 @@ $I-IV-V^{\begin{array}{c}6-4\\4-3\\ \end{array}}-I-cadence$
 \end{minipage}
 \end{tabular}
 
+%-------------------1.8
+\section{Aligning equations inbetween text}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1\linewidth]{1.8.png}}{1.8}
+\end{minipage}
+& \begin{minipage}[m]{0.5\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage{amsmath}
 
+\begin{document}
+\begin{alignat*}{2}
+\intertext{Photochemical:}
+K_{UV} &: M[1]& &\ch{-> M^{*}}[1]
+\intertext{Catalyzed:}
+K_I &: I& &\ch{->} 2R \\
+K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
+\end{alignat*}
+\end{document} 
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+%-------------------1.9
+%-------------------1.10
+%-------------------1.11
+%-------------------1.12
+%-------------------1.13
+%-------------------1.14
 
 
  

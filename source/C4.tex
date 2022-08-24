@@ -540,7 +540,7 @@ text text text
 \end{minipage}
 \end{tabular}
 
-%#################### 4.13 ####################
+%#################### 4.14 ####################
 \section{Text next to a table}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -651,14 +651,53 @@ text text text
 \end{tabular}
 
 
-
-
-
-%#################### 4.14 ####################
 %#################### 4.15 ####################
+\section{Hand Drawn tcolorbox}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\begin{mytheo}{}{theoexample}
+some text
+\end{mytheo}}{4.15}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage[most]{tcolorbox}
+\usepackage{emerald}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shadows}
+\tikzset{decoration={random steps,segment length=2mm,amplitude=0.6pt}}
+\newtcbtheorem{mytheo}{Theorem}{
+  coltitle=green!80!black,
+  colback=lightgray!20,
+  colbacktitle=lightgray!20,
+  fonttitle=\bfseries\ECFAugie,
+  enhanced,
+  attach boxed title to top left={yshift=-0.18cm,xshift=-0.5mm},
+  boxed title style={
+    tikz={rotate=4,transform shape},
+    frame code={
+      \draw[decorate,fill=lightgray!20] (frame.south west) rectangle (frame.north east);
+    }  },
+  frame code={
+    \draw[decorate,fill=lightgray!20,drop shadow] (frame.north east) rectangle (frame.south west);
+  },}{th}
+
+\begin{document}
+\begin{mytheo}{}{theoexample}
+content...
+\end{mytheo}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
 %#################### 4.16 ####################
 %#################### 4.17 ####################
 %#################### 4.18 ####################
+%#################### 4.19 ####################
 
 
 

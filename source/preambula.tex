@@ -346,7 +346,31 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 	    \end{tikzpicture}
 	}
  
-%-----------------------------
+%-----------------------------4.15
+\usepackage{emerald}
+
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shadows}
+
+\tikzset{decoration={random steps,segment length=2mm,amplitude=0.6pt}}
+
+\newtcbtheorem{mytheo}{Theorem}{
+  coltitle=green!80!black,
+  colback=lightgray!20,
+  colbacktitle=lightgray!20,
+  fonttitle=\bfseries\ECFAugie,
+  enhanced,
+  attach boxed title to top left={yshift=-0.18cm,xshift=-0.5mm},
+  boxed title style={
+    tikz={rotate=4,transform shape},
+    frame code={
+      \draw[decorate,fill=lightgray!20] (frame.south west) rectangle (frame.north east);
+    }
+  },
+  frame code={
+    \draw[decorate,fill=lightgray!20,drop shadow] (frame.north east) rectangle (frame.south west);
+  },
+}{th}
 
 %-----------------------------
 %-----------------------------
