@@ -694,7 +694,74 @@ content...
 \end{minipage}
 \end{tabular}
 
-%#################### 4.16 ####################
+
+%#################### 4.16 ####################%https://tex.stackexchange.com/questions/624558/how-can-i-do-this-block-in-beamer
+\section{Halfframed boxes}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1\linewidth]{4.16.png}}{4.16}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize] 
+\documentclass{beamer}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usetikzlibrary{calc}
+\tcbuselibrary{skins,breakable,raster}
+\makeatletter
+\definecolor{myred}{RGB}{209,23,23}
+\definecolor{myorange}{RGB}{255,153,51}
+\definecolor{mypurple}{RGB}{102,0,102}
+\definecolor{mygrey}{RGB}{200,200,200}
+
+\newtcolorbox{mybox}[2]{%
+empty,
+coltitle = #1,
+title = #2,
+overlay ={
+\draw[mygrey,line width=1pt]
+(frame.north west)--(frame.north east)--(frame.south east)--(frame.south west)--(frame.north west);
+\draw[#1,line width=1pt]
+($(frame.north west)!0.33!(frame.south west)$)
+--(frame.north west)
+--($(frame.north west)!0.33!(frame.north east)$);
+\draw[#1,line width=1pt]
+($(frame.south east)!0.33!(frame.south west)$)
+--(frame.south east)
+--($(frame.south east)!0.33!(frame.north east)$);}}
+
+\tcbset{marktext/.style={%
+  overlay={\node[rotate=90,text=black,anchor=north east] at (frame.north west){#1};},
+  code={\setbox\z@=\color@hbox#1\color@endbox\tcbdimto\myheight{\wd\z@+3mm}},
+  minimum for equal height group=\tcb@ehgid:\myheight,  }}
+\makeatother
+
+\begin{document}
+\begin{frame}
+\begin{tcbraster}[%
+    raster columns=3,
+    raster equal height=rows
+    ]
+    \begin{mybox}{myred}{Title 1}
+    some text in the first box
+    \end{mybox}
+    \begin{mybox}{myorange}{Title 2}
+    some text in the second box
+    \end{mybox}
+    \begin{mybox}{mypurple}{Title 3}
+    some text in the third box blabla
+    \end{mybox}
+\end{tcbraster}
+\end{frame}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 %#################### 4.17 ####################
 %#################### 4.18 ####################
 %#################### 4.19 ####################

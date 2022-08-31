@@ -216,4 +216,106 @@ text depth=\the\dimexpr#1+2.5ex\relax
 \end{minipage}
 \end{tabular}
 \end{table}
+
 %#################### 9.6 ####################
+\section{Generating QR code}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=0.9\linewidth]{images/9.6/9.6.pdf}}{9.6}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article} 
+\usepackage{qrcode} 
+
+\begin{document}
+\qrcode[height=0.5in]{https://github.com/AnMnv/eBook}
+\textcolor{blue}{\qrcode[height=0.5in]{https://github.com/AnMnv/eBook}}
+\textcolor{green}{\qrcode[height=0.5in]{https://github.com/AnMnv/eBook}} 
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+
+
+
+
+\newpage
+%#################### 9.7 ####################https://tex.stackexchange.com/questions/560627/how-do-make-gradient-colored-qr-code-in-latex#655712
+\section{Gradient QR code}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=0.9\linewidth]{images/9.7/9.7.pdf}}{9.7}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article} 
+\usepackage{qrcode}[]
+\usepackage{tikz}
+\usetikzlibrary{fadings, shadings}
+\newcounter{fadcnt}\setcounter{fadcnt}{0}
+\newcommand\fadingtext[3][]{%
+\stepcounter{fadcnt}
+  \begin{tikzfadingfrompicture}[name=fading letter\thefadcnt]
+    \node[text=transparent!0,inner xsep=0pt,outer xsep=0pt,#1] {#3};
+  \end{tikzfadingfrompicture}%
+  \begin{tikzpicture}[baseline=(textnode.base)]
+    \node[inner sep=0pt,outer sep=0pt,#1](textnode){\phantom{#3}}; 
+    \shade[path fading=fading letter\thefadcnt,#2,fit fading=false]
+    (textnode.south west) rectangle (textnode.north east);% 
+  \end{tikzpicture}}
+\usetikzlibrary{calc}
+\newbox\shbox
+\tikzset{%
+  path picture shading/.style={%
+  path picture={%
+\pgfpointdiff{\pgfpointanchor{path picture bounding box}{south west}}%
+  {\pgfpointanchor{path picture bounding box}{north east}}%
+\pgfgetlastxy\pathwidth\pathheight%
+\pgfinterruptpicture%
+   \global\setbox\shbox=\hbox{\pgfuseshading{#1}}%
+ \endpgfinterruptpicture%
+\pgftransformshift{\pgfpointanchor{path picture bounding box}{center}}%
+\pgftransformxscale{\pathwidth/(\wd\shbox)}%
+\pgftransformyscale{\pathheight/(\ht\shbox)}% \dp will (should) be 0pt
+\pgftext{\box\shbox}%
+    }  }  }
+\pgfdeclarehorizontalshading{rainbow}{10bp}{color(0bp)=(violet);
+            color(1.6667bp)=(blue);
+            color(3.3333bp)=(cyan);
+            color(5bp)=(green);
+            color(6.6667bp)=(yellow);
+            color(8.3333bp)=(orange);
+            color(10bp)=(red)}
+\pgfdeclareverticalshading{rainbow_vertical}{10bp}{color(0bp)=(violet);
+            color(1.6667bp)=(blue);
+            color(3.3333bp)=(cyan);
+            color(5bp)=(green);
+            color(6.6667bp)=(yellow);
+            color(8.3333bp)=(orange);
+            color(10bp)=(red)}
+
+\begin{document}
+\fadingtext[scale=0.5]{upper left=red, upper right=green, lower left=blue,lower right=yellow}{\qrcode[height=5cm]{https://github.com/AnMnv/eBook}}
+\fadingtext[scale=0.5]{path picture shading=rainbow}{\qrcode[height=5cm]{https://github.com/AnMnv/eBook}}
+\fadingtext[scale=0.5]{path picture shading=rainbow_vertical}{\qrcode[height=5cm]{https://github.com/AnMnv/eBook}}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+%#################### 9.8 ####################
+%#################### 9.9 ####################
+%#################### 9.10 ####################
+%#################### 9.11####################
+%#################### 9.12 ####################
+%#################### 9.13 ####################
