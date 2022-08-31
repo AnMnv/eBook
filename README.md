@@ -43,4 +43,13 @@ Be sure to drop a 🌟 or <a href="https://www.buymeacoffee.com/anmnv" target="_
 ![](/images/eBook-34.png)
 ![](/images/eBook-35.png)
 ![](/images/eBook-36.png)
+![](/images/eBook-37.png)
+![](/images/eBook-38.png)
+![](/images/eBook-39.png)
+![](/images/eBook-40.png)
+![](/images/eBook-41.png)
+![](/images/eBook-42.png)
+![](/images/eBook-43.png)
+![](/images/eBook-44.png)
+ 
 
