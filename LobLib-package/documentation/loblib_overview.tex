@@ -1,0 +1,249 @@
+\documentclass[11pt]{article}
+
+\usepackage{loblib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{units}
+\usepackage{multicol}
+\usepackage{empheq}
+
+
+\usepackage{verbatim}
+\usepackage{comment}
+
+%no indent
+\setlength\parindent{0pt}
+\setlength{\oddsidemargin}{.125in}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\textwidth}{6.25in}
+
+
+\begin{document}
+\vspace*{-3cm}
+\hspace*{-0.5cm}
+\definecolor{shadow}{rgb}{0.85,0.85,0.85}
+\lob[rotate=180,shadow,xscale=-1.2,yscale=1.2]{77}
+
+\vspace*{-2cm}
+
+\Large \hspace{5em} {\color{darkgrey}\textbackslash \texttt{usepackage
+}}
+\Huge \{ \textbf{LOB}LIB \}
+%\Large \texttt{{\color{darkgrey}\}}}
+
+		\begin{center}
+\hspace{7em} \huge \textit{{\color{crimson} The \textbf{Lobster} Library}}
+\end{center}
+
+
+\normalsize
+
+
+\textit{Bryce Evans} \\
+\textit{February $5^{th}$, 2014}\\
+Version $\alpha\, 0.14$ \\
+
+\section*{Overview}
+
+This document describes the \LaTeX package \texttt{loblib}, used for outfitting documents with a lobster theme. It also provides examples and comments on the package's use. \\
+
+
+\textbf{Contents:}
+\begin{itemize} \itemsep-0em
+\item Installation
+\item Usage
+\item Classification and Types
+\item Alternate Figures
+\item Other Uses
+\item Full List
+\end{itemize}
+
+\vspace*{-3.5cm}
+\hspace*{7.5cm}
+\lob[lobblue, scale=1.4]{83} \hfill
+\vspace*{-1.5cm}
+%\vspace*{3cm}
+
+\section*{Installation}
+LobLib follows standard installation of \LaTeX packages.
+Copy the package files to\\ \texttt{MiKTeX/2.9/tex/latex/loblib} for Windows.\\
+
+ For other users, place the folder in the \texttt{tempf/latex} folder from the root of your \LaTeX \, installation. \\
+
+ For for information, visit\\ \texttt{http://en.wikibooks.org/wiki/LaTeX/Installing\_Extra\_Packages}.\\
+
+* LobLib's core runs on packages Tikz and PGFOrnament.\\ Tikz is available on CTAN (\texttt{\textbackslash usepackage\{tikz\}} has auto-download).\\
+
+ PGFOrnament documentation may be found at\\ \texttt{http://altermundus.com/pages/downloads/packages/pgfornament/ornaments.pdf}.
+
+\section*{Usage}
+Usage is simple. Calling \texttt{\textbackslash lob[(optional\_styles)]\{FIGURE\_ID\}} will insert the image. Only one argument is taken for alternate forms as well. For these, the ID is incremented as 1, 1b, 1c, 1d, etc. \\
+
+Claw symbols are called by \texttt{\textbackslash lobclaw\{CLAW\_ID\}}.
+
+
+\section*{Classification}
+
+Symbols are classified as solid, wire, outline, cartoon, detailed. Changes are likely to be made altering the current numbering system to stronger taxonomy that groups figures.\\
+\begin{multicols}{2}
+A concern is memory usage on repeated use of detailed figures. Figures may consist of several thousand nodes and it is discouraged for using detailed figures such as these to much extent in a longer document.
+\vspace*{-4cm}
+\hspace*{2cm}
+\begin{tikzpicture}[gray]
+
+\scaleimg{\lob{84}}{8}
+
+
+\end{tikzpicture}
+
+\end{multicols}
+
+\section*{Alternate Types}
+Multiple of the same figure may exist, for example outline, wire, and solid. This is not an option for all figures, but is denoted by \texttt{0,0b,0c...}\\
+
+\vspace*{1em}
+
+\lob{5}
+\lob{5b}
+\lob{5c}
+
+
+
+\pagebreak
+
+\section*{Styling}
+All parameters supported in Tikz are supported by LobLib. Pass in styles in braces \{\} as opposed to brackets []. Some examples:
+\vspace*{1cm}
+
+\begin{multicols}{2}
+\begin{verbatim}
+\lob[scale=.6,fill=green ]{62}
+\hspace*{-.5cm} \vspace*{-.2cm}
+\lob[scale=.7,fill=blue]{62b}
+\end{verbatim}
+
+\lob[scale=.6,fill=lobgreen ]{62}
+\hspace*{-.5cm} \vspace*{-.2cm} \lob[scale=.7,fill=lobteal]{62b}
+\end{multicols}
+
+\section*{Section Breaks}
+Section breaks can be inserted showing a small claw using\texttt{\textbackslash lobsectionbreak}.
+
+\lobsectionbreak
+
+\section*{Bullets and Tombstones}
+Smaller items may be used as bullets:
+
+\begin{multicols}{2}
+\begin{itemize}
+\item[\lobclaw{simple}] Item 1
+\item[\lobclaw{simple}] Item 2
+\item[\lobclaw{simple}] Item 3
+\end{itemize}
+
+\begin{itemize}
+\item[\lob{29}] Item 1
+\item[\lob{29}] Item 2
+\item[\lob{29}] Item 3
+\end{itemize}
+\end{multicols}
+
+These symbols may well be used in place of tombstones.
+\begin{multicols}{2}
+\begin{align*}
+x&=y\\
+x^2&=xy\\
+x^2 + x^2 &= x^2 + xy\\
+2x^2&=x^2+xy\\
+2x^2-2xy&=x^2+xy-2xy\\
+2x^2-2xy &= x^2-xy\\
+\left(\frac{2x^2-2xy}{x^2-xy}\right)&=\left(\frac{x^2-xy}{x^2-xy}\right)\\
+2&= 1 \quad \blacksquare
+\end{align*}
+
+
+\begin{align*}
+x&=y\\
+x^2&=xy\\
+x^2 + x^2 &= x^2 + xy\\
+2x^2&=x^2+xy\\
+2x^2-2xy&=x^2+xy-2xy\\
+2x^2-2xy &= x^2-xy\\
+\left(\frac{2x^2-2xy}{x^2-xy}\right)&=\left(\frac{x^2-xy}{x^2-xy}\right)\\
+2&= 1 \quad \lobclaw{simple}
+\end{align*}
+
+\end{multicols}
+
+\section*{Watermarks}
+Add a lobster watermark to any page with \texttt{\textbackslash lobwatermark}.
+
+\textsc{Note:} Utilizes the \texttt{background} package and causes a conflict if the package settings are changed.
+
+\lobwatermark
+
+\pagebreak
+\section*{Full List:}
+\color{darknavy}
+\subsection*{1,2,2b,3,4,5,5b,5c,6,7,8,9}
+\lob{1}
+\lob{2}
+\lob{2b}
+\lob{3}
+\lob{4}
+\lob{5}
+\lob{5b}
+\lob{5c}
+\lob{6}
+\lob{7}
+\lob{8}
+\lob{9}
+\subsection*{12,19,20,21,22,28,32,32b,33}
+\lob{12}
+\lob{19}
+\lob{20}
+\lob{21}
+\lob{22}
+\lob{28}
+\lob{32}
+\lob{32b}
+\lob{33}
+\pagebreak
+\subsection*{35,35b,37,43, 54,58,62,62b,62c,68,71,73}
+\lob{35}
+\lob{35b}
+\lob{37} \\
+\lob{43}
+\lob{54}
+\lob{58}
+\lob{62}\\
+\lob{62b}
+\lob{62c}
+\lob{68}
+
+\lob{71}
+\lob{73}
+
+
+\subsection*{74,76, 77,78,79,80,83,84,90,91}
+\lob{74}
+\lob{76}
+\lob{77}
+\lob{78}
+\lob{79}
+\lob{80}
+\lob{83}
+\lob{84}
+\lob{90}
+\lob{91}
+
+
+\subsection*{92, [claw] big, [claw] simple, 29}
+\lob{92}
+\lobclaw{big}
+\lobclaw{simple}
+\lob{29}
+
+\end{document}

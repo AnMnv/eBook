@@ -1,0 +1,182 @@
+% LobLib - The Lobster Library
+% 
+% (c) 2014 Bryce Evans
+% LPPL LaTeX Public Project License
+%  
+\NeedsTeXFormat{LaTeX2e}% 
+\RequirePackage{tikz,tikzrput}%
+\ProvidesPackage{loblib}[2014/02/05 v0.14]%
+
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{lmodern}   
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage{adforn}
+\usepackage{lmodern}
+\pdfmapfile{+ OrnementsADF.map}
+\usepackage{adforn}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\i{\pgfusepath{clip}}%
+\def\k{\pgfusepath{stroke}}%
+\let\o\pgfpathclose
+\let\s\pgfusepathqfillstroke
+\def\p #1#2{\pgfqpoint{#1bp}{#2bp}}%
+\def\m #1 #2 {\pgfpathmoveto{\p{#1}{#2}}}%
+\def\r #1 #2 #3 #4 {\pgfpathrectangle{\p{#1}{#2}}{%
+\p{#3}{#4}}}%
+\def\l #1 #2 {\pgfpathlineto{\p{#1}{#2}}}%
+\def\c #1 #2 #3 #4 #5 #6 {%
+\pgfpathcurveto{\p{#1}{#2}}{\p{#3}{#4}}{\p{#5}{#6}}}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\getsizes}[2]% width, height
+{   \path (current bounding box.south west);
+    \pgfgetlastxy{\xsw}{\ysw}
+    \path (current bounding box.north east);
+    \pgfgetlastxy{\xne}{\yne}
+    \pgfmathsetmacro{\picwidth}{(\xne-\xsw)/28.453}
+    \pgfmathsetmacro{\picheight}{(\yne-\ysw)/28.453}
+    \pgfmathsetmacro{\picxscale}{#1/\picwidth}
+    \pgfmathsetmacro{\picyscale}{#2/\picheight}
+    \xdef\xsca{\picxscale}
+    \xdef\ysca{\picyscale}
+}
+
+
+\newcommand{\scaleimg}[2]% draw commands, width, height
+{ \smash{\vphantom{
+    \begin{tikzpicture}
+        #1
+        \getsizes{#2}{#2}
+    \end{tikzpicture}
+    }}
+    \begin{tikzpicture}[xscale=\xsca,yscale=\ysca]
+        #1
+    \end{tikzpicture}
+}
+
+
+%%%%%%%%%%%%
+
+
+\definecolor{crimson}{rgb}{.5,0.0,0}
+\definecolor{darkblue}{rgb}{0,0.0,0.3}
+\definecolor{darknavy}{rgb}{0,0.0,0.1}
+\definecolor{darkgreen}{rgb}{0.0,0.3,0.1}
+\definecolor{darkgrey}{rgb}{0.3,0.3,0.3}
+\definecolor{smokeblue}{rgb}{0.4,0.55,0.6}
+\definecolor{lobblue}{rgb}{0.35,0.4,0.45}
+\definecolor{lobteal}{rgb}{0.0,0.75,.9}
+\definecolor{lobgreen}{rgb}{0.0,1,0.5}
+\definecolor{shadow}{rgb}{0.85,0.85,0.85}
+
+
+\RequirePackage[scale=2,color=lobblue!10,angle=0,pages=some,anchor = below, placement=bottom]{background}
+\SetBgContents{\lob{84}}
+\newcommand{\lobwatermark}{\BgThispage}
+
+%% Define the directory
+\newcommand{\dir}{objects/}
+
+%% Adds all lob objects 
+\newcommand{\lob}[2][]{
+	\begin{tikzpicture}[#1]
+	\input{\dir lob#2.tikz}
+\end{tikzpicture}
+}
+
+%% Adds a claw
+\newcommand{\lobclaw}[2][]{
+	\begin{tikzpicture}[#1]
+	\input{\dir claw_#2.tikz}
+\end{tikzpicture}
+}
+
+%% Adds a custom figure 
+\newcommand{\lobcustom}[2][]{
+	\begin{tikzpicture}[#1]
+	\input{\dir #2.tikz}
+\end{tikzpicture}
+}
+
+%% Adds a section break with a simple claw 
+%% in the center of the line
+\newcommand{\lobsectionbreak}{
+\begin{center}
+\adforn{21}\quad\lobclaw[scale=.8]{simple}\quad\adforn{49}\\
+\end{center}
+}
+
+%% Makes a lobster claw title like 
+%% shown in the documentation
+\newcommand{\coursename}{ Course  }
+\newcommand{\coursenumber}{ DEPT 9999 }
+\newcommand{\name}{ Bryce Evans  }
+\newcommand{\netid}{ bae43  }
+\renewcommand{\today}{   January 1st, 2000  }
+\newcommand{\hwnum}{1}
+\newcommand{\hwtitle}{ Title }
+
+\newcommand{\lobtitle}{
+
+\thispagestyle{empty}
+    
+\vspace*{-4cm}          
+\hspace*{-0.5cm}        
+\lob[rotate=180,lobblue!15,xscale=-1.2,yscale=1.2]{77}
+\vspace*{-2.8cm}
+
+\Large \hspace{4em} {
+\Huge \textbf{\coursenumber:}\coursename
+        \begin{center}
+\hspace{7em} \huge \textit{{\color{crimson} HW\hwnum\--- \textbf{\hwtitle} }}
+\end{center}
+
+%\renewcommand{\today}
+
+}
+\normalsize
+}
+
+%% Adds LOBSTER font. Font files must be
+%% copied to the file directory, 
+%% doesn't work from loblib directory
+\newcommand\lobfont[1]{{\usefont{T1}{custom}{m}{n} #1 }}
+\newcommand\customfont[1]{{\usefont{T1}{custom}{m}{n} #1 }}
+
+
+%% Adds a big old blue lobster to the bottom
+%% right of a \
+\newcommand{\wiselob}{
+    \vspace*{.7cm}
+\hspace*{9cm} 
+\lob[lobblue, scale=1.2]{83} \hfill
+\vspace*{-.7cm}
+
+}
+
+%% Not implemented- shortcut for adding watermarks
+%\newcommand{\lobwatermark}[1][]{
+%\ifx&#1&%
+  % parameter not given
+  
+%\else
+  % parameter given
+
+  % working sets:
+  %\bg@material
+  % \hspace{4cm}\lob{83}
+%\fi
+%\SetBgContents{#1}
+
+%}
+
+%% Adds a small claw in place of \blacksquare
+\newcommand{\lobtomb}{\lobclaw{simple}}
+
+\endinput
+% end

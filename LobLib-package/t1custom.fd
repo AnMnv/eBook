@@ -1,0 +1,4 @@
+\ProvidesFile{t1custom.fd}
+\DeclareFontFamily{T1}{custom}{}
+\DeclareFontShape{T1}{custom}{m}{n}{ <-> custom}{}
+\pdfmapline{+custom\space <custom.ttf\space <T1-WGL4.enc}

@@ -314,7 +314,46 @@ text depth=\the\dimexpr#1+2.5ex\relax
 \end{table}
 
 %#################### 9.8 ####################
-%#################### 9.9 ####################
+\section{Lobsrets}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1.2\linewidth]{lobsters_example-1.png}
+\includegraphics[width=1.2\linewidth]{lobsters_example-2.png}}{9.8}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
+\documentclass[14pt]{extreport}
+\usepackage[left=1.5cm,right=3cm,top=1.5cm,
+bottom=1.5cm,bindingoffset=0cm]{geometry}
+\usepackage{loblib}
+ 
+\begin{document}
+\lob{1}     \lob{12}
+\lob{2}     \lob{20}
+\lob{3}     \lob{21}
+\lob{4}     \lob{22}
+\lob{5}     \lob{28}
+\lob{6}     \lob{32}
+\lob{7}     \lob{33}
+\lob{8}     \lob{74}
+\lob{9}     \lob{76}
+
+\vspace*{2cm}
+\hspace*{-2.8cm}
+\definecolor{shadow}{rgb}{0.85,0.85,0.85}
+\lob[rotate=-90,shadow,xscale=-1.2,yscale=1.2]{77}
+
+\lobwatermark
+\end{document}
+\end{lstlisting}
+LobLib documentation on \href{https://github.com/AnMnv/eBook}{GitHub} in \mybox[black]{LobLib-package} folder.\\ Origins of the package \href{https://github.com/bryce-evans/LobLib}{https://github.com/bryce-evans/LobLib}\\ However, to print lobsters put \mybox[red]{objects} folder and \mybox[red]{loblib.sty} from  the \mybox[black]{LobLib-package} folder into the same directory with your \mybox[brown]{.tex} file.
+\end{minipage}
+\end{tabular}
+\end{table}
+%#################### 9.9 ####################LobLib documentation on \href{https://github.com/AnMnv/eBook}{GitHub} in \mybox[black]{LobLib-package} folder.\\ Origins of the package \href{https://github.com/bryce-evans/LobLib}{https://github.com/bryce-evans/LobLib}\\ However, to print lobsters put \mybox[red]{objects} folder and \mybox[red]{loblib.sty} from  the \mybox[black]{LobLib-package} folder into the same directory with your \mybox[brown]{.tex} file.
 %#################### 9.10 ####################
 %#################### 9.11####################
 %#################### 9.12 ####################
