@@ -188,5 +188,43 @@ picture]{%
 \end{tabular}
 \end{table} 
 %-------------------------------------------- 6.6  
+\section{Bullets Style}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=\linewidth]{6.6.1.png}
+\begin{itemize}
+    \item[\ding{51}] Code 51
+    \item[\ding{56}] Code 56
+    \item[\ding{43}] Code 43
+    \item[\ding{118}] Code 118
+    \item[\ding{170}] Code 170
+\end{itemize}
+\par
+\ding{46} \ding{70} \ding{57}  \ding{98} \ding{96}
+ \includegraphics[width=\linewidth]{6.6.2.png}}{2.4}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\footnotesize] 
+\documentclass{article}
+\usepackage{pifont}
+
+\begin{document}
+\begin{itemize}
+    \item[\ding{51}] Code 51
+    \item[\ding{56}] Code 56
+    \item[\ding{43}] Code 43
+    \item[\ding{118}] Code 118
+    \item[\ding{170}] Code 170
+\end{itemize}
+\par
+\ding{46} \ding{70} \ding{57}  \ding{98} \ding{96}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %-------------------------------------------- 6.7  
   
