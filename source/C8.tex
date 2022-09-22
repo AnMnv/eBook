@@ -98,7 +98,7 @@ usage -->  \circled[fill=amber,draw=black]{1}
 \enum{
 \hly{green}{some text}
 \hly{yellow}{some text}
-\hly{red}{some text}}{8.3}
+\hly{red}{some text}}{8.4}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -119,6 +119,40 @@ usage -->  \circled[fill=amber,draw=black]{1}
 \end{tabular}
 \end{table}
 %#################### 8.5 ####################
+\section{Circle text in points to other text}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\tikzset{mynode/.style={inner sep=2pt,fill=cyan!50,draw=blue,line width=1pt,rounded corners}}
+
+\tikzmarknode[mynode]{A}{This} is just some text that I will repeat for this section again and again. This is just some text that I will repeat for this section again and again. 
+
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[->,line width=1pt,blue] (A) --++ (1,1) node[above right] {your comment here};
+\end{tikzpicture}}{8.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+
+\begin{document}
+\tikzset{mynode/.style={inner sep=2pt,fill=cyan!50,draw=blue,line width=1pt,rounded corners}}
+
+This is just some \tikzmarknode[mynode]{A}{text that} I will repeat for this section again and again. This is just some text that I will repeat for this section again and again. 
+
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[->,line width=1pt,blue] (A) --++ (1,1) node[above right] {your comment here};
+\end{tikzpicture}
+
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %#################### 8.6 ####################
 %#################### 8.7 ####################
 %#################### 8.8 ####################
