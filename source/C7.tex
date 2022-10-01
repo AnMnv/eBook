@@ -206,6 +206,33 @@ line width=0.4mm,scale=0.7,
 \end{tabular}
 \end{table}
 %#################### 7.6 ####################
+\section{Huge margin line}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1\linewidth]{7.6.png}}{7.6}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\documentclass{article}
+\usepackage[margin=3cm]{geometry}
+\usepackage{tikz}
+
+\begin{document}
+\tikz[overlay, remember picture] \draw[line width=2.5mm] ([xshift=1cm, yshift=-1cm]current page.north west) rectangle ([xshift=-1cm, yshift=1cm]current page.south east);
+Text
+\vfill
+Text
+\vfill
+Text
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
 %#################### 7.7 ####################
 %#################### 7.8 ####################
 %#################### 7.9 ####################
