@@ -232,8 +232,40 @@ Text
 \end{minipage}
 \end{tabular}
 \end{table}
-
+\newpage
 %#################### 7.7 ####################
+\section{Aligning anything to a corer}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=0pt,xshift=0pt]%
+at (current page.north east)
+{\qrcode[height=1.cm]{https://github.com/AnMnv/eBook}% <--- put here anything
+};
+\end{tikzpicture}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\center Find me}{7.7}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass[14pt]{extreport}
+\usepackage{tikz}
+\usepackage{qrcode}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,yshift=0pt,xshift=0pt]%
+at (current page.north west)
+{\qrcode[height=0.5cm]{https://github.com/AnMnv/eBook}% <--- put here anything
+};
+\end{tikzpicture}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %#################### 7.8 ####################
 %#################### 7.9 ####################
 %#################### 7.10 ####################
