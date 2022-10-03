@@ -262,6 +262,14 @@ at (current page.north west)
 };
 \end{tikzpicture}
 \end{document}
+
+								OR the rainbow variant (see example 9.7)
+
+\begin{tikzpicture}[remember picture,overlay]
+\node at ($(current page.north west)+(.70cm,-.75cm)$) 
+    {\fadingtext[scale=0.5]{path picture shading=rainbow}
+    {\qrcode[height=3cm]{https://github.com/AnMnv/eBook}}};
+\end{tikzpicture}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}

@@ -313,7 +313,7 @@ text depth=\the\dimexpr#1+2.5ex\relax
 \end{tabular}
 \end{table}
 
-%#################### 9.8 ####################
+%#################### 9.8 ####################LobLib documentation on \href{https://github.com/AnMnv/eBook}{GitHub} in \mybox[black]{LobLib-package} folder.\\ Origins of the package \href{https://github.com/bryce-evans/LobLib}{https://github.com/bryce-evans/LobLib}\\ However, to print lobsters put \mybox[red]{objects} folder and \mybox[red]{loblib.sty} from  the \mybox[black]{LobLib-package} folder into the same directory with your \mybox[brown]{.tex} file.
 \section{Lobsrets}
 \begin{table}[h!]
 \begin{tabular}{c | c}
@@ -353,7 +353,34 @@ LobLib documentation on \href{https://github.com/AnMnv/eBook}{GitHub} in \mybox[
 \end{minipage}
 \end{tabular}
 \end{table}
-%#################### 9.9 ####################LobLib documentation on \href{https://github.com/AnMnv/eBook}{GitHub} in \mybox[black]{LobLib-package} folder.\\ Origins of the package \href{https://github.com/bryce-evans/LobLib}{https://github.com/bryce-evans/LobLib}\\ However, to print lobsters put \mybox[red]{objects} folder and \mybox[red]{loblib.sty} from  the \mybox[black]{LobLib-package} folder into the same directory with your \mybox[brown]{.tex} file.
+%#################### 9.9 ####################
+\section{Watermark over \textbf{everything}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=1.\linewidth]{9.9.png}}{9.9}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{beamer}
+
+\usepackage{tikz}
+\AddToHook{shipout/foreground}{
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[red,rotate=30,scale=10,opacity=0.2] at (current page.center) {Draft}; 
+  \end{tikzpicture}}
+
+\begin{document}
+\begin{frame}
+\includegraphics{example-image-duck}
+\end{frame}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %#################### 9.10 ####################
 %#################### 9.11####################
 %#################### 9.12 ####################
