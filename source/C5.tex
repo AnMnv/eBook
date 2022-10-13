@@ -260,6 +260,42 @@ qqqqqqq
 \end{tabular}
 \end{table}
  %-------------------5.7
+  \section{Three figures in a row}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\centering\includegraphics[width=1\linewidth]{5.7.png}}{5.7}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\scriptsize]
+\documentclass[english]{article}
+\usepackage[demo]{graphicx}
+\usepackage{babel,blindtext}
+
+\begin{document}
+\blindtext
+\begin{figure}[!htb]
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{delete_gesture.png}
+  \caption{Caption}\label{fig:awesome_image1}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+  \includegraphics[width=\linewidth]{ok_gesture.png}
+  \caption{Caption}\label{fig:awesome_image2}
+\endminipage\hfill
+\minipage{0.32\textwidth}%
+  \includegraphics[width=\linewidth]{settings_gesture.png}
+  \caption{Caption}\label{fig:awesome_image3}
+\endminipage
+\end{figure}
+\blindtext
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
  %-------------------5.8
  %-------------------5.9
  %-------------------5.10
