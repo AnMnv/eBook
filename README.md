@@ -18,7 +18,7 @@ Be sure to drop a 🌟 or <a href="https://www.buymeacoffee.com/anmnv" target="_
  
 <br />
 
- [Online preview](https://anvilproject.org/guides/content/creating-links)
+ 
  
 # Contents
  - [Specification](#specification) 
@@ -66,5 +66,10 @@ Be sure to drop a 🌟 or <a href="https://www.buymeacoffee.com/anmnv" target="_
 ![](/images/eBook-42.png)
 ![](/images/eBook-43.png)
 ![](/images/eBook-44.png)
- 
+![](/images/eBook-45.png)
+![](/images/eBook-46.png)
+![](/images/eBook-47.png)
+![](/images/eBook-48.png)
+![](/images/eBook-49.png)
+![](/images/eBook-50.png)
 
