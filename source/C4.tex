@@ -129,14 +129,46 @@ Some text inside
 \end{minipage}
 \end{tabular}
 \end{table}
-\clearpage
 
 %#################### 4.5 ####################
+\section{Photo positioning}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{
+\begin{tcolorbox}[enhanced,sharp corners,
+width={5cm},
+colback=white,
+overlay={\node at (frame.south east) {\includegraphics[scale=0.1]{example-image-a}};} ]
+Sample text here.
+\end{tcolorbox}}{4.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
+\documentclass{article}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\begin{document}
+\begin{tcolorbox}[enhanced,sharp corners,
+width={5cm},
+colback=white,
+overlay={\node at (frame.south east) {\includegraphics[scale=0.1]{example-image-a}};} ]
+Sample text here.
+\end{tcolorbox}
+\end{document}  
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+\clearpage
+
+%#################### 4.6 ####################
 \section{bclogo – Creating colourful boxes with logos}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\href{https://ctan.org/pkg/bclogo}{\img{1}{images/4.5/4.5.pdf}}}{4.5}
+\enum{\href{https://ctan.org/pkg/bclogo}{\img{1}{images/4.5/4.5.pdf}}}{4.6}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -209,14 +241,14 @@ margin=0.5cm
 
   
 \clearpage
-%#################### 4.6 ####################
+%#################### 4.7 ####################
 \section{Warning banner}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{
 \begin{caja}[title=warning]
 Here is some text 
-\end{caja}}{4.6}
+\end{caja}}{4.7}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -249,37 +281,6 @@ The vertical alignment settings
 \end{tabular}
 
 \vspace{0.2cm}	
-
-%#################### 4.7 ####################
-\section{Photo positioning}
-\begin{tabular}{c | c}
-\begin{minipage}[m]{0.4\textwidth}
-\enum{
-\begin{tcolorbox}[enhanced,sharp corners,
-width={5cm},
-colback=white,
-overlay={\node at (frame.south east) {\includegraphics[scale=0.1]{example-image-a}};} ]
-Sample text here.
-\end{tcolorbox}}{4.7}
-\end{minipage}
-&
-\begin{minipage}[m]{0.55\textwidth}
-\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
-\documentclass{article}
-\usepackage[most]{tcolorbox}
-\usepackage{graphicx}
-\begin{document}
-\begin{tcolorbox}[enhanced,sharp corners,
-width={5cm},
-colback=white,
-overlay={\node at (frame.south east) {\includegraphics[scale=0.1]{example-image-a}};} ]
-Sample text here.
-\end{tcolorbox}
-\end{document}	
-\end{lstlisting}
-\end{minipage}
-\end{tabular}
 
 %#################### 4.8 ####################
 \section{Absolutely centered cells (vertically and horisontally)}
@@ -417,7 +418,7 @@ $d_{n+1}$ &         &    &   & = $\pm 2ad_n$ = 0     \\
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize] 
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize] 
 \documentclass{article}
 \usepackage[left=1.5cm,right=1.5cm,
 top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
@@ -474,8 +475,7 @@ top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \usepackage{booktabs}
 \usepackage{tabularx}
 
-\begin{document}
-           
+\begin{document}         
 \begin{table}[!ht] 
 \caption{Vertical and lateral stresses of mortar.}  
 \vspace{0.5cm}
@@ -488,7 +488,6 @@ Group4 & 0.34  & 0.33  & 0.33 \\ \bottomrule
 \end{tabularx}
 \label{c}
 \end{table}
-
 \end{document}        
 \end{lstlisting}
 \end{minipage}

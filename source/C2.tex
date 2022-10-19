@@ -32,7 +32,7 @@
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{ \roboto\huge\contourlength{.15em}
+\enum{\centering \roboto\huge\contourlength{.15em}
 \contour{gray}{boxed} \contour{red}{boxed} \contour{yellow}{boxed}}{2.2}
 \end{minipage}
 &
@@ -51,13 +51,14 @@
 \end{minipage}
 \end{tabular}
 \end{table}
+\clearpage
 
 %-------------------2.3
 \section{Justifyed text}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\texttt{\justify\blindenumerate[10]}}{2.3}
+\enum{\texttt{\tiny\justify\blindenumerate[10]}}{2.3}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -72,7 +73,6 @@
   \fontdimen7\font=0.1em% extra space
   \hyphenchar\font=`\-% allowing hyphenation
 }
-
 \begin{document}
 \texttt{\justify\blindenumerate[10]}
 \end{document}
@@ -98,8 +98,7 @@
 \usepackage{soulpos}
 \ulposdef{\ulnumaux}{%
 $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
-\newcommand{\ulnum}[2]{%
-\def\saveulnum{#1}%
+\newcommand{\ulnum}[2]{\def\saveulnum{#1}%
 \ulnumaux{#2}}
 
 \begin{document} 
@@ -109,12 +108,38 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 \end{minipage}
 \end{tabular}
 \end{table}
+
 %-------------------2.5
+\section{Various types of underlining}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=\linewidth]{2.6.png}}{2.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\footnotesize] 
+\documentclass[14pt]{extreport}
+\usepackage{ulem}
+
+\begin{document}
+\uline{important} \uuline{urgent}
+\uwave{boat}      \sout{wrong}
+\xout{removed}    \dashuline{dashing} 
+\dotuline{dotty} 
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+%-------------------2.6
 \section{Bullets Style}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=\linewidth]{2.5.png} }{2.4}
+\enum{\includegraphics[width=\linewidth]{2.5.png} }{2.6}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -137,7 +162,7 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 \end{minipage}
 \end{tabular}
 \end{table}
-%-------------------2.6
+
 %-------------------2.7
 
 
