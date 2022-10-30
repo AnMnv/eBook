@@ -159,6 +159,8 @@ at (current page.north west)
 \end{minipage}
 \end{tabular}
 \end{table}
+\clearpage
+
  %-------------------5.5
 \section{Wrapfigure}
 \begin{table}[h!]
@@ -297,6 +299,34 @@ qqqqqqq
 \end{tabular}
 \end{table}
  %-------------------5.8
+   \section{Three figures in a row}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\centering\includegraphics[width=1\linewidth]{5.8.png}}{5.8}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{beamer}
+\usepackage{transparent}
+\usepackage{lipsum}
+
+\begin{document}
+\usebackgroundtemplate{\transparent{0.4}\includegraphics[width=\paperwidth,height=\paperheight]{example-image-a}}
+\begin{frame}{Title}
+    \lipsum[1]
+\end{frame}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{example-image-a}}
+\begin{frame}{Title}
+    \lipsum[1]
+\end{frame}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
  %-------------------5.9
  %-------------------5.10
  %-------------------5.11
