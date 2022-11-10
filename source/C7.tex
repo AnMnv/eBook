@@ -210,7 +210,7 @@ line width=0.4mm,scale=0.7,
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=1\linewidth]{7.6.png}}{7.6}
+\enum{\includegraphics[width=0.85\linewidth]{7.6.png}}{7.6}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -238,7 +238,7 @@ Text
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north east,yshift=0pt,xshift=0pt]%
 at (current page.north east)
-{\qrcode[height=1.cm]{https://github.com/AnMnv/eBook}% <--- put here anything
+{\qrcode[height=1.cm]{https://github.com/AnMnv/eBook}% <--- put anything here
 };
 \end{tikzpicture}
 \begin{table}[h!]
@@ -263,7 +263,7 @@ at (current page.north west)
 \end{tikzpicture}
 \end{document}
 
-								OR the rainbow variant (see example 9.7)
+			OR the rainbow variant (see example 9.7)
 
 \begin{tikzpicture}[remember picture,overlay]
 \node at ($(current page.north west)+(.70cm,-.75cm)$) 
@@ -275,6 +275,70 @@ at (current page.north west)
 \end{tabular}
 \end{table}
 %#################### 7.8 ####################
+\section{Family tree}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=0pt,xshift=0pt]%
+at (current page.north east)
+{\qrcode[height=1.cm]{https://github.com/AnMnv/eBook}% <--- put here anything
+};
+\end{tikzpicture}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\begin{tikzpicture}[scale=0.5, every node/.style={scale=0.5},level 1/.style={sibling distance=5cm},level 2/.style={sibling distance=2.5cm}]
+	\node {My Family Tree}[edge from parent fork down]
+		child { node {Uncle  - Aunty }}
+		child { node {Mum - Dad}
+			child {node{Me}}
+			child {node{My sister}}
+			}	
+		child { node { Tom -  Sue}
+			 child {node{ Josh}}
+			 child {node{ Sarah}}
+			};
+\end{tikzpicture}
+
+\vspace{1.0cm}
+
+\begin{tikzpicture}[scale=0.5, every node/.style={scale=0.5},rotate=180,level 1/.style={sibling distance=5cm},level 2/.style={sibling distance=2.5cm}]
+	\node {My Family Tree}[edge from parent fork down]
+		child { node {Uncle  -  Jane}}
+		child { node {Mum - Dad}
+			child {node{Me}}
+			child {node{sister}}
+			}	
+		child { node {Uncle  -  Sue}
+			 child {node{ Josh}}
+			 child {node{ Sarah}}
+			};
+\end{tikzpicture}}{7.8}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\begin{document}
+\begin{tikzpicture}[level 1/.style={sibling distance=5cm},level 2/.style={sibling distance=2.5cm}]
+	\node {My Family Tree}[edge from parent fork down]
+		child { node {Uncle John - Aunty Jane}}
+		child { node {Mum - Dad}
+			child {node{Me}}
+			child {node{My sister}}
+			}	
+		child { node {Uncle Tom - Aunty Sue}
+			 child {node{Cousin Josh}}
+			 child {node{Cousin Sarah}}
+			};
+\end{tikzpicture}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %#################### 7.9 ####################
 %#################### 7.10 ####################
 %#################### 7.11 ####################
