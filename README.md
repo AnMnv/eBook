@@ -1,9 +1,9 @@
 ## Show your support 🌈
 
-Be sure to drop a 🌟 or <a href="https://www.buymeacoffee.com/anmnv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 160px !important;" ></a> if you like the project!  
+Be sure to drop a 🌟 or <a href="https://www.buymeacoffee.com/anmnv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 160px !important;" ></a> if you like the project! <img align="right" width="100" height="100" src="https://github.com/AnMnv/eBook/blob/main/images/bmc_qr.png">
  <br />
  
- <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" style="height: 45px !important;width: 160px !important;" >  
+  
  
 <br />
 <h2 align="center">
@@ -14,14 +14,11 @@ Be sure to drop a 🌟 or <a href="https://www.buymeacoffee.com/anmnv" target="_
   
   :arrow_up:  :arrow_up: :book: :arrow_up:  :arrow_up: 
  </h2>
-<br />
  
- 
-<br />
 
  
  
-# Contents  
+# Contents
  - [Specification](#specification) 
 ![](/images/eBook-01.png)
 ![](/images/eBook-02.png)
