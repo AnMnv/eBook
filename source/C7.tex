@@ -340,6 +340,80 @@ at (current page.north east)
 \end{tabular}
 \end{table}
 %#################### 7.9 ####################
+\begin{landscape}
+
+
+\section{Mindmap}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.59\textwidth}
+\enum{\begin{tikzpicture}[scale=0.7, every node/.style={scale=0.6}]
+  \path[mindmap,concept color=black,text=white]
+    node[concept] {Computer Science}
+    [clockwise from=0]
+
+    child[concept color=green!50!black] {
+      node[concept] {qqq}
+      [clockwise from=90]
+      child { node[concept] {qqq1} }
+      child { node[concept] {qqq2} }
+      child { node[concept] {qqq3} }
+      child { node[concept] {qqq4} }
+    }
+
+    child[concept color=blue] {
+      node[concept] {ccc}
+      [clockwise from=-30]
+      child { node[concept] {ccc1} }
+      child { node[concept] {ccc2} }
+    }
+    child[concept color=red] { node[concept] {aaa1} }
+    child[concept color=orange] { node[concept] {bbb1} };
+\end{tikzpicture}}{7.9}
+\end{minipage}
+&
+\begin{minipage}[m]{0.5\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
+\usetikzlibrary[mindmap]
+
+\begin{document}
+
+\begin{tikzpicture}
+  \path[mindmap,concept color=black,text=white]
+    node[concept] {Computer Science}
+    [clockwise from=0]
+    % note that `sibling angle' can only be defined in
+    % `level 1 concept/.append style={}'
+    child[concept color=green!50!black] {
+      node[concept] {practical}
+      [clockwise from=90]
+      child { node[concept] {algorithms} }
+      child { node[concept] {data structures} }
+      child { node[concept] {pro\-gramming languages} }
+      child { node[concept] {software engineer\-ing} }
+    }
+    % note that the `concept color' is passed to the `child'(!)
+    child[concept color=blue] {
+      node[concept] {applied}
+      [clockwise from=-30]
+      child { node[concept] {databases} }
+      child { node[concept] {WWW} }
+    }
+    child[concept color=red] { node[concept] {technical} }
+    child[concept color=orange] { node[concept] {theoretical} };
+\end{tikzpicture}
+
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+\end{landscape}
 %#################### 7.10 ####################
 %#################### 7.11 ####################
 
