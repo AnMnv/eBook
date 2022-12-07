@@ -12,7 +12,10 @@
 
 
 \input{source/embed_video.tex}
-%\usepackage{hyperref}
+\renewcommand*\sfdefault{ugq}
+\newenvironment{myfont}{\fontfamily{ugq}\selectfont}{\par}
+\newcommand{\qbox}[1]{\begin{tcolorbox}[if odd page={colback=black!25}{colback=black!25}] #1 \end{tcolorbox}}
+
 
 \begin{document}
 \tikzstyle{every picture}+=[remember picture]
@@ -26,19 +29,24 @@
 \thispagestyle{empty}
 
 \begin{center}
-\pagecolor{black}
-\color{white}
+\tikz[remember picture,overlay] \node[opacity=0.4,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{cactus.jpg}};
+
 
 \noindent
-{\Huge{Latex in Examples}} 
-\vspace{1cm}
+\begin{myfont}
+{\huge{\xmybox[blue]{LaTeX book in \xmybox[orange]{Examples}}}} 
+\end{myfont}
+
+\vspace{0.5cm}
 \vskip\baselineskip
-\center{\includegraphics[width=1\linewidth]{title.jpg}}
+\tikz[remember picture,overlay] \node[opacity=0.95,inner sep=0pt] at (current page.center){\includegraphics[width=1\linewidth]{title.jpg}};
 \vskip\baselineskip
-\vspace{2cm}
-\noindent{\Huge{\texttt{Thanks to me}}}\\
-\vspace{2cm}
-\noindent{\Huge{\texttt{Examples in this book is updated every week.}}}
+
+\begin{myfont}
+\vfill
+\xmybox[green]{Thanks to me}\\
+\xmybox[red]{The book is updated every week}
+\end{myfont}
 
 %-------------
 
@@ -49,26 +57,25 @@
 \clearpage
 \newpage
 %-------------------------------------------------------------------------------------------------------
-\vfill
-
-\doclicenseThis
+%\vfill
+%\doclicenseThis
 %-------------------------------------------------------------------------------------------------------
-
+\qbox{\bf \begin{minipage}[m]{0.4\textwidth}\centering
+Support the author\\[0.3cm]
+\href{https://www.buymeacoffee.com/anmnv}{\includegraphics[width=4.5cm]{bmc_qr.png}}
+\end{minipage}
+\hfill
+\begin{minipage}[m]{0.55\textwidth}\centering
+Find it on Github\\[0.4cm]
+\qrcode[height=4.3cm]{https://github.com/AnMnv/eBook}
+\end{minipage} }
 
 
 %------------------------------------------------------------------------------------------------------------------
 \pagecolor{white}
 \tableofcontents
 
-\clearpage
-\newpage
-\vspace{8cm}
-\begin{figure}[h!]
-\center
-\img{1.0}{images/delete0.pdf}{\textbf{how CORRECT paste code from examples}}{}
-\end{figure}
-\clearpage
-\newpage
+
 
 
 %------------------C1-Math Tips
