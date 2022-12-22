@@ -388,7 +388,10 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 \usetikzlibrary{mindmap}
 \usetikzlibrary[mindmap]
 
-%-----------------------------
+%-----------------------------2.6
+\newcommand{\invtext}[1]{\tikz[baseline]{\node[rectangle,rounded corners=0.5mm,text=white,fill=black!65,inner sep=2pt,anchor=base]  {#1}}}
+
+\newtcbox{\xmyboxg}[1][gray]{on line, arc=4pt,colback=#1!30!white,colframe=white, before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt, boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
 %-----------------------------
 %-----------------------------
 %-----------------------------

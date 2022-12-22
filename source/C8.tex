@@ -12,7 +12,7 @@ The \xmybox[green]{quick} brown \xmybox{fox} \xmybox[blue]{jumps} over the
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\footnotesize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass{article}
 \usepackage{tcolorbox}
 \newtcbox{\mybox}[1][red]{on line,
@@ -42,7 +42,7 @@ Here You can see \mylib{\href{https://texdoc.org/serve/tcolorbox.pdf/0}{more exa
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\scriptsize]{tex}
 \usepackage[many]{tcolorbox}
 \newtcbox{\mylib}{enhanced,nobeforeafter, tcbox raise base, boxrule=0.4pt, top=0mm, bottom=0mm,
   right=0mm, left=4mm, arc=1pt, boxsep=2pt, before upper={\vphantom{dlg}},  colframe=green!50!black, coltext=green!25!black, colback=green!10!white,  overlay={\begin{tcbclipinterior} \fill[green!75!blue!50!white] (frame.south west) rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {TYP} ([xshift=4mm]frame.north west);\end{tcbclipinterior}}}
@@ -70,7 +70,7 @@ $\cdots$\circled[fill=green!75!blue!50!white,draw=black]{4}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\scriptsize]{tex}
 \usepackage{tikz}
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{xcolor}
@@ -103,7 +103,7 @@ usage -->  \circled[fill=amber,draw=black]{1}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\scriptsize]{tex}
 \documentclass{article}
 \usepackage{xcolor}
 \newcommand{\hly}[2]{\colorbox{#1!80}{\parbox{\textwidth}{#2}}}
@@ -134,7 +134,7 @@ usage -->  \circled[fill=amber,draw=black]{1}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\scriptsize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\scriptsize]{tex}
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{tikzmark}
