@@ -1,5 +1,5 @@
 %#################### 8.1 ####################
-\section{Words highlighting \xmybox{1}}
+\subsection{Words highlighting \xmybox{1}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -32,7 +32,7 @@ The \xmybox[green]{quick} brown \xmybox{fox} ...
 \end{tabular}
 \end{table}
 %#################### 8.2 ####################
-\section{Unusual words highlighting}
+\subsection{Unusual words highlighting}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -54,8 +54,9 @@ Here You can see \mylib{\href{https://texdoc.org/serve/tcolorbox.pdf/0}{more exa
 \end{tabular}
 \end{table}
 \clearpage
+
 %#################### 8.3 ####################
-\section{Colored circles}
+\subsection{Colored circles}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -90,8 +91,9 @@ usage -->  \circled[fill=amber,draw=black]{1}
 \end{minipage}
 \end{tabular}
 \end{table}
+
 %#################### 8.4 ####################
-\section{Whole line colored}
+\subsection{Whole line colored}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -118,8 +120,9 @@ usage -->  \circled[fill=amber,draw=black]{1}
 \end{minipage}
 \end{tabular}
 \end{table}
+
 %#################### 8.5 ####################
-\section{Circle text in points to other text}
+\subsection{Circle text in points to other text}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -153,6 +156,85 @@ This is just some \tikzmarknode[mynode]{A}{text that} I will repeat for this sec
 \end{minipage}
 \end{tabular}
 \end{table}
+\clearpage
+
 %#################### 8.6 ####################
+\subsection{Keybutton}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{Press \button{alt } + \button{F4 } for help !}{8.6}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\scriptsize]{tex}
+\documentclass[10pt]{article}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+\tikzstyle{buttonstyle} = [rectangle, fill = black!30, draw = black!80, drop shadow, font={\sffamily\bfseries}, text=white]
+\newcommand*{\button}[1]{\tikz{\node[buttonstyle] {#1};}}
+
+\begin{document}
+Press \button{F5} for help !
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
+
 %#################### 8.7 ####################
+\subsection{Colorful \xmyboxg{$\backslash$tableofcontents}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{Press \button{alt } + \button{F4 } for help !}{8.6}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\scriptsize]{tex}
+\documentclass{article}
+\usepackage{tocloft}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{calc}
+
+\newcounter{seccntr}
+\setcounter{seccntr}{-1}
+
+\newcommand*{\hnode}[1]{%
+\tikz[remember picture] \node[minimum size=0pt,inner sep=0pt,outer sep=4.5pt] (#1) {};}
+% create a node at the beginning of the section entry
+\renewcommand{\cftsecfont}{\hnode{P1}\bfseries\Large
+\stepcounter{seccntr}%
+\ifcase\value{seccntr}%
+\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, red,opacity=0.3] -- ++($(\textwidth,0) + (1ex,0)$);
+%--- 0 --
+\or\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, green,opacity=0.4] -- ++($(\textwidth,0) + (1ex,0)$);%--- 1 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, yellow,opacity=1] -- ++($(\textwidth,0) + (1ex,0)$);%--- 2 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, blue,opacity=0.6] -- ++($(\textwidth,0) + (1ex,0)$);%--- 3 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, orange,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);%-- default
+\else\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, gray,opacity=0.8] -- ++($(\textwidth,0) + (1ex,0)$);%-- default
+\fi  %
+}
+\renewcommand{\cftsecpagefont}{\bfseries}
+
+\begin{document}
+\tableofcontents
+
+\section{First Section}
+\subsection{A subsubsection}
+\subsection{A subsubsection}
+\section{Second Section}
+\subsection{A subsubsection}
+\section{Third Section}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
 %#################### 8.8 ####################

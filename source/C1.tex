@@ -1,5 +1,5 @@
 %-------------------1.1
-\section{Auto-resizing equation}
+\subsection{Auto-resizing equation}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{
@@ -8,12 +8,18 @@
 \end{minipage}
 & \begin{minipage}[m]{0.5\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\begin{document}
 \begin{equation*}\label{eq1}
 \resizebox{.4\textwidth}{!}{ % change .4 to 0.5...
 $\dot{\rho}=\dfrac{x^3}{45a^9-23b}$} 
 \end{equation*}
-    \end{lstlisting}
+\end{document}
+\end{lstlisting}
 \end{minipage}
 \end{tabular}
  
@@ -23,7 +29,7 @@ $\dot{\rho}=\dfrac{x^3}{45a^9-23b}$}
 
 
 
-\section{Form for simplest calculation}
+\subsection{Form for simplest calculation}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ \newcommand{\sss}[1]{this.getField("#1").value}
@@ -52,6 +58,7 @@ $\sum = $ \TextField[name=AvgStat, calculate={
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass{article}
 \usepackage{hyperref}
+
 \begin{document}
 \newcommand{\sss}[1]{this.getField("#1").value}
 \begin{Form}
@@ -78,7 +85,7 @@ $\sum = $ \TextField[name=AvgStat, calculate={
 
 
 %-------------------1.3
-\section{Equation in the form of steps}
+\subsection{Equation in the form of steps}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ \resizebox{.4\textwidth}{!}{$  \frac{n_0}{n_1} = q_1 + \dfrac{\makebox[\mywd][l]{$1$}}
@@ -96,6 +103,7 @@ $\sum = $ \TextField[name=AvgStat, calculate={
 \documentclass{article}
 \usepackage{amsmath}
 \def\mywd{35pt}
+
 \begin{document}
 \[
   \frac{n_0}{n_1} = q_1 + \dfrac{\makebox[\mywd][l]{$1$}}
@@ -113,7 +121,7 @@ $\sum = $ \TextField[name=AvgStat, calculate={
 \end{tabular}
 
 %-------------------1.4
-\section{One number for multiline equation}
+\subsection{One number for multiline equation}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ \begin{equation}
@@ -131,6 +139,7 @@ x_{ij} &= \alpha_{ij}\delta T
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass{article}
 \usepackage{amsmath}
+
 \begin{document}
 \begin{equation}
 \begin{aligned}
@@ -147,7 +156,7 @@ x_{ij} &= \alpha_{ij}\delta T
 \end{tabular}
 
 %-------------------1.5
-\section{Matrix in \textbf{standalone} documentclass}
+\subsection{Matrix in \textbf{standalone} documentclass}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ \begin{equation*}
@@ -163,6 +172,7 @@ a_{31} & a_{32} & a_{33}  \\
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass[preview,border={-5cm 0cm -5cm -0.1cm}]{standalone}
 \usepackage{amsmath}
+
 \begin{document}
 \begin{equation*}
 \begin{matrix} 
@@ -178,7 +188,7 @@ a_{31} & a_{32} & a_{33}  \\
 
 
 %-------------------1.6
-\section{Multiple lines, one centered label}
+\subsection{Multiple lines, one centered label}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ \begin{equation} \label{eq1}
@@ -202,7 +212,7 @@ A & = \frac{\pi r^2}{2} \\
 \end{tabular}
 
 %-------------------1.7
-\section{Array as a fraction}
+\subsection{Array as a fraction}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ 
@@ -230,7 +240,7 @@ $I-IV-V^{\begin{array}{c}6-4\\4-3\\ \end{array}}-I-cadence$
 \end{tabular}
 
 %-------------------1.8
-\section{Aligning equations inbetween text}
+\subsection{Aligning equations inbetween text}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\includegraphics[width=1\linewidth]{1.8.png}}{1.8}

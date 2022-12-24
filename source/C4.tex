@@ -1,5 +1,5 @@
 %#################### 4.1 ####################
-\section{Nice tcolorbox}
+\subsection{Nice tcolorbox}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -30,7 +30,7 @@
 \end{table} 
 
 %#################### 4.2 ####################
-\section{Color box with yellow border}
+\subsection{Color box with yellow border}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -69,7 +69,7 @@ Some text inside
  
 
 %#################### 4.3 ####################
-\section{A drop capital in a tcolorbox}
+\subsection{A drop capital in a tcolorbox}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\begin{tcolorbox}
@@ -96,7 +96,7 @@ Some text inside
  
 
 %#################### 4.4 ####################
-\section{\textit{Table with the desired length. }}
+\subsection{\textit{Table with the desired length. }}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -131,7 +131,7 @@ Some text inside
 \end{table}
 
 %#################### 4.5 ####################
-\section{Photo positioning}
+\subsection{Photo positioning}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{
@@ -164,7 +164,7 @@ Sample text here.
 \clearpage
 
 %#################### 4.6 ####################
-\section{bclogo – Creating colourful boxes with logos}
+\subsection{bclogo – Creating colourful boxes with logos}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -242,7 +242,7 @@ margin=0.5cm
   
 \clearpage
 %#################### 4.7 ####################
-\section{Warning banner}
+\subsection{Warning banner}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{
@@ -283,7 +283,7 @@ The vertical alignment settings
 \vspace{0.2cm}	
 
 %#################### 4.8 ####################
-\section{Absolutely centered cells (vertically and horisontally)}
+\subsection{Absolutely centered cells (vertically and horisontally)}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{
@@ -328,7 +328,7 @@ and&horisontally&$\sum$\\ \hline
 \end{tabular}
 
 %#################### 4.9 ####################
-\section{Martix made of table}
+\subsection{Martix made of table}
 \begin{tabular}{c | c}
 
 \begin{minipage}[m]{0.4\textwidth}
@@ -374,7 +374,7 @@ $d_{n+1}$ &         &    &   & = $\pm 2ad_n$ = 0     \\
 \end{tabular}
 
 %#################### 4.10 ####################
-\section{Centering cells with \xmybox{NiceTabular}}
+\subsection{Centering cells with \xmybox{NiceTabular}}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ \begin{NiceTabular}{|c|c|c|} 
@@ -410,7 +410,7 @@ $d_{n+1}$ &         &    &   & = $\pm 2ad_n$ = 0     \\
 
 
 %#################### 4.11 ####################
-\section{Centered cells in \xmybox{longtable}}
+\subsection{Centered cells in \xmybox{longtable}}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\includegraphics[width=1.\linewidth]{4.11.png}}{4.11}
@@ -452,7 +452,7 @@ top=1.5cm,bottom=2cm,bindingoffset=0cm]{geometry}
 \end{tabular}
 
 %#################### 4.12 ####################
-\section{If table is not wide enough}
+\subsection{If table is not wide enough}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{ 
@@ -495,7 +495,7 @@ Group4 & 0.34  & 0.33  & 0.33 \\ \bottomrule
 
 
 %#################### 4.13 ####################
-\section{Text next to a table}
+\subsection{Text next to a table}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\begin{minipage}[m]{0.4\textwidth}
@@ -540,7 +540,52 @@ text text text
 \end{tabular}
 
 %#################### 4.14 ####################
-\section{Text next to a table}
+\subsection{Hand Drawn tcolorbox}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\begin{mytheo}{}{theoexample}
+some text
+\end{mytheo}}{4.14}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{article}
+\usepackage[most]{tcolorbox}
+\usepackage{emerald}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shadows}
+\tikzset{decoration={random steps,segment length=2mm,amplitude=0.6pt}}
+\newtcbtheorem{mytheo}{Theorem}{
+  coltitle=green!80!black,
+  colback=lightgray!20,
+  colbacktitle=lightgray!20,
+  fonttitle=\bfseries\ECFAugie,
+  enhanced,
+  attach boxed title to top left={yshift=-0.18cm,xshift=-0.5mm},
+  boxed title style={
+    tikz={rotate=4,transform shape},
+    frame code={
+      \draw[decorate,fill=lightgray!20] (frame.south west) rectangle (frame.north east);
+    }  },
+  frame code={
+    \draw[decorate,fill=lightgray!20,drop shadow] (frame.north east) rectangle (frame.south west);
+  },}{th}
+
+\begin{document}
+\begin{mytheo}{}{theoexample}
+content...
+\end{mytheo}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+
+
+%#################### 4.15 ####################
+\subsection{Text next to a table}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{  \center \begin{tikzpicture}[
@@ -579,7 +624,7 @@ text text text
    
 %---
  \end{tikzpicture} 
-  \href{https://tex.stackexchange.com/questions/154842/using-pattern-inside-tikz-shapes-with-dropped-shadows}{*****} }{4.14}
+  \href{https://tex.stackexchange.com/questions/154842/using-pattern-inside-tikz-shapes-with-dropped-shadows}{*****} }{4.15}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -650,52 +695,12 @@ text text text
 \end{tabular}
 
 
-%#################### 4.15 ####################
-\section{Hand Drawn tcolorbox}
-\begin{tabular}{c | c}
-\begin{minipage}[m]{0.4\textwidth}
-\enum{\begin{mytheo}{}{theoexample}
-some text
-\end{mytheo}}{4.15}
-\end{minipage}
-&
-\begin{minipage}[m]{0.55\textwidth}
-\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
-\documentclass{article}
-\usepackage[most]{tcolorbox}
-\usepackage{emerald}
-\usetikzlibrary{decorations.pathmorphing}
-\usetikzlibrary{shadows}
-\tikzset{decoration={random steps,segment length=2mm,amplitude=0.6pt}}
-\newtcbtheorem{mytheo}{Theorem}{
-  coltitle=green!80!black,
-  colback=lightgray!20,
-  colbacktitle=lightgray!20,
-  fonttitle=\bfseries\ECFAugie,
-  enhanced,
-  attach boxed title to top left={yshift=-0.18cm,xshift=-0.5mm},
-  boxed title style={
-    tikz={rotate=4,transform shape},
-    frame code={
-      \draw[decorate,fill=lightgray!20] (frame.south west) rectangle (frame.north east);
-    }  },
-  frame code={
-    \draw[decorate,fill=lightgray!20,drop shadow] (frame.north east) rectangle (frame.south west);
-  },}{th}
 
-\begin{document}
-\begin{mytheo}{}{theoexample}
-content...
-\end{mytheo}
-\end{document}
-\end{lstlisting}
-\end{minipage}
-\end{tabular}
+
 
 
 %#################### 4.16 ####################%https://tex.stackexchange.com/questions/624558/how-can-i-do-this-block-in-beamer
-\section{Halfframed boxes}
+\subsection{Halfframed boxes}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\includegraphics[width=1\linewidth]{4.16.png}}{4.16}

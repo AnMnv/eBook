@@ -1,36 +1,38 @@
 \usepackage{scrextend}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-	\usepackage[russian,english]{babel}
-	\usepackage{amsmath,amssymb}
-	\usepackage{array,tabularx}
-	\usepackage{graphicx}
-	\graphicspath{{images/}}
-	\usepackage{moreverb}
-	%\usepackage[svgnames,dvipsnames,x11names,table]{xcolor}
-	 \usepackage[table]{xcolor}
-	\usepackage{color}
-	\usepackage{lipsum}
-	\usepackage{hyperref}
-	\usepackage{subcaption}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{array,tabularx}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{moreverb}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{subcaption}
 	\hypersetup{%
 		colorlinks=true,
 		linkbordercolor= red,
 		urlbordercolor=green,
     }%for hyperrefs
-%------------------ 
 
- %-----------------------------5.4
-%\renewcommand\thesubfigure{{\itshape\alph{subfigure}}}
- 
+%----------------------------- for spacing
+\linespread{1.}
 %-----------------------------
-
 \usepackage[many]{tcolorbox}
-	\newtcbox{\mylib}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
-	  right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
-	  colframe=green!50!black,coltext=green!25!black,colback=green!10!white,
-	  overlay={\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
-	    rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {TYP} ([xshift=4mm]frame.north west);\end{tcbclipinterior}}}
+\newtcbox{\mylib}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
+right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
+colframe=green!50!black,coltext=green!25!black,colback=green!10!white,
+overlay={\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {TYP} ([xshift=4mm]frame.north west);\end{tcbclipinterior}}}
+
+%----------------------------- for cover
+\newtcbox{\forcover}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
+right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}}, colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
+overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {I N} ([xshift=4mm]frame.north west);\end{tcbclipinterior}}}
 
 %------------------  
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
@@ -164,7 +166,6 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
 \def\mywd{35pt}
 %-----------------------------
 \usepackage{booktabs}
-
 \usepackage{multirow}
 \usepackage{pdflscape}
 \usepackage{longtable, array}
@@ -378,8 +379,6 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 %----------------------------- 2.5 & 6.6
 \usepackage{pifont}
 %-----------------------------9.7
-
-
 %-----------------------------8.5
 \usetikzlibrary{tikzmark}
 %-----------------------------7.8
@@ -387,11 +386,47 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 %-----------------------------7.9
 \usetikzlibrary{mindmap}
 \usetikzlibrary[mindmap]
-
 %-----------------------------2.6
 \newcommand{\invtext}[1]{\tikz[baseline]{\node[rectangle,rounded corners=0.5mm,text=white,fill=black!65,inner sep=2pt,anchor=base]  {#1}}}
 
 \newtcbox{\xmyboxg}[1][gray]{on line, arc=4pt,colback=#1!30!white,colframe=white, before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt, boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
-%-----------------------------
-%-----------------------------
+%-----------------------------8.6
+\tikzstyle{buttonstyle} = [rectangle, fill = black!30, draw = black!80, drop shadow, font={\sffamily\bfseries}, text=white]
+\newcommand*{\button}[1]{\tikz{\node[buttonstyle] {#1};}}
+%----------------------------- for colorful TOC Dec 24 2022
+\usepackage{tocloft}
+\newcounter{seccntr}
+\setcounter{seccntr}{-1}
+
+\newcommand*{\hnode}[1]{%
+    \tikz[remember picture] \node[minimum size=0pt,inner sep=0pt,outer sep=4.5pt] (#1) {};}
+% create a node at the beginning of the section entry
+\renewcommand{\cftsecfont}{\hnode{P1}\bfseries\Large
+\stepcounter{seccntr}%
+\ifcase\value{seccntr}%
+\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, red,opacity=0.3] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 0 --
+\or\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, green,opacity=0.4] -- ++($(\textwidth,0) + (1ex,0)$);%---- 1 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, yellow,opacity=1] -- ++($(\textwidth,0) + (1ex,0)$);%---- 2 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, blue,opacity=0.6] -- ++($(\textwidth,0) + (1ex,0)$);%---- 3 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, orange,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 4 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, pink,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 5 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, lime,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 6 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, purple,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 7 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, teal,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 8 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, violet,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 9 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, olive,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%---- 10 --
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, magenta,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
+%-- default
+\else\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, gray,opacity=0.8] -- ++($(\textwidth,0) + (1ex,0)$);%-- default
+\fi  %
+}
+\renewcommand{\cftsecpagefont}{\bfseries}
 %-----------------------------
