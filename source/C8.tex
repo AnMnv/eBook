@@ -201,22 +201,18 @@ Press \button{F5} for help !
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
 \usetikzlibrary{calc}
-
 \newcounter{seccntr}
 \setcounter{seccntr}{-1}
-
 \newcommand*{\hnode}[1]{%
 \tikz[remember picture] \node[minimum size=0pt,inner sep=0pt,outer sep=4.5pt] (#1) {};}
-% create a node at the beginning of the section entry
 \renewcommand{\cftsecfont}{\hnode{P1}\bfseries\Large
 \stepcounter{seccntr}%
 \ifcase\value{seccntr}%
 \tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, red,opacity=0.3] -- ++($(\textwidth,0) + (1ex,0)$);
-%--- 0 --
-\or\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, green,opacity=0.4] -- ++($(\textwidth,0) + (1ex,0)$);%--- 1 --
-\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, yellow,opacity=1] -- ++($(\textwidth,0) + (1ex,0)$);%--- 2 --
-\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, blue,opacity=0.6] -- ++($(\textwidth,0) + (1ex,0)$);%--- 3 --
-\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, orange,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);%-- default
+\or\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, green,opacity=0.4] -- ++($(\textwidth,0) + (1ex,0)$);
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, yellow,opacity=1] -- ++($(\textwidth,0) + (1ex,0)$);
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, blue,opacity=0.6] -- ++($(\textwidth,0) + (1ex,0)$);
+\or\tikz[remember picture,overlay]  \draw (P1.north west)  [line width={17pt}, orange,opacity=0.7] -- ++($(\textwidth,0) + (1ex,0)$);
 \else\tikz[remember picture,overlay] \draw (P1.north west)  [line width={17pt}, gray,opacity=0.8] -- ++($(\textwidth,0) + (1ex,0)$);%-- default
 \fi  %
 }
@@ -224,7 +220,6 @@ Press \button{F5} for help !
 
 \begin{document}
 \tableofcontents
-
 \section{First Section}
 \subsection{\hll{A subsubsection}}
 \subsection{\hll{A subsubsection}}
