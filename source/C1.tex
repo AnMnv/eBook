@@ -265,18 +265,33 @@ K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
 \subsection{\hll{Equation: boxed split inside align}}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
-\begin{tcblisting}{comment only, colback=white,colframe=white,
-pdf comment,
-comment only,
-compilable listing,
-run pdflatex,}
-c
+\begin{tcblisting}{colback=white,colframe=white,comment style={scale=2}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[%
+% border=1pt
+  border={0pt 20pt 0pt 0pt} % left bottom right top
+]{standalone}% http://ctan.org/pkg/standalone
+\begin{document}
+$2^5 = x_5 \times y^8$
+\end{document} 
 \end{tcblisting}
 \end{minipage} 
 &
 \begin{minipage}[m]{0.4\textwidth}
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
-qqqqqqqqqqqqqqq
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{hf-tikz}
+\begin{document}
+\begin{align}
+A ={}& B + C + D \notag \\
+\begin{split}
+\tikzmarkin{thisbox}
+A ={}& \phantom{{}+{}} B\_is\_long\\
+&  +    C\_is\_long\_too\\
+&  +    D\_is\_long\_too\tikzmarkend{thisbox}
+\end{split}
+\end{align}
+\end{document} 
 \end{lstlisting}
 \end{minipage}
 \end{tabular}

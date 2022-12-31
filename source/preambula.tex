@@ -5,7 +5,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{array,tabularx}
 \usepackage{graphicx}
-\graphicspath{{images/}}
+\graphicspath{{/home/anmnv/Desktop/eBook/images/}}
 \usepackage{moreverb}
 \usepackage[table]{xcolor}
 \usepackage{color}
@@ -443,8 +443,7 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
  % }
 %}
  
-\newcommand{\code}[1]{
-\begin{tcblisting}{
+\newcommand{\executemycode}[1]{\begin{tcblisting}{
   %comment and listing,
   comment style={scale=2},
   comment only,
@@ -453,6 +452,7 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
   compilable listing,
   run pdflatex,
 }
+\documentclass{standalone}
 #1
 \end{tcblisting}}
 
