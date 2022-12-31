@@ -104,7 +104,19 @@
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=\linewidth]{2.4.png} }{2.4}
+%\enum{\includegraphics[width=\linewidth]{2.4.png} }{2.4}
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[varwidth, border={10pt 10pt 10pt 10pt}]{standalone}
+\usepackage{amsmath,soul}
+\usepackage{soulpos}
+\ulposdef{\ulnumaux}{%
+$\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
+\newcommand{\ulnum}[2]{\def\saveulnum{#1}%
+\ulnumaux{#2}}
+\begin{document}
+\ulnum{\text{(some text)}}{This is short text}
+\end{document}
+\end{tcblisting}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
