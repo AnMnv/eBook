@@ -1,26 +1,43 @@
-\subsection{\hll{New section symbol}}
+\subsection{\hll{Ornaments from \xmyboxg{$\backslash$pgfornament}}}
 %-------------------2.1
 \begin{table}[h!]
 \begin{tabular}{c | c}
-\begin{minipage}[m]{0.4\textwidth}
-\enum{\sectionlinetwo{orange}{88}}{2.1}
+\begin{minipage}[m]{0.4\textwidth}%\enum{\sectionlinetwo{orange}{88}}{2.1}
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[varwidth, border={10pt 10pt 10pt 10pt}]{standalone}
+\usepackage[object=vectorian]{pgfornament}  
+\usepackage{tikz}
+\begin{document}
+\pgfornament[width=5cm]{4} \pgfornament[width=1cm]{5}
+\pgfornament[width=1cm]{6} \pgfornament[width=1cm]{7} \pgfornament[width=1cm]{8}
+\pgfornament[width=1cm]{9} \pgfornament[width=1cm]{10} \pgfornament[width=1cm]{11}
+\pgfornament[width=1cm]{12} \pgfornament[width=1cm]{13} \pgfornament[width=1cm]{14}
+\pgfornament[width=1cm]{15} \pgfornament[width=1cm]{16} \pgfornament[width=1cm]{17}
+\pgfornament[width=1cm]{18} \pgfornament[width=1cm]{19} \pgfornament[width=1cm]{20}
+\pgfornament[width=1cm]{21} \pgfornament[width=1cm]{22} \pgfornament[width=1cm]{23}
+\pgfornament[width=1cm]{24} \pgfornament[width=1cm]{25} \pgfornament[width=1cm]{26}
+\pgfornament[width=1cm]{27} \pgfornament[width=1cm]{28} \pgfornament[width=1cm]{29} . . .
+\end{document}
+\end{tcblisting}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
+\documentclass[varwidth]{standalone}
 \usepackage[object=vectorian]{pgfornament}  
-\usepackage{lipsum,tikz}
-\newcommand{\sectionlinetwo}[2]{%
-\nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
-{\color{#1}\resizebox{0.5\linewidth}{2ex}
-{{{\begin{tikzpicture}
-\node  (C) at (0,0) {};\node (D) at (9,0) {};
-\path (C) to [ornament=#2] (D);
-\end{tikzpicture}}}}}%
-\hspace{\fill}\par\nointerlineskip 
-\vspace{.5\baselineskip}}
-%usage---> \sectionlinetwo{orange}{88}
+\usepackage{tikz}
+
+\begin{document}
+\pgfornament[width=5cm]{4} \pgfornament[width=1cm]{5}
+\pgfornament[width=1cm]{6} \pgfornament[width=1cm]{7} 
+\pgfornament[width=1cm]{8} \pgfornament[width=1cm]{9} 
+\pgfornament[width=1cm]{10} \pgfornament[width=1cm]{11}
+\pgfornament[width=1cm]{12} \pgfornament[width=1cm]{13}
+\pgfornament[width=1cm]{14} \pgfornament[width=1cm]{15} 
+\pgfornament[width=1cm]{16} \pgfornament[width=1cm]{17}
+\pgfornament[width=1cm]{18} \pgfornament[width=1cm]{19} 
+\end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
@@ -37,12 +54,12 @@
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
-\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\ttfamily\footnotesize] 
 \documentclass{article}
 \usepackage{xcolor}
 \usepackage{roboto}
 \usepackage[outline]{contour}
+
 \begin{document}
 \roboto\huge\contourlength{.15em}
 \contour{gray}{boxed}

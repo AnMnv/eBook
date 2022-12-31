@@ -1,0 +1,18 @@
+\documentclass[varwidth, border={-120pt 10pt 10pt 10pt}]{standalone}
+\usepackage{mathtools}
+\usepackage{xcolor}
+
+\begin{document}
+\begin{align}
+    \begin{split}
+        A ={}& B + C + D
+    \end{split}\nonumber\\
+  \mathrlap{\boxed{\phantom{\begin{gathered}A = {}+ C\_is\_long\_too\\A\\A\end{gathered}}}}
+  \hspace{\dimexpr\fboxsep+\fboxrule-0.4pt}
+  \begin{split}
+        A ={}& \phantom{{}+{}} B\_is\_long\\
+             &            +    C\_is\_long\_too\\
+             &            +    D\_is\_long\_too
+    \end{split}
+\end{align}
+\end{document}

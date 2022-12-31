@@ -240,7 +240,13 @@ $I-IV-V^{\begin{array}{c}6-4\\4-3\\ \end{array}}-I-cadence$
 \subsection{\hll{Aligning equations inbetween text}}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=1\linewidth]{1.8.png}}{1.8}
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.5}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[varwidth, border={10pt 10pt 10pt 10pt}]{standalone}
+\usepackage{amsmath}
+\begin{document}
+qqq
+\end{document}
+\end{tcblisting}
 \end{minipage}
 & \begin{minipage}[m]{0.5\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
@@ -265,33 +271,44 @@ K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
 \subsection{\hll{Equation: boxed split inside align}}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
-\begin{tcblisting}{colback=white,colframe=white,comment style={scale=2}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
-\documentclass[%
-% border=1pt
-  border={0pt 20pt 0pt 0pt} % left bottom right top
-]{standalone}% http://ctan.org/pkg/standalone
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[varwidth, border={-120pt 10pt 10pt 10pt}]{standalone}
+\usepackage{mathtools}
+\usepackage{xcolor}
+
 \begin{document}
-$2^5 = x_5 \times y^8$
-\end{document} 
+\begin{align}
+    \begin{split}
+        A ={}& B + C + D
+    \end{split}\nonumber\\
+  \mathrlap{\boxed{\phantom{\begin{gathered}A = {}+ C\_is\_long\_too\\A\\A\end{gathered}}}}
+  \hspace{\dimexpr\fboxsep+\fboxrule-0.4pt}
+  \begin{split}
+        A ={}& \phantom{{}+{}} B\_is\_long\\
+             &            +    C\_is\_long\_too\\
+             &            +    D\_is\_long\_too
+    \end{split}
+\end{align}
+\end{document}
 \end{tcblisting}
 \end{minipage} 
 &
 \begin{minipage}[m]{0.4\textwidth}
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
-\documentclass{standalone}
-\usepackage{amsmath}
-\usepackage{hf-tikz}
 \begin{document}
 \begin{align}
-A ={}& B + C + D \notag \\
 \begin{split}
-\tikzmarkin{thisbox}
+A ={}& B + C + D
+\end{split}\nonumber\\
+\mathrlap{\boxed{\phantom{\begin{gathered}A = {}+ C\_is\_long\_too\\A\\A\end{gathered}}}}
+\hspace{\dimexpr\fboxsep+\fboxrule-0.4pt}
+\begin{split}
 A ={}& \phantom{{}+{}} B\_is\_long\\
 &  +    C\_is\_long\_too\\
-&  +    D\_is\_long\_too\tikzmarkend{thisbox}
+&  +    D\_is\_long\_too
 \end{split}
 \end{align}
-\end{document} 
+\end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
