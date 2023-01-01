@@ -105,16 +105,17 @@
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 %\enum{\includegraphics[width=\linewidth]{2.4.png} }{2.4}
-\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
-\documentclass[varwidth, border={10pt 10pt 10pt 10pt}]{standalone}
-\usepackage{amsmath,soul}
-\usepackage{soulpos}
-\ulposdef{\ulnumaux}{%
-$\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
-\newcommand{\ulnum}[2]{\def\saveulnum{#1}%
-\ulnumaux{#2}}
-\begin{document}
-\ulnum{\text{(some text)}}{This is short text}
+\begin{tcblisting}{colback=white,colframe=white,comment style=
+{frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass{standalone}
+\usepackage{array}
+%\setlength\extrarowheight{2pt}
+\newcommand{\mycommand}[2]{\begin{tabular}[t]{@{} c @{}}
+#1\\  \hline
+#2
+\end{tabular}}
+ \begin{document}
+text \mycommand{Some long Text}{text under line} text 
 \end{document}
 \end{tcblisting}
 \end{minipage}
@@ -122,16 +123,15 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\ttfamily\footnotesize] 
-\documentclass[12pt]{article}
-\usepackage{amsmath,soul}
-\usepackage{soulpos}
-\ulposdef{\ulnumaux}{%
-$\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
-\newcommand{\ulnum}[2]{\def\saveulnum{#1}%
-\ulnumaux{#2}}
-
-\begin{document} 
-\ulnum{\text{(some text)}}{This is short text}
+\documentclass{standalone}
+\usepackage{array}
+%\setlength\extrarowheight{2pt}
+\newcommand{\mycommand}[2]{\begin{tabular}[t]{@{} c @{}}
+#1\\  \hline
+#2
+\end{tabular}}
+ \begin{document}
+text \mycommand{Some long Text}{text under line} text 
 \end{document}
 \end{lstlisting}
 \end{minipage}
