@@ -148,8 +148,10 @@ text \mycommand{Some long Text}{text under line} text
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 %\enum{\includegraphics[width=\linewidth]{2.6.png}}{2.5}
+\begin{tikzpicture}
+\node (0,0) {\begin{minipage}[m]{0.90\textwidth}
 \begin{tcblisting}{colback=white,colframe=white,  comment only,  pdf comment,  freeze pdf,  compilable listing,  run pdflatex,
-comment style={frame hidden,scale=2}}
+comment style={frame hidden,scale=2.5}}
 \documentclass{standalone}
 \usepackage[skins,listings]{tcolorbox}
 \usepackage{ulem}
@@ -172,6 +174,9 @@ Some \dotuline{dotty} text
 \end{exampleB}
 \end{document}
 \end{tcblisting}
+\end{minipage}};
+\node [opacity=0.05] (0,0) {\scalebox{8.0}{\textcolor{red}{2.5}}};
+\end{tikzpicture}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -190,7 +195,7 @@ Some \dotuline{dotty} text
 \end{minipage}
 \end{tabular}
 \end{table}
-\clearpage
+\clearpage 
 
 %-------------------2.6
 \subsection{\hll{Bullets Style}}
