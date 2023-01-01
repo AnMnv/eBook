@@ -1,0 +1,21 @@
+\documentclass{standalone}
+\usepackage[skins,listings]{tcolorbox}
+\usepackage{ulem}
+\newtcblisting{exampleB}[2][]{%
+width=10cm,  colframe=red!50!yellow!50!black,
+colback=white,  coltitle=red!50!yellow!3!white,
+bicolor,colbacklower=red!50!yellow!5!white,
+fonttitle=\sffamily\bfseries,  sidebyside,text and listing,  title=#2,#1}
+
+\begin{document}
+\begin{exampleB}[lefthand width=3.5cm, text outside listing,colback=red!50!yellow!5!white,top=0mm,bottom=0mm,left=0mm,right=0mm,
+arc=0mm,boxrule=1pt]{}
+Some \uline{important} text\\
+Some \uuline{urgent} text\\
+Some \uwave{boat} text\\
+Some \sout{wrong} text\\
+Some \xout{removed} text\\
+Some \dashuline{dashing} text\\
+Some \dotuline{dotty} text
+\end{exampleB}
+\end{document}

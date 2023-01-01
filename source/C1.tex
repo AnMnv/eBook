@@ -271,6 +271,8 @@ K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
 \subsection{\hll{Equation: boxed split inside align}}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
+\begin{tikzpicture}
+\node (0,0) {\begin{minipage}[m]{0.90\textwidth}
 \begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
 \documentclass[varwidth, border={-120pt 10pt 10pt 10pt}]{standalone}
 \usepackage{mathtools}
@@ -291,6 +293,9 @@ K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
 \end{align}
 \end{document}
 \end{tcblisting}
+\end{minipage}};
+\node [opacity=0.05] (0,0) {\scalebox{8.0}{\textcolor{red}{1.9}}};
+\end{tikzpicture}
 \end{minipage} 
 &
 \begin{minipage}[m]{0.4\textwidth}

@@ -104,20 +104,23 @@
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-%\enum{\includegraphics[width=\linewidth]{2.4.png} }{2.4}
-\begin{tcblisting}{colback=white,colframe=white,comment style=
-{frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
-\documentclass{standalone}
-\usepackage{array}
-%\setlength\extrarowheight{2pt}
-\newcommand{\mycommand}[2]{\begin{tabular}[t]{@{} c @{}}
-#1\\  \hline
-#2
-\end{tabular}}
- \begin{document}
-text \mycommand{Some long Text}{text under line} text 
-\end{document}
-\end{tcblisting}
+\begin{tikzpicture}
+\node (0,0) {\begin{minipage}[m]{0.90\textwidth}
+  \begin{tcblisting}{colback=white,colframe=white,comment style=
+  {frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+    \documentclass{standalone}
+    \usepackage{array}
+    \newcommand{\mycommand}[2]{\begin{tabular}[t]{@{} c @{}}
+    #1\\  \hline
+    #2
+    \end{tabular}}
+    \begin{document}
+    text \mycommand{Some long Text}{text under line} text
+    \end{document}
+  \end{tcblisting}
+\end{minipage}};
+\node [opacity=0.05] (0,0) {\scalebox{8.0}{\textcolor{red}{2.4}}};
+\end{tikzpicture}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -130,7 +133,8 @@ text \mycommand{Some long Text}{text under line} text
 #1\\  \hline
 #2
 \end{tabular}}
- \begin{document}
+
+\begin{document}
 text \mycommand{Some long Text}{text under line} text 
 \end{document}
 \end{lstlisting}
@@ -143,7 +147,31 @@ text \mycommand{Some long Text}{text under line} text
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=\linewidth]{2.6.png}}{2.5}
+%\enum{\includegraphics[width=\linewidth]{2.6.png}}{2.5}
+\begin{tcblisting}{colback=white,colframe=white,  comment only,  pdf comment,  freeze pdf,  compilable listing,  run pdflatex,
+comment style={frame hidden,scale=2}}
+\documentclass{standalone}
+\usepackage[skins,listings]{tcolorbox}
+\usepackage{ulem}
+\newtcblisting{exampleB}[2][]{%
+width=10cm,  colframe=red!50!yellow!50!black,
+colback=white,  coltitle=red!50!yellow!3!white,
+bicolor,colbacklower=red!50!yellow!5!white,
+fonttitle=\sffamily\bfseries,  sidebyside,text and listing,  title=#2,#1}
+
+\begin{document}
+\begin{exampleB}[lefthand width=3.5cm, text outside listing,colback=red!50!yellow!5!white,top=0mm,bottom=0mm,left=0mm,right=0mm,
+arc=0mm,boxrule=1pt]{}
+Some \uline{important} text\\
+Some \uuline{urgent} text\\
+Some \uwave{boat} text\\
+Some \sout{wrong} text\\
+Some \xout{removed} text\\
+Some \dashuline{dashing} text\\
+Some \dotuline{dotty} text
+\end{exampleB}
+\end{document}
+\end{tcblisting}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}

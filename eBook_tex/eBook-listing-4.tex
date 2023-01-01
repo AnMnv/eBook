@@ -1,10 +1,10 @@
-\documentclass{standalone}
-\usepackage{array}
-%\setlength\extrarowheight{2pt}
-\newcommand{\mycommand}[2]{\begin{tabular}[t]{@{} c @{}}
-#1\\  \hline
-#2
-\end{tabular}}
- \begin{document}
-text \mycommand{Some long Text}{text under line} text
-\end{document}
+    \documentclass{standalone}
+    \usepackage{array}
+    \newcommand{\mycommand}[2]{\begin{tabular}[t]{@{} c @{}}
+    #1\\  \hline
+    #2
+    \end{tabular}}
+    \begin{document}
+    text \mycommand{Some long Text}{text under line} text
+    \end{document}
+  
