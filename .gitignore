@@ -13,6 +13,9 @@
 .*.lb
 *.ini
 
+*.gitignore
+*.sh
+
 ## Intermediate documents:
 *.dvi
 *.xdv
