@@ -125,6 +125,35 @@ picture]{%
 \end{minipage}
 \end{tabular}
 \end{table}
+
+%-------------------------------------------- 6.5 
+\subsection{\hll{Change footnote symbol}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\includegraphics[width=0.9\linewidth]{6.5.png}}{6.5}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{blue!15}{orange!15},numbers=left,basicstyle=\ttfamily\scriptsize] 
+\documentclass{beamer}
+\renewcommand{\thefootnote}{ (\fnsymbol{footnote})}
+
+\begin{document}
+\begin{frame}
+\frametitle{Sample frame title}
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{example-image}\footnote[1]{image description}
+\end{figure}
+\end{frame}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table} 
+\clearpage
+
 %-------------------------------------------- 6.4  
 \subsection{\hll{Leveled arabic enumeration}}
 \begin{table}[h!]
@@ -161,32 +190,7 @@ picture]{%
 \end{minipage}
 \end{tabular}
 \end{table}
-%-------------------------------------------- 6.5 
-\subsection{\hll{Change footnote symbol}}
-\begin{table}[h!]
-\begin{tabular}{c | c}
-\begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=0.9\linewidth]{6.5.png}}{6.5}
-\end{minipage}
-&
-\begin{minipage}[m]{0.55\textwidth}
-\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
-\begin{lstlisting}[numberstyle=\zebra{blue!15}{orange!15},numbers=left,basicstyle=\ttfamily\scriptsize] 
-\documentclass{beamer}
-\renewcommand{\thefootnote}{ (\fnsymbol{footnote})}
 
-\begin{document}
-\begin{frame}
-\frametitle{Sample frame title}
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{example-image}\footnote[1]{image description}
-\end{figure}
-\end{frame}
-\end{document}
-\end{lstlisting}
-\end{minipage}
-\end{tabular}
-\end{table} 
 %-------------------------------------------- 6.6  
 \subsection{\hll{Bullets Style}}
 \begin{table}[h!]
@@ -227,4 +231,50 @@ picture]{%
 \end{tabular}
 \end{table}
 %-------------------------------------------- 6.7  
+\subsection{\hll{Split itemize into multiple columns}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[varwidth, border={-120pt 10pt 10pt 10pt}]{standalone}
+\usepackage{multicol}
+\begin{document}
+Three columns:
+\begin{multicols}{3}
+\begin{itemize}
+\item item 1
+\item item 2
+\item item 3
+\item item 4
+\item item 5
+\item item 6
+\end{itemize}
+\end{multicols}
+\end{document}
+\end{tcblisting}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{black!10},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{article}
+\usepackage{multicol}
+
+\begin{document}
+Three columns:
+    \begin{multicols}{3}
+    \begin{itemize}
+        \item item 1
+        \item item 2
+        \item item 3
+        \item item 4
+        \item item 5
+        \item item 6
+    \end{itemize}
+    \end{multicols}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
   

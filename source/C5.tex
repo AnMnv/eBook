@@ -54,11 +54,9 @@
 \subfloat{\includegraphics[width=0.5\linewidth]{example-image-a.png}}\\ (a)
 \end{tabular}\qquad % some space
 \begin{tabular}{@{}c@{}}
-\subfloat{\includegraphics[width=0.3\linewidth]{example-image-b.png}}\\ (b)
-\\[0.1cm]
+\subfloat{\includegraphics[width=0.3\linewidth]{example-image-b.png}}\\ (b)\\[0.1cm]
 \subfloat{\includegraphics[width=0.3\linewidth]{example-image-c.png}}\\ (c)
-\end{tabular}
-\caption{Caption.}
+\end{tabular}%\caption{Caption.}
 \end{figure}
 \end{document}
 \end{lstlisting}
@@ -143,17 +141,14 @@ at (current page.north west)
 \begin{subfigure}{.25\textwidth}
 \centering
 \includegraphics[width=.6\linewidth]{example-image-a}
-\caption{ \textit{a} }
-\label{1a}
+\caption{ \textit{a} }\label{1a}
 \end{subfigure}%
 \begin{subfigure}{.25\textwidth}
 \centering
 \includegraphics[width=.715\linewidth]{example-image-b}
-\caption{ \textit{b} }
-\label{1b}
+\caption{ \textit{b} }\label{1b}
 \end{subfigure}
-\caption{ }
-\label{fig1}
+\caption{ }\label{fig1}
 \end{figure}
  Fig. \ref{1a} $\leftarrow$ a in \textbf{\textit{italic}} style
 \end{document}
@@ -164,6 +159,7 @@ at (current page.north west)
 
 
 %-------------------5.5
+ 
 \subsection{\hll{Wrapfigure}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
@@ -209,6 +205,8 @@ at (current page.north west)
 \end{minipage}
 \end{tabular}
 \end{table}
+ 
+
  %-------------------5.6
  \subsection{\hll{Figures in landscape mode}}
 \begin{table}[h!]
@@ -263,8 +261,10 @@ qqqqqqq
 \end{minipage}
 \end{tabular}
 \end{table}
+
+ 
  %-------------------5.7
-  \subsection{\hll{Three figures in a row}}
+\subsection{\hll{Three figures in a row}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -300,9 +300,10 @@ qqqqqqq
 \end{minipage}
 \end{tabular}
 \end{table}
-
+\clearpage
+ 
  %-------------------5.8
-{\subsection{\hll{Image as a background in a presentation}}
+\subsection{\hll{Image as a background in a presentation}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -329,7 +330,8 @@ qqqqqqq
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
-\end{table}}
+\end{table}
+ 
  %-------------------5.9
  %-------------------5.10
  %-------------------5.11

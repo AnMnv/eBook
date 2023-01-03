@@ -723,13 +723,7 @@ content...
 \definecolor{mypurple}{RGB}{102,0,102}
 \definecolor{mygrey}{RGB}{200,200,200}
 
-\newtcolorbox{mybox}[2]{%
-empty,
-coltitle = #1,
-title = #2,
-overlay ={
-\draw[mygrey,line width=1pt]
-(frame.north west)--(frame.north east)--(frame.south east)--(frame.south west)--(frame.north west);
+\newtcolorbox{mybox}[2]{empty,coltitle = #1,title = #2,overlay ={\draw[mygrey,line width=1pt](frame.north west)--(frame.north east)--(frame.south east)--(frame.south west)--(frame.north west);
 \draw[#1,line width=1pt]
 ($(frame.north west)!0.33!(frame.south west)$)
 --(frame.north west)
@@ -739,27 +733,21 @@ overlay ={
 --(frame.south east)
 --($(frame.south east)!0.33!(frame.north east)$);}}
 
-\tcbset{marktext/.style={%
-  overlay={\node[rotate=90,text=black,anchor=north east] at (frame.north west){#1};},
-  code={\setbox\z@=\color@hbox#1\color@endbox\tcbdimto\myheight{\wd\z@+3mm}},
-  minimum for equal height group=\tcb@ehgid:\myheight,  }}
+\tcbset{marktext/.style={overlay={\node[rotate=90,text=black,anchor=north east] at (frame.north west){#1};}, code={\setbox\z@=\color@hbox#1\color@endbox\tcbdimto\myheight{\wd\z@+3mm}},minimum for equal height group=\tcb@ehgid:\myheight,  }}
 \makeatother
 
 \begin{document}
 \begin{frame}
-\begin{tcbraster}[%
-    raster columns=3,
-    raster equal height=rows
-    ]
-    \begin{mybox}{myred}{Title 1}
-    some text in the first box
-    \end{mybox}
-    \begin{mybox}{myorange}{Title 2}
-    some text in the second box
-    \end{mybox}
-    \begin{mybox}{mypurple}{Title 3}
-    some text in the third box blabla
-    \end{mybox}
+\begin{tcbraster}[raster columns=3, raster equal height=rows]
+\begin{mybox}{myred}{Title 1}
+some text in the first box
+\end{mybox}
+\begin{mybox}{myorange}{Title 2}
+some text in the second box
+\end{mybox}
+\begin{mybox}{mypurple}{Title 3}
+some text in the third box blabla
+\end{mybox}
 \end{tcbraster}
 \end{frame}
 \end{document}
