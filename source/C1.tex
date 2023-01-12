@@ -6,7 +6,7 @@
 \resizebox{.6\textwidth}{!}{$\dot{\rho}=
 \dfrac{x^3}{45a^9-23b}$}}{1.1}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
 \documentclass{article}
@@ -50,7 +50,7 @@ $\sum = $ \TextField[name=AvgStat, calculate={
 }, readonly, value=0]{} 
 \end{Form}}{1.2}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass{article}
@@ -94,7 +94,7 @@ $\sum = $ \TextField[name=AvgStat, calculate={
   {q_{k-1} + \dfrac{1}
   {q_k}}$}$}}$}}$}} $}}{1.3}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass{article}
@@ -131,7 +131,7 @@ x_{ij} &= \alpha_{ij}\delta T
 \end{aligned}
 \end{equation}}{1.4}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass{article}
@@ -164,7 +164,7 @@ a_{31} & a_{32} & a_{33}  \\
 \end{matrix} 
 \end{equation*} }{1.5}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
 \documentclass[preview,border={-5cm 0cm -5cm -0.1cm}]{standalone}
@@ -195,7 +195,7 @@ A & = \frac{\pi r^2}{2} \\
 \end{split}
 \end{equation} }{1.6}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
 \begin{equation} \label{eq1}
@@ -219,7 +219,7 @@ $I-IV-V^{\genfrac{}{}{0pt}{}{6-4}{4-3}}-I-cadence$ \\
 
 $I-IV-V^{\begin{array}{c}6-4\\4-3\\ \end{array}}-I-cadence$}{1.7}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
 \documentclass{article}
@@ -248,7 +248,7 @@ qqq
 \end{document}
 \end{tcblisting}
 \end{minipage}
-& \begin{minipage}[m]{0.5\textwidth}
+& \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
 \documentclass{article}
@@ -273,7 +273,7 @@ K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
 \begin{minipage}[m]{0.4\textwidth}
 \begin{tikzpicture}
 \node (0,0) {\begin{minipage}[m]{0.90\textwidth}
-\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.1}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.5}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
 \documentclass[varwidth, border={-120pt 10pt 10pt 10pt}]{standalone}
 \usepackage{mathtools}
 \usepackage{xcolor}
@@ -298,7 +298,7 @@ K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
 \end{tikzpicture}
 \end{minipage} 
 &
-\begin{minipage}[m]{0.4\textwidth}
+\begin{minipage}[m]{0.55\textwidth}
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
 \begin{document}
 \begin{align}
@@ -317,7 +317,42 @@ A ={}& \phantom{{}+{}} B\_is\_long\\
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
+
 %-------------------1.10
+\subsection{\hll{Multiline text above arrow or relation symbol}}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\begin{tikzpicture}
+\node (0,0) {\begin{minipage}[m]{0.90\textwidth}
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.5}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[varwidth, border={5pt 5pt 5pt 5pt}]{standalone}
+\usepackage{mathtools}
+\newcommand{\twoline}[2]{\overset{\textup{\scriptsize #1}}{\textup{#2}}}
+
+\begin{document}
+$$\dfrac{x+1}{x} \xrightarrow{\twoline{Euclidean}{division}} 1+\dfrac{1}{x}$$
+\end{document}
+\end{tcblisting}
+\end{minipage}};
+\node [opacity=0.05] (0,0) {\scalebox{8.0}{\textcolor{red}{1.10}}};
+\end{tikzpicture}
+\end{minipage} 
+&
+\begin{minipage}[m]{0.55\textwidth}
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass[a4paper, 12pt]{article}
+\usepackage{mathtools}
+\newcommand{\twoline}[2]{\overset{\textup{\scriptsize #1}}{\textup{#2}}}
+
+\begin{document}
+\begin{equation*}
+\dfrac{x+1}{x} \xrightarrow{\twoline{Euclidean}{division}} 1+\dfrac{1}{x}
+\end{equation*}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
 %-------------------1.11
 %-------------------1.12
 %-------------------1.13

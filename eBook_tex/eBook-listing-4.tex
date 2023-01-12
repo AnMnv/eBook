@@ -1,10 +1,14 @@
-    \documentclass{standalone}
-    \usepackage{array}
-    \newcommand{\mycommand}[2]{\begin{tabular}[t]{@{} c @{}}
-    #1\\  \hline
-    #2
-    \end{tabular}}
-    \begin{document}
-    text \mycommand{Some long Text}{text under line} text
-    \end{document}
-  
+\documentclass[varwidth, border={10pt 10pt 10pt 10pt}]{standalone}
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{tikz}
+\begin{document}
+\pgfornament[width=5cm]{4} \pgfornament[width=1cm]{5}
+\pgfornament[width=1cm]{6} \pgfornament[width=1cm]{7} \pgfornament[width=1cm]{8}
+\pgfornament[width=1cm]{9} \pgfornament[width=1cm]{10} \pgfornament[width=1cm]{11}
+\pgfornament[width=1cm]{12} \pgfornament[width=1cm]{13} \pgfornament[width=1cm]{14}
+\pgfornament[width=1cm]{15} \pgfornament[width=1cm]{16} \pgfornament[width=1cm]{17}
+\pgfornament[width=1cm]{18} \pgfornament[width=1cm]{19} \pgfornament[width=1cm]{20}
+\pgfornament[width=1cm]{21} \pgfornament[width=1cm]{22} \pgfornament[width=1cm]{23}
+\pgfornament[width=1cm]{24} \pgfornament[width=1cm]{25} \pgfornament[width=1cm]{26}
+\pgfornament[width=1cm]{27} \pgfornament[width=1cm]{28} \pgfornament[width=1cm]{29} . . .
+\end{document}
