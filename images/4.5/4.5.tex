@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{
+paperwidth=8cm,
+paperheight=14cm,
+margin=0.5cm
+}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[tikz]{bclogo}
+
+\newtcolorbox{framedd}[1][]{
+  colframe=lightgray,
+  colback=yellow!40!white,
+  enhanced jigsaw,
+  sharp corners,
+  lower separated=false,
+  lefthand width=1cm,
+  sidebyside gap=0.5cm,
+  sidebyside,#1}
+
+\begin{document}
+\begin{framedd}
+  \bcbombe  \tcblower  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green]
+  \bclampe   \tcblower  Some text inside.
+\end{framedd} 
+
+\begin{framedd}
+  \bcattention  \bcinterdit  \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green]
+   \bcnucleaire  \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green]
+ \bcdanger \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}
+  \bcquestion \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[colback=blue!40!green, lefthand width=2.5cm]
+  \bcsoleil  \bceclaircie \bcpluie  \bcneige \tcblower
+  Some text inside.
+\end{framedd}
+
+\begin{framedd}[lefthand width=3cm]
+  \bccube \bcdodecaedre \bcicosaedre \bcoctaedre \bctetraedre  \tcblower
+  Some text inside.
+\end{framedd}
+\end{document}

@@ -5,7 +5,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{array,tabularx}
 \usepackage{graphicx}
-\graphicspath{{/home/anmnv/Desktop/eBook/images/}}
+\graphicspath{{C:/Users/user/Desktop/eBook/images}}
 \usepackage{moreverb}
 \usepackage[table]{xcolor}
 \usepackage{color}
@@ -51,7 +51,7 @@ rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90] {I N} ([xshift
   columns=fullflexible,
   frame=single,
   breaklines=true,
-  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
   }
 %------------------
   \newcommand\realnumberstyle[1]{}
@@ -436,7 +436,72 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 %----------------------------- latex code inside latex code
  
 
-%-----------------------------
+%-----------------------------7.10
+
+\newif\ifsimplegantttickpositionbelow
+\tikzset{
+    pics/simple gantt/.style={
+        code={
+            \ifsimplegantttickpositionbelow
+                \path[/tikz/simple gantt/tick] (0,0) -- 
+                    ++(0,{-1*\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+                    node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{0}};
+            \else
+                \path[/tikz/simple gantt/tick] (0,\pgfkeysvalueof{/tikz/simple gantt/height}) -- 
+                    ++(0,{\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+                    node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{0}};
+            \fi
+            \foreach \n/\x [count=\i, remember=\x as \lastx (initially 0)] in {#1} {
+                \ifsimplegantttickpositionbelow
+                    \path[/tikz/simple gantt/tick] ({\x*\pgfkeysvalueof{/tikz/simple gantt/width unit}},0) -- 
+                        ++(0,{-1*\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+                        node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{\x}};
+                \else
+                    \path[/tikz/simple gantt/tick] ({\x*\pgfkeysvalueof{/tikz/simple gantt/width unit}},\pgfkeysvalueof{/tikz/simple gantt/height}) -- 
+                        ++(0,{\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+                        node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{\x}};
+                \fi
+                \pgfmathparse{int(mod(\i - 1, \pgfkeysvalueof{/tikz/simple gantt/color cycle length}) + 1)} 
+                \global\pgfkeyslet{/tikz/simple gantt/color cycle step}{\pgfmathresult}
+                \path[
+                    /tikz/simple gantt/box, 
+                    fill={simple gantt color \pgfkeysvalueof{/tikz/simple gantt/color cycle step}},
+                ]
+                    ({\lastx*\pgfkeysvalueof{/tikz/simple gantt/width unit}},0) rectangle 
+                    ({\x*\pgfkeysvalueof{/tikz/simple gantt/width unit}},\pgfkeysvalueof{/tikz/simple gantt/height})
+                    \pgfextra{\pgfmathparse{\x - \lastx}}
+                    \ifdim\pgfmathresult pt < \pgfkeysvalueof{/tikz/simple gantt/label as pin if value below} pt\relax
+                        node[/tikz/simple gantt/label, pin={[/tikz/simple gantt/label pin]\pgfkeysvalueof{/tikz/simple gantt/label pin angle}:\n}] {}
+                    \else
+                        node[/tikz/simple gantt/label] {\n}
+                    \fi ;
+            }
+        }
+    },
+    simple gantt/color cycle length/.initial={0},
+    simple gantt/color cycle step/.initial={1},
+    simple gantt/color cycle/.code={
+        \foreach \c [count=\i] in {#1} {
+            \xglobal\colorlet{simple gantt color \i}{\c}
+            \global\pgfkeyslet{/tikz/simple gantt/color cycle length}{\i}
+        }
+    },
+    simple gantt/height/.initial={1cm},
+    simple gantt/width unit/.initial={1cm},
+    simple gantt/box/.style={},
+    simple gantt/label/.style={pos=0.5},
+    simple gantt/label pin/.style={above, pin edge={black, thin}, pin distance=0.5cm},
+    simple gantt/label pin angle/.initial={90},
+    simple gantt/label as pin if value below/.initial={1.5},
+    simple gantt/tick/.style={draw},
+    simple gantt/tick label/.style={below},
+    simple gantt/tick position/.is choice,
+    simple gantt/tick position/above/.code={\simplegantttickpositionbelowfalse},
+    simple gantt/tick position/below/.code={\simplegantttickpositionbelowtrue},
+    simple gantt/tick position={below},
+    simple gantt/tick length/.initial={5pt},
+    simple gantt/color cycle={blue!50, red!50, green!50},
+}
 %-----------------------------
 %-----------------------------
 %-----------------------------

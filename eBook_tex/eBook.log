@@ -1,0 +1,3400 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  4 MAR 2023 21:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**eBook.tex
+(./eBook.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(c:/texlive/2022/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks17
+)
+(c:/Users/user/Desktop/eBook/source/preambula.tex
+(c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2022/10/12 v3.38 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2022/10/12 v3.38 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2022/10/12 v3.38 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2022/10/12 v3.38 KOMA-Script package (file load hooks)
+
+(c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2022/10/12 v3.38 KOMA-Script package (using LaTeX hooks)
+
+
+(c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2022/10/12 v3.38 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+)))
+(c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count196
+\U@D=\dimen149
+\l@unhyphenated=\language87
+
+(c:/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count197
+
+(c:/texlive/2022/texmf-dist/tex/generic/babel-russian/russianb.ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+
+
+Package babel Warning: No Cyrillic font encoding has been loaded so far.
+(babel)                A font encoding should be declared before babel.
+(babel)                Default `T2A' encoding will be loaded  on input line 78.
+
+
+(c:/texlive/2022/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2022/06/11 v1.0j Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+
+(c:/texlive/2022/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
+)
+(c:/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+))
+(c:/texlive/2022/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+(c:/texlive/2022/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex
+Package babel Info: Importing font and identification data for russian
+(babel)             from babel-ru.ini. Reported on input line 11.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen150
+))
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+)
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count198
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count199
+\leftroot@=\count266
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count267
+\DOTSCASE@=\count268
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count269
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count270
+\dotsspace@=\muskip16
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks21
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks22
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen159
+\ar@mcellbox=\box53
+\extrarowheight=\dimen160
+\NC@list=\toks25
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box54
+)
+(c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen161
+\TX@old@table=\dimen162
+\TX@old@col=\dimen163
+\TX@target=\dimen164
+\TX@delta=\dimen165
+\TX@cols=\count276
+\TX@ftn=\toks26
+)
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
+)
+(c:/texlive/2022/texmf-dist/tex/latex/moreverb/moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+
+(c:/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks27
+\verbatim@line=\toks28
+\verbatim@in@stream=\read3
+)
+\tab@position=\count277
+\tab@size=\count278
+\listing@line=\count279
+)
+(c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip55
+\rownum=\count280
+)
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+
+(c:/texlive/2022/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2022/06/12 v2.14 Predefined colors according to SVG 1.1 (UK)
+))
+(c:/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty
+(c:/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(c:/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+
+(c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count281
+\l__pdf_internal_box=\box55
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count282
+\l__lipsum_a_int=\count283
+\l__lipsum_b_int=\count284
+
+(c:/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+
+(c:/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(c:/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count285
+)
+\@linkdim=\dimen168
+\Hy@linkcounter=\count286
+\Hy@pagecounter=\count287
+
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count288
+
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 3164.
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4425.
+\c@Hy@tempcnt=\count289
+
+(c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen169
+
+(c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count290
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(c:/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count291
+\c@Item=\count292
+\c@Hfootnote=\count293
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+
+(c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count294
+\c@bookmark@seq@number=\count295
+
+(c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip56
+)
+(c:/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(c:/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(c:/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen172
+\captionmargin=\dimen173
+\caption@leftmargin=\dimen174
+\caption@rightmargin=\dimen175
+\caption@width=\dimen176
+\caption@indent=\dimen177
+\caption@parindent=\dimen178
+\caption@hangindent=\dimen179
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count298
+\c@subtable=\count299
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+
+(c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2023/02/12 version 6.0.1 text color boxes
+
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen180
+\pgfutil@tempdimb=\dimen181
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen182
+\pgf@y=\dimen183
+\pgf@xa=\dimen184
+\pgf@ya=\dimen185
+\pgf@xb=\dimen186
+\pgf@yb=\dimen187
+\pgf@xc=\dimen188
+\pgf@yc=\dimen189
+\pgf@xd=\dimen190
+\pgf@yd=\dimen191
+\w@pgf@writea=\write3
+\r@pgf@reada=\read4
+\c@pgf@counta=\count300
+\c@pgf@countb=\count301
+\c@pgf@countc=\count302
+\c@pgf@countd=\count303
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count304
+ (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count305
+\pgfsyssoftpath@bigbuffer@items=\count306
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen192
+\pgfmath@count=\count307
+\pgfmath@box=\box57
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count308
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen193
+\pgf@picmaxx=\dimen194
+\pgf@picminy=\dimen195
+\pgf@picmaxy=\dimen196
+\pgf@pathminx=\dimen197
+\pgf@pathmaxx=\dimen198
+\pgf@pathminy=\dimen199
+\pgf@pathmaxy=\dimen256
+\pgf@xx=\dimen257
+\pgf@xy=\dimen258
+\pgf@yx=\dimen259
+\pgf@yy=\dimen260
+\pgf@zx=\dimen261
+\pgf@zy=\dimen262
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen263
+\pgf@path@lasty=\dimen264
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen265
+\pgf@shorten@start@additional=\dimen266
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count309
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen267
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen268
+\pgf@pt@y=\dimen269
+\pgf@pt@temp=\dimen270
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen271
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen272
+\pgf@sys@shading@range@num=\count310
+\pgf@shadingcount=\count311
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box61
+) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box62
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen273
+\pgf@nodesepend=\dimen274
+)
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2022/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/texlive/2022/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count312
+)
+\tcb@titlebox=\box63
+\tcb@upperbox=\box64
+\tcb@lowerbox=\box65
+\tcb@phantombox=\box66
+\c@tcbbreakpart=\count313
+\c@tcblayer=\count314
+\c@tcolorbox@number=\count315
+\tcb@temp=\box67
+\tcb@temp=\box68
+\tcb@temp=\box69
+\tcb@temp=\box70
+
+(c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.0.1'
+\c@tcbrastercolumn=\count316
+\c@tcbrasterrow=\count317
+\c@tcbrasternum=\count318
+\c@tcbraster=\count319
+) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.0.1'
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen275
+\pgffor@skip=\dimen276
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count320
+\pgfplotmarksize=\dimen277
+)
+\tikz@lastx=\dimen278
+\tikz@lasty=\dimen279
+\tikz@lastxsaved=\dimen280
+\tikz@lastysaved=\dimen281
+\tikz@lastmovetox=\dimen282
+\tikz@lastmovetoy=\dimen283
+\tikzleveldistance=\dimen284
+\tikzsiblingdistance=\dimen285
+\tikz@figbox=\box71
+\tikz@figbox@bg=\box72
+\tikz@tempbox=\box73
+\tikz@tempbox@bg=\box74
+\tikztreelevel=\count321
+\tikznumberofchildren=\count322
+\tikznumberofcurrentchild=\count323
+\tikz@fig@count=\count324
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count325
+\pgfmatrixcurrentcolumn=\count326
+\pgf@matrix@numberofcolumns=\count327
+)
+\tikz@expandcount=\count328
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(c:/texlive/2022/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2022/07/20 v1.0.0 Image filling library for TikZ
+
+(c:/texlive/2022/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2022/07/20 v1.0.0 Auxiliary code for tikzfill
+)
+(c:/texlive/2022/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2022/07/20 v1.0.0 Image filling library
+\l__tikzfill_img_box=\box75
+)) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.1'
+)) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.0.1'
+(c:/texlive/2022/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box76
+\tcb@totalupperbox=\box77
+\tcb@totallowerbox=\box78
+)
+(c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.0.1'
+) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.0.1'
+) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.0.1'
+\tcbfitdim=\dimen286
+\tcb@lowerfitdim=\dimen287
+\tcb@upperfitdim=\dimen288
+\tcb@cur@hbadness=\count329
+) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.0.1'
+(c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.0.1'
+(c:/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count330
+\lst@gtempboxa=\box79
+\lst@token=\toks42
+\lst@length=\count331
+\lst@currlwidth=\dimen289
+\lst@column=\count332
+\lst@pos=\count333
+\lst@lostspace=\dimen290
+\lst@width=\dimen291
+\lst@newlines=\count334
+\lst@lineno=\count335
+\lst@maxwidth=\dimen292
+
+(c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count336
+\lst@skipnumbers=\count337
+\lst@framebox=\box80
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.0.1'
+(c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.0.1'
+(c:/texlive/2022/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count338
+))
+(c:/texlive/2022/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(c:/texlive/2022/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)))
+(c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.0.1'
+) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.0.1'
+) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.0.1'
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.te
+x
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.0.1'
+)) (c:/texlive/2022/texmf-dist/tex/latex/lstaddons/lstautogobble.sty
+Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
+ings'
+\lstag@spacecount=\count339
+)
+(c:/texlive/2022/texmf-dist/tex/latex/inconsolata/zi4.sty
+Package: zi4 2019/05/17 v1.12
+
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(c:/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(c:/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks43
+\XKV@tempa@toks=\toks44
+)
+\XKV@depth=\count340
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\zifour@ocount=\count341
+)
+(c:/texlive/2022/texmf-dist/tex/latex/pgfornament/pgfornament.sty
+(c:/texlive/2022/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks45
+\pgfopts@list@add@b@toks=\toks46
+)
+Package: pgfornament 2020/05/26 v1.2 vector ornaments
+
+(c:/texlive/2022/texmf-dist/tex/latex/pgfornament/pgflibraryvectorian.code.tex
+2020/04/06 1.1 pgflibraryvectorian.code.tex
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshadings.code.tex
+File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryshadings.code.t
+ex
+File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2022/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(c:/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)
+(c:/texlive/2022/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+
+(c:/texlive/2022/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count342
+Package zref Info: New property: abspage on input line 65.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip57
+\c@mdf@globalstyle@cnt=\count343
+\mdf@skipabove@length=\skip58
+\mdf@skipbelow@length=\skip59
+\mdf@leftmargin@length=\skip60
+\mdf@rightmargin@length=\skip61
+\mdf@innerleftmargin@length=\skip62
+\mdf@innerrightmargin@length=\skip63
+\mdf@innertopmargin@length=\skip64
+\mdf@innerbottommargin@length=\skip65
+\mdf@splittopskip@length=\skip66
+\mdf@splitbottomskip@length=\skip67
+\mdf@outermargin@length=\skip68
+\mdf@innermargin@length=\skip69
+\mdf@linewidth@length=\skip70
+\mdf@innerlinewidth@length=\skip71
+\mdf@middlelinewidth@length=\skip72
+\mdf@outerlinewidth@length=\skip73
+\mdf@roundcorner@length=\skip74
+\mdf@footenotedistance@length=\skip75
+\mdf@userdefinedwidth@length=\skip76
+\mdf@needspace@length=\skip77
+\mdf@frametitleaboveskip@length=\skip78
+\mdf@frametitlebelowskip@length=\skip79
+\mdf@frametitlerulewidth@length=\skip80
+\mdf@frametitleleftmargin@length=\skip81
+\mdf@frametitlerightmargin@length=\skip82
+\mdf@shadowsize@length=\skip83
+\mdf@extratopheight@length=\skip84
+\mdf@subtitleabovelinewidth@length=\skip85
+\mdf@subtitlebelowlinewidth@length=\skip86
+\mdf@subtitleaboveskip@length=\skip87
+\mdf@subtitlebelowskip@length=\skip88
+\mdf@subtitleinneraboveskip@length=\skip89
+\mdf@subtitleinnerbelowskip@length=\skip90
+\mdf@subsubtitleabovelinewidth@length=\skip91
+\mdf@subsubtitlebelowlinewidth@length=\skip92
+\mdf@subsubtitleaboveskip@length=\skip93
+\mdf@subsubtitlebelowskip@length=\skip94
+\mdf@subsubtitleinneraboveskip@length=\skip95
+\mdf@subsubtitleinnerbelowskip@length=\skip96
+
+(c:/texlive/2022/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box81
+\mdf@footnotebox=\box82
+\mdf@splitbox@one=\box83
+\mdf@splitbox@two=\box84
+\mdf@splitbox@save=\box85
+\mdfsplitboxwidth=\skip97
+\mdfsplitboxtotalwidth=\skip98
+\mdfsplitboxheight=\skip99
+\mdfsplitboxdepth=\skip100
+\mdfsplitboxtotalheight=\skip101
+\mdfframetitleboxwidth=\skip102
+\mdfframetitleboxtotalwidth=\skip103
+\mdfframetitleboxheight=\skip104
+\mdfframetitleboxdepth=\skip105
+\mdfframetitleboxtotalheight=\skip106
+\mdffootnoteboxwidth=\skip107
+\mdffootnoteboxtotalwidth=\skip108
+\mdffootnoteboxheight=\skip109
+\mdffootnoteboxdepth=\skip110
+\mdffootnoteboxtotalheight=\skip111
+\mdftotallinewidth=\skip112
+\mdfboundingboxwidth=\skip113
+\mdfboundingboxtotalwidth=\skip114
+\mdfboundingboxheight=\skip115
+\mdfboundingboxdepth=\skip116
+\mdfboundingboxtotalheight=\skip117
+\mdf@freevspace@length=\skip118
+\mdf@horizontalwidthofbox@length=\skip119
+\mdf@verticalmarginwhole@length=\skip120
+\mdf@horizontalspaceofbox=\skip121
+\mdfsubtitleheight=\skip122
+\mdfsubsubtitleheight=\skip123
+\c@mdfcountframes=\count344
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count345
+\c@mdf@env@i=\count346
+\c@mdf@env@ii=\count347
+\c@mdf@zref@counter=\count348
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+\mylength=\skip124
+\myboxx=\box86
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen293
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box87
+\pgfnodeparttwobox=\box88
+\pgfnodepartthreebox=\box89
+\pgfnodepartfourbox=\box90
+\pgfnodeparttwentybox=\box91
+\pgfnodepartnineteenbox=\box92
+\pgfnodeparteighteenbox=\box93
+\pgfnodepartseventeenbox=\box94
+\pgfnodepartsixteenbox=\box95
+\pgfnodepartfifteenbox=\box96
+\pgfnodepartfourteenbox=\box97
+\pgfnodepartthirteenbox=\box98
+\pgfnodeparttwelvebox=\box99
+\pgfnodepartelevenbox=\box100
+\pgfnodeparttenbox=\box101
+\pgfnodepartninebox=\box102
+\pgfnodeparteightbox=\box103
+\pgfnodepartsevenbox=\box104
+\pgfnodepartsixbox=\box105
+\pgfnodepartfivebox=\box106
+)))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box107
+\pgf@layerboxsaved@background=\box108
+)
+(c:/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count349
+\mult@box=\box109
+\multicol@leftmargin=\dimen294
+\c@unbalance=\count350
+\c@collectmore=\count351
+\doublecol@number=\count352
+\multicoltolerance=\count353
+\multicolpretolerance=\count354
+\full@width=\dimen295
+\page@free=\dimen296
+\premulticols=\dimen297
+\postmulticols=\dimen298
+\multicolsep=\skip125
+\multicolbaselineskip=\skip126
+\partial@page=\box110
+\last@line=\box111
+\maxbalancingoverflow=\dimen299
+\mult@rightbox=\box112
+\mult@grightbox=\box113
+\mult@firstbox=\box114
+\mult@gfirstbox=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\@tempa=\box136
+\@tempa=\box137
+\@tempa=\box138
+\@tempa=\box139
+\@tempa=\box140
+\@tempa=\box141
+\@tempa=\box142
+\@tempa=\box143
+\@tempa=\box144
+\@tempa=\box145
+\@tempa=\box146
+\@tempa=\box147
+\@tempa=\box148
+\@tempa=\box149
+\@tempa=\box150
+\@tempa=\box151
+\c@minrows=\count355
+\c@columnbadness=\count356
+\c@finalcolumnbadness=\count357
+\last@try=\dimen300
+\multicolovershoot=\dimen301
+\multicolundershoot=\dimen302
+\mult@nat@firstbox=\box152
+\colbreak@box=\box153
+\mc@col@check@num=\count358
+)
+\c@tcb@cnt@caja=\count359
+
+(c:/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen303
+\c@nlinenum=\count360
+\TeXr@lab=\toks47
+)
+(c:/texlive/2022/texmf-dist/tex/latex/pgf-pie/pgf-pie.sty
+Package: pgf-pie 2022/06/14 v0.7 Some LaTeX macros for pie chart by using PGF/T
+ikz package.
+
+(c:/texlive/2022/texmf-dist/tex/latex/pgf-pie/tikzlibrarypie.code.tex
+(c:/texlive/2022/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+\pgfpie@angleEnd=\dimen304
+\pgfpie@explodeLength=\count361
+\pgfpie@colorLength=\count362
+\pgfpie@sliceLength=\count363
+))
+(c:/texlive/2022/texmf-dist/tex/latex/nicematrix/nicematrix.sty
+Package: nicematrix 2023/02/25 v6.15 Enhanced arrays with the help of PGF/TikZ
+\g__nicematrix_env_int=\count364
+\g__nicematrix_NiceMatrixBlock_int=\count365
+\l__nicematrix_note_in_caption_int=\count366
+\l__nicematrix_columns_width_dim=\dimen305
+\l__nicematrix_col_width_dim=\dimen306
+\g__nicematrix_row_total_int=\count367
+\g__nicematrix_col_total_int=\count368
+\g__nicematrix_last_row_node_int=\count369
+\l__nicematrix_key_nb_rows_int=\count370
+\g__nicematrix_blocks_wd_dim=\dimen307
+\g__nicematrix_blocks_ht_dim=\dimen308
+\g__nicematrix_blocks_dp_dim=\dimen309
+\l__nicematrix_width_dim=\dimen310
+\l__nicematrix_tabular_width_dim=\dimen311
+\l__nicematrix_rule_width_dim=\dimen312
+\l__nicematrix_old_iRow_int=\count371
+\l__nicematrix_old_jCol_int=\count372
+\g__nicematrix_total_X_weight_int=\count373
+\l__nicematrix_X_columns_dim=\dimen313
+\l__nicematrix_x_initial_dim=\dimen314
+\l__nicematrix_y_initial_dim=\dimen315
+\l__nicematrix_x_final_dim=\dimen316
+\l__nicematrix_y_final_dim=\dimen317
+\l__nicematrix_tmpc_dim=\dimen318
+\l__nicematrix_tmpd_dim=\dimen319
+\g__nicematrix_width_last_col_dim=\dimen320
+\g__nicematrix_width_first_col_dim=\dimen321
+\l__nicematrix_row_min_int=\count374
+\l__nicematrix_row_max_int=\count375
+\l__nicematrix_col_min_int=\count376
+\l__nicematrix_col_max_int=\count377
+\g__nicematrix_static_num_of_col_int=\count378
+\l__nicematrix_rounded_corners_dim=\dimen322
+\l__nicematrix_line_width_dim=\dimen323
+\g__nicematrix_block_box_int=\count379
+\l__nicematrix_submatrix_extra_height_dim=\dimen324
+\l__nicematrix_submatrix_left_xshift_dim=\dimen325
+\l__nicematrix_submatrix_right_xshift_dim=\dimen326
+\l__nicematrix_first_row_int=\count380
+\l__nicematrix_first_col_int=\count381
+\l__nicematrix_last_row_int=\count382
+\l__nicematrix_last_col_int=\count383
+\c@tabularnote=\count384
+\c@nicematrix_draft=\count385
+\l__nicematrix_cell_space_top_limit_dim=\dimen327
+\l__nicematrix_cell_space_bottom_limit_dim=\dimen328
+\l__nicematrix_xdots_inter_dim=\dimen329
+\l__nicematrix_xdots_shorten_start_dim=\dimen330
+\l__nicematrix_xdots_shorten_end_dim=\dimen331
+\l__nicematrix_xdots_radius_dim=\dimen332
+\l__nicematrix_notes_above_space_dim=\dimen333
+\l__nicematrix_left_margin_dim=\dimen334
+\l__nicematrix_right_margin_dim=\dimen335
+\l__nicematrix_extra_left_margin_dim=\dimen336
+\l__nicematrix_extra_right_margin_dim=\dimen337
+\c__nicematrix_max_l_dim=\dimen338
+\l__nicematrix_position_int=\count386
+\l__nicematrix_start_int=\count387
+\l__nicematrix_multiplicity_int=\count388
+\l__nicematrix_brace_yshift_dim=\dimen339
+)
+(c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen340
+\lightrulewidth=\dimen341
+\cmidrulewidth=\dimen342
+\belowrulesep=\dimen343
+\belowbottomsep=\dimen344
+\aboverulesep=\dimen345
+\abovetopsep=\dimen346
+\cmidrulesep=\dimen347
+\cmidrulekern=\dimen348
+\defaultaddspace=\dimen349
+\@cmidla=\count389
+\@cmidlb=\count390
+\@aboverulesep=\dimen350
+\@belowrulesep=\dimen351
+\@thisruleclass=\count391
+\@lastruleclass=\count392
+\@thisrulewidth=\dimen352
+)
+(c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip127
+\multirow@cntb=\count393
+\multirow@dima=\skip128
+\bigstrutjot=\dimen353
+)
+(c:/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(c:/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(c:/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip129
+\LTright=\skip130
+\LTpre=\skip131
+\LTpost=\skip132
+\LTchunksize=\count394
+\LTcapwidth=\dimen354
+\LT@head=\box154
+\LT@firsthead=\box155
+\LT@foot=\box156
+\LT@lastfoot=\box157
+\LT@gbox=\box158
+\LT@cols=\count395
+\LT@rows=\count396
+\c@LT@tables=\count397
+\c@LT@chunks=\count398
+\LT@p@ftn=\toks48
+)
+(c:/texlive/2022/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2022-09-25 v2.30 (Daniel Flipo)
+
+(c:/texlive/2022/texmf-dist/tex/generic/minifp/minifp.sty
+Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
+-based programing language.
+\MFP@loopctr=\count399
+)
+\c@DefaultLines=\count400
+\c@DefaultDepth=\count401
+\DefaultFindent=\dimen355
+\DefaultNindent=\dimen356
+\DefaultSlope=\dimen357
+\DiscardVskip=\dimen358
+
+Loading lettrine.cfg
+(c:/texlive/2022/texmf-dist/tex/latex/lettrine/lettrine.cfg)
+\L@lbox=\box159
+\L@tbox=\box160
+\c@L@lines=\count402
+\c@L@depth=\count403
+\L@Pindent=\dimen359
+\L@Findent=\dimen360
+\L@Nindent=\dimen361
+\L@lraise=\dimen362
+\L@first=\dimen363
+\L@next=\dimen364
+\L@slope=\dimen365
+\L@height=\dimen366
+\L@novskip=\dimen367
+\L@target@ht=\dimen368
+\L@target@dp=\dimen369
+\L@target@tht=\dimen370
+\LettrineWidth=\dimen371
+\LettrineHeight=\dimen372
+\LettrineDepth=\dimen373
+\Llist@everypar=\toks49
+) (./coffee4.sty)
+\c@fadcnt=\count404
+\shbox=\box161
+
+(c:/texlive/2022/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(c:/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count405
+\c@Blindtext=\count406
+\c@blind@countparstart=\count407
+\blind@countxx=\count408
+\blindtext@numBlindtext=\count409
+\blind@countyy=\count410
+\c@blindlist=\count411
+\c@blindlistlevel=\count412
+\c@blindlist@level=\count413
+\blind@listitem=\count414
+\c@blind@listcount=\count415
+\c@blind@levelcount=\count416
+\blind@mathformula=\count417
+\blind@Mathformula=\count418
+\c@blind@randomcount=\count419
+\c@blind@randommax=\count420
+\c@blind@pangramcount=\count421
+\c@blind@pangrammax=\count422
+)
+(c:/texlive/2022/texmf-dist/tex/latex/fancypar/fancypar.sty
+Package: fancypar 2021/04/17 v1.3 fancy paragraphs
+\textindent=\skip133
+\textindentright=\skip134
+\c@fancycount=\count423
+\linebox=\box162
+)
+(c:/texlive/2022/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box163
+\UL@hyphenbox=\box164
+\UL@skip=\skip135
+\UL@hook=\toks50
+\UL@height=\dimen374
+\UL@pe=\count424
+\UL@pixel=\dimen375
+\ULC@box=\box165
+Package: ulem 2019/11/18
+\ULdepth=\dimen376
+)
+(c:/texlive/2022/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarychains.code.tex
+File: tikzlibrarychains.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.t
+ex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2022/texmf-dist/tex/latex/roboto/roboto.sty
+Package: roboto 2022/09/10 (Bob Tennent) Supports Roboto fonts for all LaTeX en
+gines.
+
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(c:/texlive/2022/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+))
+(c:/texlive/2022/texmf-dist/tex/latex/contour/contour.sty
+Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
+\con@length=\skip136
+
+Loading configuration file `contour.cfg'.
+(c:/texlive/2022/texmf-dist/tex/latex/contour/contour.cfg
+File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
+)
+contour: Using driver file `pdftex.cnt'.
+(c:/texlive/2022/texmf-dist/tex/latex/contour/pdftex.cnt
+File: pdftex.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
+))
+(c:/texlive/2022/texmf-dist/tex/latex/background/background.sty
+Package: background 2014/03/04 v2.1 background material
+
+(c:/texlive/2022/texmf-dist/tex/latex/everypage/everypage.sty
+Package: everypage 2020/10/17 R2.0b Hooks to run on every page
+
+
+Package everypage Warning: Functionality similar to this package has recently
+(everypage)                been implemented in LaTeX. This package is now in
+(everypage)                legacy status.
+(everypage)                Please, don't use it in new documents and packages.
+
+
+Package everypage Warning: You appear to be running a version of LaTeX
+(everypage)                providing the new functionality.
+(everypage)                Doing the best to deliver the original `everypage`
+(everypage)                interface on top of it. Strict equivalence is
+(everypage)                not possible, breakage may occur.
+(everypage)                If truly needed, Use `everypage-1x` to force the
+(everypage)                loading of an older code base.
+
+) (c:/texlive/2022/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks51
+\AP@partial=\box166
+\AP@footins=\box167
+))
+(c:/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
+
+(c:/texlive/2022/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
+\SOUL@word=\toks52
+\SOUL@lasttoken=\toks53
+\SOUL@syllable=\toks54
+\SOUL@cmds=\toks55
+\SOUL@buffer=\toks56
+\SOUL@token=\toks57
+\SOUL@syllgoal=\dimen377
+\SOUL@syllwidth=\dimen378
+\SOUL@charkern=\dimen379
+\SOUL@hyphkern=\dimen380
+\SOUL@dimen=\dimen381
+\SOUL@dimeni=\dimen382
+\SOUL@minus=\count425
+\SOUL@comma=\count426
+\SOUL@apo=\count427
+\SOUL@grave=\count428
+\SOUL@spaceskip=\skip137
+\SOUL@ttwidth=\dimen383
+\SOUL@uldp=\dimen384
+\SOUL@ulht=\dimen385
+))
+(c:/texlive/2022/texmf-dist/tex/latex/soulpos/soulpos.sty
+Package: soulpos 2021/10/15 v1.2 Fancy underlining
+\ulp@subcnt=\count429
+\ulp@cnt=\count430
+\ulp@out=\write4
+\ulp@in=\read5
+\ulwidth=\dimen386
+) (./emerald.sty
+Package: emerald 2006/01/26 v1.0 LaTeX2e package which gives support for ECF (e
+merald city fontwerks) fonts
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.pathmorphing.code.tex
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.code.tex
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.t
+ex
+\pgfdecoratedcompleteddistance=\dimen387
+\pgfdecoratedremainingdistance=\dimen388
+\pgfdecoratedinputsegmentcompleteddistance=\dimen389
+\pgfdecoratedinputsegmentremainingdistance=\dimen390
+\pgf@decorate@distancetomove=\dimen391
+\pgf@decorate@repeatstate=\count431
+\pgfdecorationsegmentamplitude=\dimen392
+\pgfdecorationsegmentlength=\dimen393
+)
+\tikz@lib@dec@box=\box168
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+orations.pathmorphing.code.tex))
+\c@tcb@cnt@mytheo=\count432
+
+(c:/texlive/2022/texmf-dist/tex/latex/qrcode/qrcode.sty
+Package: qrcode 2015/01/08 v1.51 QR code generation
+\c@qr@i=\count433
+\c@qr@j=\count434
+\qr@a=\count435
+\qr@b=\count436
+\qr@c=\count437
+\qr@for@depth=\count438
+\qr@for@maxdepth=\count439
+\qr@for@start=\count440
+\qr@for@end=\count441
+\qr@for@step=\count442
+\qr@newforcount=\count443
+\qr@newforcount=\count444
+\qr@desiredheight=\skip138
+\qr@modulesize=\skip139
+\qr@minipagewidth=\skip140
+\c@maski=\count445
+\c@maskj=\count446
+\c@totalones=\count447
+\c@penaltyi=\count448
+\c@penaltyii=\count449
+\c@penaltyiii=\count450
+\c@penaltyiv=\count451
+\c@qr@hexchars=\count452
+\qr@newforcount=\count453
+\c@qr@divisionsremaining=\count454
+)
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(c:/texlive/2022/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
+File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking po
+sitions in a document
+\l__sn_x_dim=\dimen394
+\l__sn_y_dim=\dimen395
+\l__sn_xa_dim=\dimen396
+\l__sn_ya_dim=\dimen397
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarymindmap.code.tex
+File: tikzlibrarymindmap.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip141
+\cftbeforetoctitleskip=\skip142
+\cftaftertoctitleskip=\skip143
+\cftbeforepartskip=\skip144
+\cftpartnumwidth=\skip145
+\cftpartindent=\skip146
+\cftbeforesecskip=\skip147
+\cftsecindent=\skip148
+\cftsecnumwidth=\skip149
+\cftbeforesubsecskip=\skip150
+\cftsubsecindent=\skip151
+\cftsubsecnumwidth=\skip152
+\cftbeforesubsubsecskip=\skip153
+\cftsubsubsecindent=\skip154
+\cftsubsubsecnumwidth=\skip155
+\cftbeforeparaskip=\skip156
+\cftparaindent=\skip157
+\cftparanumwidth=\skip158
+\cftbeforesubparaskip=\skip159
+\cftsubparaindent=\skip160
+\cftsubparanumwidth=\skip161
+\cftbeforeloftitleskip=\skip162
+\cftafterloftitleskip=\skip163
+\cftbeforefigskip=\skip164
+\cftfigindent=\skip165
+\cftfignumwidth=\skip166
+\c@lofdepth=\count455
+\c@lotdepth=\count456
+\cftbeforelottitleskip=\skip167
+\cftafterlottitleskip=\skip168
+\cftbeforetabskip=\skip169
+\cfttabindent=\skip170
+\cfttabnumwidth=\skip171
+)
+\c@seccntr=\count457
+)
+(c:/Users/user/Desktop/eBook/source/embed_video.tex
+(c:/texlive/2022/texmf-dist/tex/latex/media9/pdfbase.sty
+Package: pdfbase 2022/08/04 v0.55 driver independent access to low-level PDF fe
+atures
+\g_pbs_page_int=\count458
+\g_pbs_oc_int=\count459
+))
+(c:/texlive/2022/texmf-dist/tex/latex/doclicense/doclicense.sty
+Package: doclicense 2022/05/18 v3.2.0 Support for putting documents under a lic
+ense
+
+(c:/texlive/2022/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+
+(c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count460
+\calc@Bcount=\count461
+\calc@Adimen=\dimen398
+\calc@Bdimen=\dimen399
+\calc@Askip=\skip172
+\calc@Bskip=\skip173
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count462
+\calc@Cskip=\skip174
+)
+(c:/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+))
+(c:/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count463
+\decimalpart=\count464
+)
+Package: xstring 2023/01/14 v1.85 String manipulations (CT)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/hyperxmp/hyperxmp.sty
+Package: hyperxmp 2022/10/16 v5.11 Store hyperref metadata in XMP format
+\hyxmp@aep@toks=\toks58
+\@hyxmp@count=\count465
+
+(c:/texlive/2022/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+))
+\doclicense@hsize=\skip175
+
+(c:/texlive/2022/texmf-dist/tex/latex/doclicense/doclicense-english.ldf
+File: doclicense-english.ldf 
+))
+(c:/texlive/2022/texmf-dist/tex/latex/ccicons/ccicons.sty
+Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
+)
+(c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+\csq@reset=\count466
+\csq@gtype=\count467
+\csq@glevel=\count468
+\csq@qlevel=\count469
+\csq@maxlvl=\count470
+\csq@tshold=\count471
+\csq@ltx@everypar=\toks59
+
+(c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 19
+.
+
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+) (./eBook.aux
+<Reading QR code for "https://github.com/AnMnv/eBook" at level 3-Q from aux fil
+e.>
+
+LaTeX Warning: Label `fig:First' multiply defined.
+
+)
+\openout1 = `eBook.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 19.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
+9.
+ (c:/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(42.67912pt, 543.16313pt, 28.45274pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=543.16313pt
+* \textheight=709.61174pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-66.59087pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \th on input line 19.
+(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count472
+\scratchdimen=\dimen400
+\scratchbox=\box169
+\nofMPsegments=\count473
+\nofMParguments=\count474
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count475
+\MPscratchDim=\dimen401
+\MPnumerator=\count476
+\makeMPintoPDFobject=\count477
+\everyMPtoPDFconversion=\toks61
+) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 19.
+
+(./eBook.out) (./eBook.out)
+\@outlinefile=\write5
+\openout5 = `eBook.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(c:/texlive/2022/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count478
+
+(c:/texlive/2022/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+
+
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+
+
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+\c@mv@tabular=\count479
+\c@mv@boldtabular=\count480
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(0.0pt, 614.295pt, 0.0pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=614.295pt
+* \textheight=650.43001pt
+* \oddsidemargin=-72.26999pt
+* \evensidemargin=-72.26999pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 31.
+<C:/Users/user/Desktop/eBook/images/day1.png, id=410, 5179.35pt x 2168.1pt>
+File: C:/Users/user/Desktop/eBook/images/day1.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/day1.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/day1.png  used on i
+nput line 34.
+(pdftex.def)             Requested size: 614.295pt x 257.11719pt.
+LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input l
+ine 37.
+
+(c:/texlive/2022/texmf-dist/tex/latex/roboto/T1Roboto-LF.fd
+File: T1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for T1/Roboto-LF.
+)
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' aliased to
+(Font)              `T1/Roboto-LF/regular/it' on input line 37.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/it' will be
+(Font)              scaled to size 12.0pt on input line 37.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/it' aliased to
+(Font)              `T1/Roboto-LF/bold/it' on input line 37.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/it' will be
+(Font)              scaled to size 12.0pt on input line 37.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/it' aliased to
+(Font)              `T1/Roboto-LF/bold/it' on input line 37.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/it' will be
+(Font)              scaled to size 6.0pt on input line 37.
+ [1
+
+\openout4 = `eBook.upa'.
+
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <c:/Users/user/D
+esktop/eBook/images/day1.png>]
+<C:/Users/user/Desktop/eBook/images/bmc_qr.png, id=420, 501.875pt x 501.875pt>
+File: C:/Users/user/Desktop/eBook/images/bmc_qr.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/bmc_qr.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/bmc_qr.png  used on
+ input line 55.
+(pdftex.def)             Requested size: 128.0374pt x 128.03386pt.
+
+
+
+<QR code requested for "https://github.com/AnMnv/eBook" in version 0-M.>
+<Error-correction level increased from M to Q at no cost.>
+
+<Copying the QR code for "https://github.com/AnMnv/eBook" in version 3-Q as pre
+viously calculated.>
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \clearpage
+                [1
+
+ <c:/Users/user/Desktop/eBook/images/bmc_qr.png>]
+(./eBook.toc [2
+
+] [3]
+Overfull \hbox (1.59445pt too wide) detected at line 91
+\T1/phv/b/n/17.28 10 
+ []
+
+)
+\tf@toc=\write6
+\openout6 = `eBook.toc'.
+
+ [4] (c:/Users/user/Desktop/eBook/source/C1.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 11
+.
+(c:/texlive/2022/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 12.0pt on input line 11.
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 10.0pt on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 29.
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 51.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 51.
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+
+ []
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 55.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 85.
+
+[5
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 156.
+
+[6]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 212.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 240.
+
+\tcb@out=\write7
+\openout7 = `eBook-listing-1.tex'.
+
+(./eBook-listing-1.md5)
+
+Package tcolorbox Warning: System call with restricted shell escape may fail on
+ input line 249.
+
+runsystem(pdflatex  eBook-listing-1)...disabled (restricted).
+
+<eBook-listing-1.pdf, id=643, page=1, 35.83287pt x 26.25008pt>
+File: eBook-listing-1.pdf Graphic file (type pdf)
+<use eBook-listing-1.pdf, page 1>
+Package pdftex.def Info: eBook-listing-1.pdf , page1 used on input line 249.
+(pdftex.def)             Requested size: 89.33675pt x 65.45357pt.
+
+Overfull \hbox (39.37784pt too wide) in paragraph at lines 249--249
+ [] 
+ []
+
+[7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 271.
+
+\openout7 = `eBook-listing-2.tex'.
+
+(./eBook-listing-2.md5)
+
+Package tcolorbox Warning: System call with restricted shell escape may fail on
+ input line 295.
+
+runsystem(pdflatex  eBook-listing-2)...disabled (restricted).
+
+<eBook-listing-2.pdf, id=683, page=1, 234.99995pt x 98.39961pt>
+File: eBook-listing-2.pdf Graphic file (type pdf)
+<use eBook-listing-2.pdf, page 1>
+Package pdftex.def Info: eBook-listing-2.pdf , page1 used on input line 295.
+(pdftex.def)             Requested size: 78.47298pt x 32.85934pt.
+
+Overfull \hbox (33.94594pt too wide) in paragraph at lines 295--295
+ [] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 322.
+
+\openout7 = `eBook-listing-3.tex'.
+
+(./eBook-listing-3.md5)
+
+Package tcolorbox Warning: System call with restricted shell escape may fail on
+ input line 335.
+
+runsystem(pdflatex  eBook-listing-3)...disabled (restricted).
+
+<eBook-listing-3.pdf, id=685, page=1, 106.8542pt x 36.64992pt>
+File: eBook-listing-3.pdf Graphic file (type pdf)
+<use eBook-listing-3.pdf, page 1>
+Package pdftex.def Info: eBook-listing-3.pdf , page1 used on input line 335.
+(pdftex.def)             Requested size: 78.47298pt x 26.91582pt.
+
+Overfull \hbox (33.94594pt too wide) in paragraph at lines 335--335
+ [] 
+ []
+
+) [8 <./eBook-listing-1.pdf> <./eBook-listing-2.pdf> <./eBook-listing-3.pdf>]
+(c:/Users/user/Desktop/eBook/source/C2.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmyboxg' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\backslash' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
+
+\openout7 = `eBook-listing-4.tex'.
+
+(./eBook-listing-4.md5)
+
+Package tcolorbox Warning: System call with restricted shell escape may fail on
+ input line 22.
+
+runsystem(pdflatex  eBook-listing-4)...disabled (restricted).
+
+<eBook-listing-4.pdf, id=772, page=1, 364.99962pt x 274.70126pt>
+File: eBook-listing-4.pdf Graphic file (type pdf)
+<use eBook-listing-4.pdf, page 1>
+Package pdftex.def Info: eBook-listing-4.pdf , page1 used on input line 22.
+(pdftex.def)             Requested size: 89.33675pt x 67.23323pt.
+
+Overfull \hbox (3.3237pt too wide) in paragraph at lines 22--22
+ [] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 49.
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 54.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 24.88pt on input line 54.
+contour: Using real outline for `boxed' on input line 54.
+contour: Using real outline for `boxed' on input line 54.
+contour: Using real outline for `boxed' on input line 54.
+[9
+
+ <./eBook-listing-4.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 75.
+
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 6.0pt on input line 79.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 104.
+
+\openout7 = `eBook-listing-5.tex'.
+
+(./eBook-listing-5.md5)
+
+Package tcolorbox Warning: System call with restricted shell escape may fail on
+ input line 121.
+
+runsystem(pdflatex  eBook-listing-5)...disabled (restricted).
+
+<eBook-listing-5.pdf, id=811, page=1, 109.99995pt x 24.40016pt>
+File: eBook-listing-5.pdf Graphic file (type pdf)
+<use eBook-listing-5.pdf, page 1>
+Package pdftex.def Info: eBook-listing-5.pdf , page1 used on input line 121.
+(pdftex.def)             Requested size: 78.47298pt x 17.40799pt.
+
+Overfull \hbox (2.23724pt too wide) in paragraph at lines 121--121
+ [] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 147.
+
+\openout7 = `eBook-listing-6.tex'.
+
+(./eBook-listing-6.md5)
+
+Package tcolorbox Warning: System call with restricted shell escape may fail on
+ input line 177.
+
+runsystem(pdflatex  eBook-listing-6)...disabled (restricted).
+
+<eBook-listing-6.pdf, id=813, page=1, 284.52798pt x 84.6904pt>
+File: eBook-listing-6.pdf Graphic file (type pdf)
+<use eBook-listing-6.pdf, page 1>
+Package pdftex.def Info: eBook-listing-6.pdf , page1 used on input line 177.
+(pdftex.def)             Requested size: 78.47298pt x 23.35776pt.
+
+Overfull \hbox (33.94594pt too wide) in paragraph at lines 177--177
+ [] 
+ []
+
+[10
+
+ <./eBook-listing-5.pdf> <./eBook-listing-6.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 202.
+
+<C:/Users/user/Desktop/eBook/images/2.5.png, id=891, 1276.77pt x 937.25156pt>
+File: C:/Users/user/Desktop/eBook/images/2.5.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/2.5.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/2.5.png  used on in
+put line 206.
+(pdftex.def)             Requested size: 195.53441pt x 143.52773pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--206
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmyboxg' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\backslash' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+<C:/Users/user/Desktop/eBook/images/2.7.png, id=892, 516.7305pt x 155.98276pt>
+File: C:/Users/user/Desktop/eBook/images/2.7.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/2.7.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/2.7.png  used on in
+put line 235.
+(pdftex.def)             Requested size: 195.53441pt x 59.02414pt.
+) [11
+
+ <c:/Users/user/Desktop/eBook/images/2.5.png (PNG copy)> <c:/Users/user/Desktop
+/eBook/images/2.7.png (PNG copy)>]
+(c:/Users/user/Desktop/eBook/source/C3.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmyboxg' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmyboxg' on input line 2.
+
+<C:/Users/user/Desktop/eBook/images/3.1.png, id=925, 563.10374pt x 109.00725pt>
+
+File: C:/Users/user/Desktop/eBook/images/3.1.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/3.1.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/3.1.png  used on in
+put line 6.
+(pdftex.def)             Requested size: 195.53441pt x 37.85204pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 38.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12
+
+ <c:/Users/user/Desktop/eBook/images/3.1.png>] [13]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 102.
+
+<C:/Users/user/Desktop/eBook/images/3.3.png, id=970, 1048.66782pt x 191.21437pt
+>
+File: C:/Users/user/Desktop/eBook/images/3.3.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/3.3.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/3.3.png  used on in
+put line 106.
+(pdftex.def)             Requested size: 195.53441pt x 35.65128pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmyboxg' on input line 143.
+
+<C:/Users/user/Desktop/eBook/images/3.4.png, id=972, 1284.8pt x 274.02374pt>
+File: C:/Users/user/Desktop/eBook/images/3.4.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/3.4.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/3.4.png  used on in
+put line 147.
+(pdftex.def)             Requested size: 195.53441pt x 41.6997pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 176.
+
+<C:/Users/user/Desktop/eBook/images/3.5.pdf, id=973, 597.50829pt x 273.91635pt>
+
+File: C:/Users/user/Desktop/eBook/images/3.5.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/3.5.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/3.5.pdf  used on in
+put line 182.
+(pdftex.def)             Requested size: 195.53441pt x 89.63615pt.
+[14
+
+ <c:/Users/user/Desktop/eBook/images/3.3.png> <c:/Users/user/Desktop/eBook/imag
+es/3.4.png>]) [15 <c:/Users/user/Desktop/eBook/images/3.5.pdf>]
+(c:/Users/user/Desktop/eBook/source/C4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+
+Overfull \hbox (3.63487pt too wide) in paragraph at lines 11--11
+[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 33.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 72.
+
+Package lettrine.sty Info: Targeted height = 22.92801pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 23.66824pt (S);
+(lettrine.sty)             reported on input line 77.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 99.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 99.
+
+<C:/Users/user/Desktop/eBook/images/4.5.png, id=1087, 404.10976pt x 52.998pt>
+File: C:/Users/user/Desktop/eBook/images/4.5.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/4.5.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.5.png  used on in
+put line 106.
+(pdftex.def)             Requested size: 195.53441pt x 25.64415pt.
+
+Underfull \hbox (badness 1838) in paragraph at lines 106--106
+\T1/phv/m/sl/12 a com-mand was also cre-ated to
+ []
+
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 8.0pt on input line 111.
+[16
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 134.
+
+<example-image-a.pdf, id=1138, 321.2pt x 240.9pt>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 143.
+(pdftex.def)             Requested size: 32.12187pt x 24.0914pt.
+[17 <c:/Users/user/Desktop/eBook/images/4.5.png> <c:/texlive/2022/texmf-dist/te
+x/latex/mwe/example-image-a.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 167.
+
+<C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf, id=1182, 227.62239pt x 398.338
+2pt>
+File: C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf  used o
+n input line 171.
+(pdftex.def)             Requested size: 195.53441pt x 342.19948pt.
+[18
+
+ <c:/Users/user/Desktop/eBook/images/4.5/4.5.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 245.
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 251.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 251.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 286.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 331.
+
+[19
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmybox' on input line 377.
+
+\g__nicematrix_max_cell_width_dim=\dimen402
+\c@iRow=\count481
+\c@jCol=\count482
+\l__nicematrix_cell_box=\box170
+\l__nicematrix_the_array_box=\box171
+\l__nicematrix_left_delim_dim=\dimen403
+\l__nicematrix_right_delim_dim=\dimen404
+\g__nicematrix_dp_row_zero_dim=\dimen405
+\g__nicematrix_ht_row_zero_dim=\dimen406
+\g__nicematrix_ht_row_one_dim=\dimen407
+\g__nicematrix_dp_ante_last_row_dim=\dimen408
+\g__nicematrix_ht_last_row_dim=\dimen409
+\g__nicematrix_dp_last_row_dim=\dimen410
+\g__nicematrix_ddots_int=\count483
+\g__nicematrix_iddots_int=\count484
+\g__nicematrix_delta_x_one_dim=\dimen411
+\g__nicematrix_delta_y_one_dim=\dimen412
+\g__nicematrix_delta_x_two_dim=\dimen413
+\g__nicematrix_delta_y_two_dim=\dimen414
+\l__nicematrix_initial_i_int=\count485
+\l__nicematrix_initial_j_int=\count486
+\l__nicematrix_final_i_int=\count487
+\l__nicematrix_final_j_int=\count488
+\l__nicematrix_end_int=\count489
+\l__nicematrix_local_start_int=\count490
+\l__nicematrix_local_end_int=\count491
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 413.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmybox' on input line 413.
+
+<C:/Users/user/Desktop/eBook/images/4.11.png, id=1306, 797.98125pt x 794.2172pt
+>
+File: C:/Users/user/Desktop/eBook/images/4.11.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/4.11.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.11.png  used on i
+nput line 416.
+(pdftex.def)             Requested size: 195.53441pt x 194.60309pt.
+[20]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 455.
+
+
+Overfull \hbox (3.13591pt too wide) in paragraph at lines 465--465
+[]|\T1/phv/m/n/12 Group1| 
+ []
+
+
+Overfull \hbox (3.13591pt too wide) in paragraph at lines 465--465
+[]|\T1/phv/m/n/12 Group2| 
+ []
+
+
+Overfull \hbox (3.13591pt too wide) in paragraph at lines 465--465
+[]|\T1/phv/m/n/12 Group3| 
+ []
+
+
+Overfull \hbox (3.13591pt too wide) in paragraph at lines 465--465
+[]|\T1/phv/m/n/12 Group4| 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 498.
+
+[21 <c:/Users/user/Desktop/eBook/images/4.11.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 543.
+
+LaTeX Font Info:    Trying to load font information for T1+fau on input line 54
+8.
+LaTeX Font Info:    No file T1fau.fd. on input line 548.
+
+LaTeX Font Warning: Font shape `T1/fau/m/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 548.
+
+[22]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 588.
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
+(Font)              `T1/Roboto-LF/regular/n' on input line 627.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 627.
+[23]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 703.
+
+<C:/Users/user/Desktop/eBook/images/4.16.png, id=1462, 1033.61156pt x 646.66594
+pt>
+File: C:/Users/user/Desktop/eBook/images/4.16.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/4.16.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.16.png  used on i
+nput line 706.
+(pdftex.def)             Requested size: 195.53441pt x 122.33496pt.
+) [24] [25 <c:/Users/user/Desktop/eBook/images/4.16.png (PNG copy)>]
+(c:/Users/user/Desktop/eBook/source/C5.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 12.
+(pdftex.def)             Requested size: 29.32825pt x 29.32579pt.
+
+Overfull \hbox (3.79495pt too wide) in paragraph at lines 12--12
+[][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 36.
+
+<C:/Users/user/Desktop/eBook/images/5.2.png, id=1577, 377.15906pt x 237.13594pt
+>
+File: C:/Users/user/Desktop/eBook/images/5.2.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/5.2.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.2.png  used on in
+put line 41.
+(pdftex.def)             Requested size: 195.53441pt x 122.93869pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmybox' on input line 69.
+
+<example-image-a.png, id=1578, 401.5pt x 301.125pt>
+File: example-image-a.png Graphic file (type png)
+<use example-image-a.png>
+Package pdftex.def Info: example-image-a.png  used on input line 81.
+(pdftex.def)             Requested size: 85.35826pt x 64.01923pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 108.
+
+
+Package subcaption Warning: `subfigure' is treated as `subtable'
+(subcaption)                 on input line 127.
+
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 127.
+(pdftex.def)             Requested size: 43.99492pt x 32.99428pt.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 127.
+
+Package subcaption Warning: `subfigure' is treated as `subtable'
+(subcaption)                 on input line 127.
+
+<example-image-b.pdf, id=1579, 321.2pt x 240.9pt>
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Package pdftex.def Info: example-image-b.pdf  used on input line 127.
+(pdftex.def)             Requested size: 43.99492pt x 32.99428pt.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 127.
+[26
+
+ <c:/Users/user/Desktop/eBook/images/5.2.png> <c:/texlive/2022/texmf-dist/tex/l
+atex/mwe/example-image-a.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 163.
+
+<C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf, id=1627, 597.50829pt x 845.047
+1pt>
+File: C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf  used o
+n input line 167.
+(pdftex.def)             Requested size: 215.08904pt x 304.19093pt.
+
+Overfull \hbox (19.55463pt too wide) in paragraph at lines 167--167
+[][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 211.
+
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 230.
+(pdftex.def)             Requested size: 87.98988pt x 65.99222pt.
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Package pdftex.def Info: example-image-b.pdf  used on input line 230.
+(pdftex.def)             Requested size: 87.98988pt x 65.99222pt.
+[27 <c:/texlive/2022/texmf-dist/tex/latex/mwe/example-image-b.pdf> <c:/Users/us
+er/Desktop/eBook/images/5.5/5.5.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 267.
+
+<C:/Users/user/Desktop/eBook/images/5.7.png, id=1698, 500.46976pt x 494.44725pt
+>
+File: C:/Users/user/Desktop/eBook/images/5.7.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/5.7.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.7.png  used on in
+put line 271.
+(pdftex.def)             Requested size: 195.53441pt x 193.1807pt.
+[28 <c:/Users/user/Desktop/eBook/images/5.7.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 306.
+
+<C:/Users/user/Desktop/eBook/images/5.8.png, id=1754, 425.1885pt x 652.839pt>
+File: C:/Users/user/Desktop/eBook/images/5.8.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/5.8.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.8.png  used on in
+put line 310.
+(pdftex.def)             Requested size: 195.53441pt x 300.22989pt.
+) [29
+
+ <c:/Users/user/Desktop/eBook/images/5.8.png>]
+(c:/Users/user/Desktop/eBook/source/C6.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 39.
+
+<C:/Users/user/Desktop/eBook/images/6.2.png, id=1776, 956.07187pt x 523.9575pt>
+
+File: C:/Users/user/Desktop/eBook/images/6.2.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/6.2.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.2.png  used on in
+put line 43.
+(pdftex.def)             Requested size: 175.97977pt x 96.44292pt.
+[30
+
+ <c:/Users/user/Desktop/eBook/images/6.2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 130.
+
+<C:/Users/user/Desktop/eBook/images/6.5.png, id=1829, 1178.90437pt x 881.54344p
+t>
+File: C:/Users/user/Desktop/eBook/images/6.5.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/6.5.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.5.png  used on in
+put line 134.
+(pdftex.def)             Requested size: 175.97977pt x 131.58014pt.
+[31 <c:/Users/user/Desktop/eBook/images/6.5.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 158.
+
+<C:/Users/user/Desktop/eBook/images/6.4.png, id=1888, 1150.2975pt x 633.567pt>
+File: C:/Users/user/Desktop/eBook/images/6.4.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/6.4.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.4.png  used on in
+put line 162.
+(pdftex.def)             Requested size: 175.97977pt x 96.92577pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 195.
+
+<C:/Users/user/Desktop/eBook/images/6.6.1.png, id=1889, 1868.48062pt x 742.2731
+3pt>
+File: C:/Users/user/Desktop/eBook/images/6.6.1.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/6.6.1.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.6.1.png  used on 
+input line 209.
+(pdftex.def)             Requested size: 195.53441pt x 77.6748pt.
+<C:/Users/user/Desktop/eBook/images/6.6.2.png, id=1890, 1869.23344pt x 630.1040
+6pt>
+File: C:/Users/user/Desktop/eBook/images/6.6.2.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/6.6.2.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.6.2.png  used on 
+input line 209.
+(pdftex.def)             Requested size: 195.53441pt x 65.90808pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]\U/pzd/m/n/12 . F 9 b `
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 234.
+
+\openout7 = `eBook-listing-7.tex'.
+
+(./eBook-listing-7.md5)
+
+Package tcolorbox Warning: System call with restricted shell escape may fail on
+ input line 254.
+
+runsystem(pdflatex  eBook-listing-7)...disabled (restricted).
+
+<eBook-listing-7.pdf, id=1892, page=1, 344.99991pt x 88.94429pt>
+File: eBook-listing-7.pdf Graphic file (type pdf)
+<use eBook-listing-7.pdf, page 1>
+Package pdftex.def Info: eBook-listing-7.pdf , page1 used on input line 254.
+(pdftex.def)             Requested size: 89.33675pt x 23.03131pt.
+
+Overfull \hbox (3.3237pt too wide) in paragraph at lines 254--254
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [32
+
+ <c:/Users/user/Desktop/eBook/images/6.4.png> <c:/Users/user/Desktop/eBook/imag
+es/6.6.1.png (PNG copy)> <c:/Users/user/Desktop/eBook/images/6.6.2.png (PNG cop
+y)>] [33 <./eBook-listing-7.pdf>]
+(c:/Users/user/Desktop/eBook/source/C7.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+
+Overfull \hbox (10.40546pt too wide) in paragraph at lines 14--14
+[][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 39.
+
+[34
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 77.
+
+<C:/Users/user/Desktop/eBook/images/7.3.pdf, id=2006, 180.58066pt x 227.00508pt
+>
+File: C:/Users/user/Desktop/eBook/images/7.3.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/7.3.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/7.3.pdf  used on in
+put line 81.
+(pdftex.def)             Requested size: 195.53441pt x 245.80263pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 118.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 161.
+
+<C:/Users/user/Desktop/eBook/images/7.5.png, id=2007, 529.22719pt x 441.14813pt
+>
+File: C:/Users/user/Desktop/eBook/images/7.5.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/7.5.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/7.5.png  used on in
+put line 165.
+(pdftex.def)             Requested size: 195.53441pt x 162.99338pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 209.
+
+<C:/Users/user/Desktop/eBook/images/7.6.png, id=2008, 485.4135pt x 622.12425pt>
+
+File: C:/Users/user/Desktop/eBook/images/7.6.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/7.6.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/7.6.png  used on in
+put line 213.
+(pdftex.def)             Requested size: 166.20543pt x 213.00981pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35 <c:/Users/user/Desktop/eBook/images/7.3.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 237.
+
+
+
+<QR code requested for "https://github.com/AnMnv/eBook" in version 0-M.>
+<Error-correction level increased from M to Q at no cost.>
+
+<Copying the QR code for "https://github.com/AnMnv/eBook" in version 3-Q as pre
+viously calculated.>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 278.
+
+
+
+<QR code requested for "https://github.com/AnMnv/eBook" in version 0-M.>
+<Error-correction level increased from M to Q at no cost.>
+
+<Copying the QR code for "https://github.com/AnMnv/eBook" in version 3-Q as pre
+viously calculated.>
+[36 <c:/Users/user/Desktop/eBook/images/7.5.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37 <c:/Users/user/Desktop/eBook/images/7.6.png (PNG copy)>] [38]
+Overfull \hbox (11.05647pt too wide) in paragraph at lines 370--370
+[][] 
+ []
+
+[39
+
+]
+Overfull \hbox (5.70456pt too wide) in paragraph at lines 444--444
+[][] 
+ []
+
+) [40
+
+] (c:/Users/user/Desktop/eBook/source/C8.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmybox' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 35.
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 40.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 6.0pt on input line 40.
+[41
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 59.
+
+
+Overfull \hbox (7.17938pt too wide) in paragraph at lines 69--69
+[][]\T1/phv/m/n/12 fill=green!75!blue!50!white,draw=black 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 96.
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 103--103
+[][][][][][][]
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 103--103
+[][][][][][]
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 103--103
+[][][][][][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 125.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42
+
+] [43]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xmyboxg' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\backslash' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 188.
+
+) [44
+
+] (c:/Users/user/Desktop/eBook/source/C9.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 38.
+
+<C:/Users/user/Desktop/eBook/images/9.3.png, id=2445, 713.66624pt x 355.3275pt>
+
+File: C:/Users/user/Desktop/eBook/images/9.3.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/9.3.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.3.png  used on in
+put line 42.
+(pdftex.def)             Requested size: 195.53441pt x 97.3548pt.
+[45
+
+ <c:/Users/user/Desktop/eBook/images/9.3.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 75.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\fadingtext' on input line 75.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+
+ []
+
+
+Overfull \hbox (12.31981pt too wide) in paragraph at lines 83--83
+ [] 
+ []
+
+[46
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 146.
+
+<C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf, id=2561, 597.50829pt x 845.047
+1pt>
+File: C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf  used o
+n input line 150.
+(pdftex.def)             Requested size: 175.97977pt x 248.88701pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 174.
+
+<C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf, id=2562, 614.295pt x 794.97pt>
+
+File: C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf  used o
+n input line 178.
+(pdftex.def)             Requested size: 175.97977pt x 227.7333pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 221.
+
+<C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf, id=2563, 115.0719pt x 36.135pt
+>
+File: C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf  used o
+n input line 225.
+(pdftex.def)             Requested size: 175.97977pt x 55.26538pt.
+[47
+
+ <c:/Users/user/Desktop/eBook/images/9.4/9.4.pdf> <c:/Users/user/Desktop/eBook/
+images/9.5/9.5.pdf>] [48 <c:/Users/user/Desktop/eBook/images/9.6/9.6.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 250.
+
+<C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf, id=2643, 243.39531pt x 71.1317
+4pt>
+File: C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf Graphic file (type pdf)
+<use C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf  used o
+n input line 254.
+(pdftex.def)             Requested size: 175.97977pt x 51.4297pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 317.
+
+<C:/Users/user/Desktop/eBook/images/lobsters_example-1.png, id=2644, 614.295pt 
+x 794.97pt>
+File: C:/Users/user/Desktop/eBook/images/lobsters_example-1.png Graphic file (t
+ype png)
+<use C:/Users/user/Desktop/eBook/images/lobsters_example-1.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/lobsters_example-1.
+png  used on input line 322.
+(pdftex.def)             Requested size: 234.64069pt x 303.65654pt.
+<C:/Users/user/Desktop/eBook/images/lobsters_example-2.png, id=2645, 614.295pt 
+x 794.97pt>
+File: C:/Users/user/Desktop/eBook/images/lobsters_example-2.png Graphic file (t
+ype png)
+<use C:/Users/user/Desktop/eBook/images/lobsters_example-2.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/lobsters_example-2.
+png  used on input line 322.
+(pdftex.def)             Requested size: 234.64069pt x 303.65654pt.
+
+Overfull \hbox (39.10628pt too wide) in paragraph at lines 322--322
+[][]
+ []
+
+
+Overfull \hbox (39.10628pt too wide) in paragraph at lines 322--322
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+\T1/phv/m/n/12 Origins of the pack-age [][]https://github.com/bryce-
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 352--353
+\T1/phv/m/n/12 However, to print lob-sters put [] folder and
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 357.
+
+<C:/Users/user/Desktop/eBook/images/9.9.png, id=2648, 800.39024pt x 601.0455pt>
+
+File: C:/Users/user/Desktop/eBook/images/9.9.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/9.9.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.9.png  used on in
+put line 361.
+(pdftex.def)             Requested size: 195.53441pt x 146.83096pt.
+[49 <c:/Users/user/Desktop/eBook/images/9.7/9.7.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 385.
+
+<C:/Users/user/Desktop/eBook/images/9.10.png, id=2734, 782.925pt x 691.83469pt>
+
+File: C:/Users/user/Desktop/eBook/images/9.10.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/9.10.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.10.png  used on i
+nput line 389.
+(pdftex.def)             Requested size: 195.53441pt x 172.77878pt.
+[50 <c:/Users/user/Desktop/eBook/images/lobsters_example-1.png> <c:/Users/user/
+Desktop/eBook/images/lobsters_example-2.png>]) [51 <c:/Users/user/Desktop/eBook
+/images/9.9.png> <c:/Users/user/Desktop/eBook/images/9.10.png (PNG copy)>]
+(c:/Users/user/Desktop/eBook/source/C10.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hll' on input line 3.
+
+<<C:/Users/user/Desktop/eBook/images/10.1.mp4>>
+<C:/Users/user/Desktop/eBook/images/10.1.png, id=2807, 720.291pt x 407.72325pt>
+
+File: C:/Users/user/Desktop/eBook/images/10.1.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/10.1.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/10.1.png  used on i
+nput line 7.
+(pdftex.def)             Requested size: 195.53441pt x 110.68399pt.
+ <c:/Users/user/Desktop/eBook/images/10.1.png (PNG copy)>
+File: C:/Users/user/Desktop/eBook/images/10.1.png Graphic file (type png)
+<use C:/Users/user/Desktop/eBook/images/10.1.png>
+Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/10.1.png  used on i
+nput line 7.
+(pdftex.def)             Requested size: 195.53441pt x 110.68399pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [52
+
+]
+
+LaTeX Warning: Text page 53 contains only floats.
+
+(c:/texlive/2022/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+)
+(c:/texlive/2022/texmf-dist/tex/generic/stringenc/se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+) [53]
+(./eBook.aux
+<Reading QR code for "https://github.com/AnMnv/eBook" at level 3-Q from aux fil
+e.>
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `eBook.out' has not changed.
+(rerunfilecheck)             Checksum: 797D481C91BC3DB45B180D3E3ECF35F0;16933.
+ ) 
+Here is how much of TeX's memory you used:
+ 51454 strings out of 476024
+ 1067149 string characters out of 5794016
+ 2910275 words of memory out of 5000000
+ 68889 multiletter control sequences out of 15000+600000
+ 619793 words of font info for 126 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 113i,33n,109p,18295b,2554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
+ive/2022/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{c:/texlive/2022/tex
+mf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips
+/inconsolata/i4-t1-0.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/inconso
+lata/Inconsolata-zi4r.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto
+/Roboto-Bold.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-B
+oldItalic.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-Regu
+lar.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texliv
+e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:
+/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/
+2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
+blic/amsfonts/latxfont/lasy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/lm/lmss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000
+.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/t
+exlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/202
+2/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fo
+nts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8
+a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on eBook.pdf (54 pages, 8162893 bytes).
+PDF statistics:
+ 3408 PDF objects out of 3580 (max. 8388607)
+ 3122 compressed objects within 32 object streams
+ 1970 named destinations out of 2073 (max. 500000)
+ 1318 words of extra memory for PDF output out of 10000 (max. 10000000)
+

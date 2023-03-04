@@ -341,9 +341,7 @@ at (current page.north east)
 \end{table}
 %#################### 7.9 ####################
 \begin{landscape}
-
-
-\subsection{\hll{Mindmap}}
+\subsection{Mind map}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.59\textwidth}
@@ -415,6 +413,113 @@ at (current page.north east)
 \end{table}
 \end{landscape}
 %#################### 7.10 ####################
+\subsection{Gantt chart}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\begin{tikzpicture}[scale=0.8, every node/.style={scale=0.8}]
+\tikzset{
+    simple gantt/.cd,
+    width unit=0.33cm,
+    box/.style={draw},
+}
+\pic at (0,0) {simple gantt={$P_1$/2, $P_2$/3, $P_3$/11, $P_4$/15, $P_5$/20}};
+
+
+\tikzset{
+    simple gantt/.cd,
+    height=0.75cm,
+    color cycle={yellow, orange, cyan, magenta},
+    label pin angle={270},
+    label pin/.append style={below},
+    tick position={above},
+    tick label/.append style={above},
+    label as pin if value below={4},
+}
+\pic at (0,-3) {simple gantt={A/1, B/3, C/9, D/10, E/20, F/25}};
+\end{tikzpicture}}{7.10}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\ttfamily\tiny]
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+
+\newif\ifsimplegantttickpositionbelow
+\tikzset{
+pics/simple gantt/.style={
+code={
+\ifsimplegantttickpositionbelow
+\path[/tikz/simple gantt/tick] (0,0) -- 
+++(0,{-1*\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{0}};
+\else
+\path[/tikz/simple gantt/tick] (0,\pgfkeysvalueof{/tikz/simple gantt/height}) -- 
+++(0,{\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{0}};
+\fi
+\foreach \n/\x [count=\i, remember=\x as \lastx (initially 0)] in {#1} {
+\ifsimplegantttickpositionbelow
+\path[/tikz/simple gantt/tick] ({\x*\pgfkeysvalueof{/tikz/simple gantt/width unit}},0) -- 
+    ++(0,{-1*\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+    node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{\x}};
+\else
+\path[/tikz/simple gantt/tick] ({\x*\pgfkeysvalueof{/tikz/simple gantt/width unit}},\pgfkeysvalueof{/tikz/simple gantt/height}) -- 
+    ++(0,{\pgfkeysvalueof{/tikz/simple gantt/tick length}}) 
+    node[/tikz/simple gantt/tick label] {\pgfmathprintnumber{\x}};
+\fi
+\pgfmathparse{int(mod(\i - 1, \pgfkeysvalueof{/tikz/simple gantt/color cycle length}) + 1)} 
+\global\pgfkeyslet{/tikz/simple gantt/color cycle step}{\pgfmathresult}
+\path[
+/tikz/simple gantt/box, 
+fill={simple gantt color \pgfkeysvalueof{/tikz/simple gantt/color cycle step}},
+]
+({\lastx*\pgfkeysvalueof{/tikz/simple gantt/width unit}},0) rectangle 
+({\x*\pgfkeysvalueof{/tikz/simple gantt/width unit}},\pgfkeysvalueof{/tikz/simple gantt/height})
+\pgfextra{\pgfmathparse{\x - \lastx}}
+\ifdim\pgfmathresult pt < \pgfkeysvalueof{/tikz/simple gantt/label as pin if value below} pt\relax
+    node[/tikz/simple gantt/label, pin={[/tikz/simple gantt/label pin]\pgfkeysvalueof{/tikz/simple gantt/label pin angle}:\n}] {}
+\else
+    node[/tikz/simple gantt/label] {\n}
+\fi ;}}},
+simple gantt/color cycle length/.initial={0},
+simple gantt/color cycle step/.initial={1},
+simple gantt/color cycle/.code={
+\foreach \c [count=\i] in {#1} {
+\xglobal\colorlet{simple gantt color \i}{\c}
+\global\pgfkeyslet{/tikz/simple gantt/color cycle length}{\i}}},
+simple gantt/height/.initial={1cm},
+simple gantt/width unit/.initial={1cm},
+simple gantt/box/.style={},
+simple gantt/label/.style={pos=0.5},
+simple gantt/label pin/.style={above, pin edge={black, thin}, pin distance=0.5cm},
+simple gantt/label pin angle/.initial={90},
+simple gantt/label as pin if value below/.initial={1.5},
+simple gantt/tick/.style={draw},
+simple gantt/tick label/.style={below},
+simple gantt/tick position/.is choice,
+simple gantt/tick position/above/.code={\simplegantttickpositionbelowfalse},
+simple gantt/tick position/below/.code={\simplegantttickpositionbelowtrue},
+simple gantt/tick position={below},
+simple gantt/tick length/.initial={5pt},
+simple gantt/color cycle={blue!50, red!50, green!50},}
+
+\begin{document}
+\begin{tikzpicture}
+\tikzset{simple gantt/.cd, width unit=0.33cm,box/.style={draw}}
+\pic at (0,0) {simple gantt={$P_1$/2, $P_2$/3, $P_3$/11, $P_4$/15, $P_5$/20}};
+
+\tikzset{simple gantt/.cd, height=0.75cm, color cycle={yellow, orange, cyan, magenta},
+label pin angle={270}, label pin/.append style={below}, tick position={above},
+tick label/.append style={above},label as pin if value below={4}}
+\pic at (0,-3) {simple gantt={A/1, B/3, C/9, D/10, E/20, F/25}};
+\end{tikzpicture}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %#################### 7.11 ####################
 
 

@@ -1,0 +1,31 @@
+\documentclass[12pt]{book}
+\usepackage{graphicx}
+\usepackage[pages=some]{background}
+\graphicspath{{/home/anmnv/Desktop/eBook/images}}
+\usepackage{lipsum}
+\newcommand\DupImage{%
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill%  YOUR IMAGE
+     \includegraphics[width=5cm]{logo.jpeg}\hfill}
+\newlength{\drop}
+\backgroundsetup{  scale=1, angle=45, opacity=.3, 
+  contents={%
+     \begin{minipage}{1.5\paperheight}
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage\\[2ex]
+     \DupImage  \end{minipage}   }  }
+
+\begin{document}
+\drop=0.1\textheight \BgThispage \lipsum[1-8]
+\end{document}
