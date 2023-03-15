@@ -69,24 +69,25 @@
 \contentsline {subsection}{\numberline {7.8}\hll {Family tree}}{37}{subsection.7.8}%
 \contentsline {subsection}{\numberline {7.9}Mind map}{39}{subsection.7.9}%
 \contentsline {subsection}{\numberline {7.10}Gantt chart}{40}{subsection.7.10}%
-\contentsline {section}{\numberline {8}Highlighting}{41}{section.8}%
-\contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{41}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}\hll {Unusual words highlighting}}{41}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}\hll {Colored circles}}{42}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}\hll {Whole line colored}}{42}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}\hll {Circle text in points to other text}}{42}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}\hll {Keybutton}}{44}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}\hll {Colorful \xmyboxg {$\backslash $tableofcontents}}}{44}{subsection.8.7}%
-\contentsline {section}{\numberline {9}For Fun}{45}{section.9}%
-\contentsline {subsection}{\numberline {9.1}\hll {LaTeX Coffee Stains}}{45}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}\hll {Sticky notes}}{45}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}\hll {\fadingtext [scale=1, font=\bfseries ]{path picture shading=rainbow}{Rainbow text}}}{46}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}\hll {Single Watermark}}{47}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}\hll {Full page of Watermarks}}{47}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}\hll {Generating QR code}}{48}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}\hll {Gradient QR code}}{49}{subsection.9.7}%
-\contentsline {subsection}{\numberline {9.8}\hll {Lobsrets}}{49}{subsection.9.8}%
-\contentsline {subsection}{\numberline {9.9}\hll {Watermark over \textbf {everything}}}{50}{subsection.9.9}%
-\contentsline {subsection}{\numberline {9.10}\hll {Simple Emoji by \href {https://github.com/dilippuri/latexemoji}{dilippuri}}}{51}{subsection.9.10}%
-\contentsline {section}{\numberline {10} Animation, videos, interaction}{52}{section.10}%
-\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{52}{subsection.10.1}%
+\contentsline {subsection}{\numberline {7.11}Drawing a stacked venn diagram}{40}{subsection.7.11}%
+\contentsline {section}{\numberline {8}Highlighting}{42}{section.8}%
+\contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{42}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}\hll {Unusual words highlighting}}{42}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}\hll {Colored circles}}{43}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}\hll {Whole line colored}}{43}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}\hll {Circle text in points to other text}}{43}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}\hll {Keybutton}}{45}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}\hll {Colorful \xmyboxg {$\backslash $tableofcontents}}}{45}{subsection.8.7}%
+\contentsline {section}{\numberline {9}For Fun}{46}{section.9}%
+\contentsline {subsection}{\numberline {9.1}\hll {LaTeX Coffee Stains}}{46}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}\hll {Sticky notes}}{46}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}\hll {\fadingtext [scale=1, font=\bfseries ]{path picture shading=rainbow}{Rainbow text}}}{47}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}\hll {Single Watermark}}{48}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}\hll {Full page of Watermarks}}{48}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}\hll {Generating QR code}}{49}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}\hll {Gradient QR code}}{50}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}\hll {Lobsrets}}{50}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}\hll {Watermark over \textbf {everything}}}{51}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}\hll {Simple Emoji by \href {https://github.com/dilippuri/latexemoji}{dilippuri}}}{52}{subsection.9.10}%
+\contentsline {section}{\numberline {10} Animation, videos, interaction}{53}{section.10}%
+\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{53}{subsection.10.1}%

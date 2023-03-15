@@ -521,7 +521,55 @@ tick label/.append style={above},label as pin if value below={4}}
 \end{tabular}
 \end{table}
 %#################### 7.11 ####################
+\subsection{Drawing a stacked venn diagram}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{
+\begin{tikzpicture}[scale=0.5]
+\foreach \x [count=\y] in {A,B,C} {
+    \draw (0,{-\y}) circle[radius=\y];
+    \node at (0,{-2*\y+1}) {\x};
+} 
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.5]
+\foreach \x/\z [count=\y] in {C/yellow,B/orange,A/red} {
+    \draw[fill=\z] (0,{\y-4}) circle[radius={4-\y}];
+    \node at (0,{-2*(4-\y)+1}) {\x};
+} 
+\end{tikzpicture}}{7.11}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
 
+\begin{document}
+\begin{tikzpicture}[scale=0.5]
+\foreach \x [count=\y] in {A,B,C} {
+    \draw (0,{-\y}) circle[radius=\y];
+    \node at (0,{-2*\y+1}) {\x};
+} 
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.5]
+\foreach \x/\z [count=\y] in {C/yellow,B/orange,A/red} {
+    \draw[fill=\z] (0,{\y-4}) circle[radius={4-\y}];
+    \node at (0,{-2*(4-\y)+1}) {\x};
+} 
+\end{tikzpicture}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+%#################### 7.12 ####################
+%#################### 7.13 ####################
+%#################### 7.14 ####################
+%#################### 7.15 ####################
+%#################### 7.16 ####################
+%#################### 7.17 ####################
 
 
 
