@@ -279,25 +279,20 @@ some code
     fonttitle=\bfseries, colframe=gray, listing only, 
     listing options={basicstyle=\ttfamily,language=php, showstringspaces=false, 
     breaklines=true, postbreak={\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}}, tabsize=4
-  }, 
-    title=Code Snippet \thetcbcounter: #2, #1}
-
+  }, title=Code Snippet \thetcbcounter: #2, #1}
 
 \begin{document}
-
 \begin{sourcecode}{}
-    <?php
+<?php
 
-    function abc($file_name){
+function abc($file_name){
 
-        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        header('Content-Disposition: attachment;filename="'.$file_name.'"');
-        header('Cache-Control: max-age=0');
-        $writer->save('php://output');
-    }
-
+header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+header('Content-Disposition: attachment;filename="'.$file_name.'"');
+header('Cache-Control: max-age=0');
+$writer->save('php://output');
+}
 \end{sourcecode}
-
 \end{document}
 \end{lstlisting}
 \end{minipage}
