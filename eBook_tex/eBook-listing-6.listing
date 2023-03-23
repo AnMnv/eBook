@@ -1,0 +1,7 @@
+Some \uline{important} text\\
+Some \uuline{urgent} text\\
+Some \uwave{boat} text\\
+Some \sout{wrong} text\\
+Some \xout{removed} text\\
+Some \dashuline{dashing} text\\
+Some \dotuline{dotty} text

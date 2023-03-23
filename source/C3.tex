@@ -219,11 +219,94 @@ some code
 \end{tabular}
 \end{table}
 %-------------------3.6
+\subsection{\hll{Breaking code lines in a tcolorbox}}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\begin{tikzpicture}
+\node (0,0) {\begin{minipage}[m]{0.90\textwidth}
+\begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.5}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
+\documentclass[varwidth, border={10pt 10pt 10pt 10pt}]{standalone}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\tcbuselibrary{breakable}
+
+\newtcblisting[auto counter,number within=chapter]{sourcecode}[2][]{sharp corners, breakable,
+    fonttitle=\bfseries, colframe=gray, listing only, 
+    listing options={basicstyle=\ttfamily,language=php, showstringspaces=false, 
+    breaklines=true, postbreak={\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}}, tabsize=4
+  }, 
+    title=Code Snippet \thetcbcounter: #2, #1}
+
+
+\begin{document}
+
+\begin{sourcecode}{}
+    <?php
+
+    function abc($file_name){
+
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment;filename="'.$file_name.'"');
+        header('Cache-Control: max-age=0');
+        $writer->save('php://output');
+    }
+
+\end{sourcecode}
+
+\end{document}
+\end{tcblisting}
+\end{minipage}};
+\node [opacity=0.05] (0,0) {\scalebox{8.0}{\textcolor{red}{3.6}}};
+\end{tikzpicture}
+\end{minipage} 
+&
+\begin{minipage}[m]{0.55\textwidth}
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{book}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\tcbuselibrary{breakable}
+
+\newtcblisting[auto counter,number within=chapter]{sourcecode}[2][]{sharp corners, breakable,
+    fonttitle=\bfseries, colframe=gray, listing only, 
+    listing options={basicstyle=\ttfamily,language=php, showstringspaces=false, 
+    breaklines=true, postbreak={\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}}, tabsize=4
+  }, 
+    title=Code Snippet \thetcbcounter: #2, #1}
+
+
+\begin{document}
+
+\begin{sourcecode}{}
+    <?php
+
+    function abc($file_name){
+
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment;filename="'.$file_name.'"');
+        header('Cache-Control: max-age=0');
+        $writer->save('php://output');
+    }
+
+\end{sourcecode}
+
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
 %-------------------3.7
 %-------------------3.8
 %-------------------3.9
 %-------------------3.10
-
 
 
 

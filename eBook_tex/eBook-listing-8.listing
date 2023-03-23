@@ -1,0 +1,10 @@
+    <?php
+
+    function abc($file_name){
+
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment;filename="'.$file_name.'"');
+        header('Cache-Control: max-age=0');
+        $writer->save('php://output');
+    }
+
