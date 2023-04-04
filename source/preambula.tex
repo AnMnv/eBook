@@ -502,7 +502,30 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
     simple gantt/tick length/.initial={5pt},
     simple gantt/color cycle={blue!50, red!50, green!50},
 }
-%-----------------------------
+%-----------------------------3.7
+\usepackage{minted}
+\tcbuselibrary{listings, minted, skins}
+\tcbset{listing engine=minted}
+
+\newtcblisting{javalst}{listing only, minted language=java, minted style=paraiso-dark,
+colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
+fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+\newtcblisting{javalstt}{listing only, minted language=java, minted style=emacs,
+colback=white, enhanced, frame hidden, minted options={fontfamily=fdm, bgcolor=white,
+fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+\newtcblisting{javalsttt}{listing only, minted language=java, minted style=vim,
+colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
+fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+\newtcblisting{javalstttt}{listing only, minted language=java, minted style=perldoc,
+colback=white, enhanced,  minted options={fontfamily=fdm, bgcolor=white,
+fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+\newtcblisting{javalsttttt}{listing only, minted language=java, minted style=monokai,
+colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
+fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+
+\definecolor{inline}{RGB}{187,57,82}
+\definecolor{bg}{RGB}{22,43,58}
+\setminted[java]{bgcolor=bg, fontfamily=fdm, fontsize=\footnotesize}
 %-----------------------------
 %-----------------------------
 %-----------------------------

@@ -218,6 +218,7 @@ some code
 \end{minipage}
 \end{tabular}
 \end{table}
+
 %-------------------3.6
 \subsection{\hll{Breaking code lines in a tcolorbox}}
 \begin{tabular}{l | c}
@@ -299,6 +300,90 @@ $writer->save('php://output');
 \end{tabular}
 
 %-------------------3.7
+%https://tex.stackexchange.com/questions/452150/advanced-customization-of-minted-code
+\subsection{\hll{Modern code listing using \xmyboxg{minted}}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+
+paraiso-dark
+\begin{javalst}
+public class ClassName {
+        public static void main(String[] args) {
+            System.out.println(args);
+        }
+}
+\end{javalst}
+emacs
+\begin{javalstt}
+public class ClassName {
+        public static void main(String[] args) {
+            System.out.println(args);
+        }
+}
+\end{javalstt}
+vim
+\begin{javalsttt}
+public class ClassName {
+        public static void main(String[] args) {
+            System.out.println(args);
+        }
+}
+\end{javalsttt} 
+perldoc
+\begin{javalstttt}
+public class ClassName {
+        public static void main(String[] args) {
+            System.out.println(args);
+        }
+}
+\end{javalstttt}
+monokai
+\begin{javalsttttt}
+public class ClassName {
+        public static void main(String[] args) {
+            System.out.println(args);
+        }
+}
+\end{javalsttttt}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{pink!15}{green!15},numbers=left,basicstyle=\ttfamily\footnotesize]{tex}
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{listings, minted, skins}
+
+\tcbset{listing engine=minted}
+
+\newtcblisting{javalst}{listing only, minted language=java, minted style=paraiso-dark,
+    colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
+    fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+
+\definecolor{inline}{RGB}{187,57,82}
+\definecolor{bg}{RGB}{22,43,58}
+\setminted[java]{bgcolor=bg, fontfamily=fdm, fontsize=\footnotesize}
+
+\begin{document}
+
+\begin{javalst}
+    public class ClassName {
+            public static void main(String[] args) {
+                System.out.println(args);
+            }
+    }
+\end{javalst}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+
 %-------------------3.8
 %-------------------3.9
 %-------------------3.10
