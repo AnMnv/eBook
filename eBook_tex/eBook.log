@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  11 APR 2023 00:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  11 APR 2023 00:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2329,7 +2329,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 99.
 
-<C:/Users/user/Desktop/eBook/images/4.5.png, id=1232, 404.10976pt x 52.998pt>
+<C:/Users/user/Desktop/eBook/images/4.5.png, id=1230, 404.10976pt x 52.998pt>
 File: C:/Users/user/Desktop/eBook/images/4.5.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/4.5.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.5.png  used on input line 106.
@@ -2346,7 +2346,7 @@ Underfull \hbox (badness 1838) in paragraph at lines 106--106
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 134.
 
-<example-image-a.pdf, id=1283, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=1281, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 143.
@@ -2356,7 +2356,7 @@ Package pdftex.def Info: example-image-a.pdf  used on input line 143.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 167.
 
-<C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf, id=1328, 227.62239pt x 398.3382pt>
+<C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf, id=1326, 227.62239pt x 398.3382pt>
 File: C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf Graphic file (type pdf)
 <use C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf  used on input line 171.
@@ -2425,7 +2425,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\xmybox' on input line 413.
 
-<C:/Users/user/Desktop/eBook/images/4.11.png, id=1450, 797.98125pt x 794.2172pt>
+<C:/Users/user/Desktop/eBook/images/4.11.png, id=1448, 797.98125pt x 794.2172pt>
 File: C:/Users/user/Desktop/eBook/images/4.11.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/4.11.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.11.png  used on input line 416.
@@ -2484,7 +2484,7 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 703.
 
-<C:/Users/user/Desktop/eBook/images/4.16.png, id=1607, 1033.61156pt x 646.66594pt>
+<C:/Users/user/Desktop/eBook/images/4.16.png, id=1605, 1033.61156pt x 646.66594pt>
 File: C:/Users/user/Desktop/eBook/images/4.16.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/4.16.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/4.16.png  used on input line 706.
@@ -2507,7 +2507,7 @@ Overfull \hbox (3.79495pt too wide) in paragraph at lines 12--12
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 36.
 
-<C:/Users/user/Desktop/eBook/images/5.2.png, id=1721, 377.15906pt x 237.13594pt>
+<C:/Users/user/Desktop/eBook/images/5.2.png, id=1719, 377.15906pt x 237.13594pt>
 File: C:/Users/user/Desktop/eBook/images/5.2.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/5.2.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.2.png  used on input line 41.
@@ -2520,7 +2520,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\xmybox' on input line 69.
 
-<example-image-a.png, id=1722, 401.5pt x 301.125pt>
+<example-image-a.png, id=1720, 401.5pt x 301.125pt>
 File: example-image-a.png Graphic file (type png)
 <use example-image-a.png>
 Package pdftex.def Info: example-image-a.png  used on input line 81.
@@ -2543,7 +2543,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 Package subcaption Warning: `subfigure' is treated as `subtable'
 (subcaption)                 on input line 127.
 
-<example-image-b.pdf, id=1723, 321.2pt x 240.9pt>
+<example-image-b.pdf, id=1721, 321.2pt x 240.9pt>
 File: example-image-b.pdf Graphic file (type pdf)
 <use example-image-b.pdf>
 Package pdftex.def Info: example-image-b.pdf  used on input line 127.
@@ -2557,7 +2557,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 163.
 
-<C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf, id=1771, 597.50829pt x 845.0471pt>
+<C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf, id=1769, 597.50829pt x 845.0471pt>
 File: C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf Graphic file (type pdf)
 <use C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.5/5.5.pdf  used on input line 167.
@@ -2584,7 +2584,7 @@ Package pdftex.def Info: example-image-b.pdf  used on input line 230.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 267.
 
-<C:/Users/user/Desktop/eBook/images/5.7.png, id=1843, 500.46976pt x 494.44725pt>
+<C:/Users/user/Desktop/eBook/images/5.7.png, id=1841, 500.46976pt x 494.44725pt>
 File: C:/Users/user/Desktop/eBook/images/5.7.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/5.7.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.7.png  used on input line 271.
@@ -2594,7 +2594,7 @@ Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.7.png  used on inp
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 306.
 
-<C:/Users/user/Desktop/eBook/images/5.8.png, id=1899, 425.1885pt x 652.839pt>
+<C:/Users/user/Desktop/eBook/images/5.8.png, id=1897, 425.1885pt x 652.839pt>
 File: C:/Users/user/Desktop/eBook/images/5.8.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/5.8.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/5.8.png  used on input line 310.
@@ -2610,7 +2610,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 39.
 
-<C:/Users/user/Desktop/eBook/images/6.2.png, id=1921, 956.07187pt x 523.9575pt>
+<C:/Users/user/Desktop/eBook/images/6.2.png, id=1919, 956.07187pt x 523.9575pt>
 File: C:/Users/user/Desktop/eBook/images/6.2.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/6.2.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.2.png  used on input line 43.
@@ -2626,7 +2626,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 130.
 
-<C:/Users/user/Desktop/eBook/images/6.5.png, id=1973, 1178.90437pt x 881.54344pt>
+<C:/Users/user/Desktop/eBook/images/6.5.png, id=1971, 1178.90437pt x 881.54344pt>
 File: C:/Users/user/Desktop/eBook/images/6.5.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/6.5.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.5.png  used on input line 134.
@@ -2636,7 +2636,7 @@ Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.5.png  used on inp
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 158.
 
-<C:/Users/user/Desktop/eBook/images/6.4.png, id=2032, 1150.2975pt x 633.567pt>
+<C:/Users/user/Desktop/eBook/images/6.4.png, id=2030, 1150.2975pt x 633.567pt>
 File: C:/Users/user/Desktop/eBook/images/6.4.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/6.4.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.4.png  used on input line 162.
@@ -2645,12 +2645,12 @@ Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.4.png  used on inp
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 195.
 
-<C:/Users/user/Desktop/eBook/images/6.6.1.png, id=2033, 1868.48062pt x 742.27313pt>
+<C:/Users/user/Desktop/eBook/images/6.6.1.png, id=2031, 1868.48062pt x 742.27313pt>
 File: C:/Users/user/Desktop/eBook/images/6.6.1.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/6.6.1.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.6.1.png  used on input line 209.
 (pdftex.def)             Requested size: 195.53441pt x 77.6748pt.
-<C:/Users/user/Desktop/eBook/images/6.6.2.png, id=2034, 1869.23344pt x 630.10406pt>
+<C:/Users/user/Desktop/eBook/images/6.6.2.png, id=2032, 1869.23344pt x 630.10406pt>
 File: C:/Users/user/Desktop/eBook/images/6.6.2.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/6.6.2.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/6.6.2.png  used on input line 209.
@@ -2667,7 +2667,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \openout9 = `eBook-listing-13.tex'.
 
 (./eBook-listing-13.md5)
-<eBook-listing-13.pdf, id=2036, page=1, 344.99991pt x 88.94429pt>
+<eBook-listing-13.pdf, id=2034, page=1, 344.99991pt x 88.94429pt>
 File: eBook-listing-13.pdf Graphic file (type pdf)
 <use eBook-listing-13.pdf, page 1>
 Package pdftex.def Info: eBook-listing-13.pdf , page1 used on input line 254.
@@ -2703,7 +2703,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 77.
 
-<C:/Users/user/Desktop/eBook/images/7.3.pdf, id=2152, 180.58066pt x 227.00508pt>
+<C:/Users/user/Desktop/eBook/images/7.3.pdf, id=2150, 180.58066pt x 227.00508pt>
 File: C:/Users/user/Desktop/eBook/images/7.3.pdf Graphic file (type pdf)
 <use C:/Users/user/Desktop/eBook/images/7.3.pdf>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/7.3.pdf  used on input line 81.
@@ -2729,7 +2729,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 161.
 
-<C:/Users/user/Desktop/eBook/images/7.5.png, id=2153, 529.22719pt x 441.14813pt>
+<C:/Users/user/Desktop/eBook/images/7.5.png, id=2151, 529.22719pt x 441.14813pt>
 File: C:/Users/user/Desktop/eBook/images/7.5.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/7.5.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/7.5.png  used on input line 165.
@@ -2741,7 +2741,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 209.
 
-<C:/Users/user/Desktop/eBook/images/7.6.png, id=2154, 485.4135pt x 622.12425pt>
+<C:/Users/user/Desktop/eBook/images/7.6.png, id=2152, 485.4135pt x 622.12425pt>
 File: C:/Users/user/Desktop/eBook/images/7.6.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/7.6.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/7.6.png  used on input line 213.
@@ -2903,7 +2903,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 38.
 
-<C:/Users/user/Desktop/eBook/images/9.3.png, id=2613, 713.66624pt x 355.3275pt>
+<C:/Users/user/Desktop/eBook/images/9.3.png, id=2611, 713.66624pt x 355.3275pt>
 File: C:/Users/user/Desktop/eBook/images/9.3.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/9.3.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.3.png  used on input line 42.
@@ -2936,7 +2936,7 @@ Overfull \hbox (12.31981pt too wide) in paragraph at lines 83--83
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 146.
 
-<C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf, id=2730, 597.50829pt x 845.0471pt>
+<C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf, id=2728, 597.50829pt x 845.0471pt>
 File: C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf Graphic file (type pdf)
 <use C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf  used on input line 150.
@@ -2945,7 +2945,7 @@ Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.4/9.4.pdf  used on
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 174.
 
-<C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf, id=2731, 614.295pt x 794.97pt>
+<C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf, id=2729, 614.295pt x 794.97pt>
 File: C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf Graphic file (type pdf)
 <use C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf  used on input line 178.
@@ -2954,7 +2954,7 @@ Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.5/9.5.pdf  used on
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 221.
 
-<C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf, id=2732, 115.0719pt x 36.135pt>
+<C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf, id=2730, 115.0719pt x 36.135pt>
 File: C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf Graphic file (type pdf)
 <use C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf  used on input line 225.
@@ -2966,7 +2966,7 @@ Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.6/9.6.pdf  used on
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 250.
 
-<C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf, id=2812, 243.39531pt x 71.13174pt>
+<C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf, id=2810, 243.39531pt x 71.13174pt>
 File: C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf Graphic file (type pdf)
 <use C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf  used on input line 254.
@@ -2975,12 +2975,12 @@ Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.7/9.7.pdf  used on
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 317.
 
-<C:/Users/user/Desktop/eBook/images/lobsters_example-1.png, id=2813, 614.295pt x 794.97pt>
+<C:/Users/user/Desktop/eBook/images/lobsters_example-1.png, id=2811, 614.295pt x 794.97pt>
 File: C:/Users/user/Desktop/eBook/images/lobsters_example-1.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/lobsters_example-1.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/lobsters_example-1.png  used on input line 322.
 (pdftex.def)             Requested size: 234.64069pt x 303.65654pt.
-<C:/Users/user/Desktop/eBook/images/lobsters_example-2.png, id=2814, 614.295pt x 794.97pt>
+<C:/Users/user/Desktop/eBook/images/lobsters_example-2.png, id=2812, 614.295pt x 794.97pt>
 File: C:/Users/user/Desktop/eBook/images/lobsters_example-2.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/lobsters_example-2.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/lobsters_example-2.png  used on input line 322.
@@ -3012,7 +3012,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 357.
 
-<C:/Users/user/Desktop/eBook/images/9.9.png, id=2817, 800.39024pt x 601.0455pt>
+<C:/Users/user/Desktop/eBook/images/9.9.png, id=2815, 800.39024pt x 601.0455pt>
 File: C:/Users/user/Desktop/eBook/images/9.9.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/9.9.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.9.png  used on input line 361.
@@ -3025,7 +3025,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 385.
 
-<C:/Users/user/Desktop/eBook/images/9.10.png, id=2903, 782.925pt x 691.83469pt>
+<C:/Users/user/Desktop/eBook/images/9.10.png, id=2901, 782.925pt x 691.83469pt>
 File: C:/Users/user/Desktop/eBook/images/9.10.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/9.10.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/9.10.png  used on input line 389.
@@ -3036,7 +3036,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hll' on input line 3.
 
 <<C:/Users/user/Desktop/eBook/images/10.1.mp4>>
-<C:/Users/user/Desktop/eBook/images/10.1.png, id=2976, 720.291pt x 407.72325pt>
+<C:/Users/user/Desktop/eBook/images/10.1.png, id=2974, 720.291pt x 407.72325pt>
 File: C:/Users/user/Desktop/eBook/images/10.1.png Graphic file (type png)
 <use C:/Users/user/Desktop/eBook/images/10.1.png>
 Package pdftex.def Info: C:/Users/user/Desktop/eBook/images/10.1.png  used on input line 7.
@@ -3077,18 +3077,18 @@ Package rerunfilecheck Info: File `eBook.out' has not changed.
 (rerunfilecheck)             Checksum: D372C867BB812602579FBC2792AD4C99;17627.
  ) 
 Here is how much of TeX's memory you used:
- 54425 strings out of 476024
- 1134192 string characters out of 5794016
- 3086075 words of memory out of 5000000
- 71661 multiletter control sequences out of 15000+600000
- 624664 words of font info for 140 fonts, out of 8000000 for 9000
+ 54418 strings out of 476024
+ 1134123 string characters out of 5794016
+ 3086050 words of memory out of 5000000
+ 71657 multiletter control sequences out of 15000+600000
+ 623254 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,33n,109p,18329b,2568s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-BoldItalic.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on eBook.pdf (57 pages, 8263812 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-BoldItalic.pfb><c:/texlive/2022/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on eBook.pdf (57 pages, 8258455 bytes).
 PDF statistics:
- 3622 PDF objects out of 4296 (max. 8388607)
- 3311 compressed objects within 34 object streams
+ 3614 PDF objects out of 4296 (max. 8388607)
+ 3306 compressed objects within 34 object streams
  2077 named destinations out of 2487 (max. 500000)
  1352 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -509,17 +509,17 @@ $\underset{\saveulnum}{\rule[-.7ex]{\ulwidth}{.4pt}}$}
 
 \newtcblisting{javalst}{listing only, minted language=java, minted style=paraiso-dark,
 colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
-fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+fontsize=\scriptsize, tabsize=2, breaklines, autogobble}}
 \newtcblisting{javalstt}{listing only, minted language=java, minted style=emacs,
 colback=white, enhanced, frame hidden, minted options={fontfamily=fdm, bgcolor=white,
-fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+fontsize=\scriptsize, tabsize=2, breaklines, autogobble}}
 \newtcblisting{javalsttt}{listing only, minted language=java, minted style=vim,
 colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
-fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+fontsize=\scriptsize, tabsize=2, breaklines, autogobble}}
 \newtcblisting{javalstttt}{listing only, minted language=java, minted style=perldoc,
 colback=white, enhanced,  minted options={fontfamily=fdm, bgcolor=white,
-fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
-\renewcommand{\theFancyVerbLine}{\textcolor[rgb]{1,1,1}{\tiny\arabic{FancyVerbLine}}}
+fontsize=\scriptsize, tabsize=2, breaklines, autogobble}}
+\renewcommand{\theFancyVerbLine}{\textcolor[rgb]{1,1,1}{\scriptsize\arabic{FancyVerbLine}}}
 \newtcblisting{python}{
     listing only, 
     minted language=java, 
@@ -527,14 +527,13 @@ fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
     colback=bg, 
     enhanced, 
     frame hidden,
-    minted options={
-        fontsize=\tiny, 
+    minted options={ 
         tabsize=2, 
         breaklines, 
         autogobble,
         linenos,
         numbersep=5pt,
-        fontsize=\tiny,
+        fontsize=\scriptsize,
     },
     overlay={\begin{tcbclipinterior}\fill[bg](frame.south west)rectangle([xshift=5mm]frame.north west);\end{tcbclipinterior}}
 }
