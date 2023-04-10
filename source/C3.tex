@@ -358,19 +358,15 @@ public class ClassName {
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \tcbuselibrary{listings, minted, skins}
-
 \tcbset{listing engine=minted}
-
 \newtcblisting{javalst}{listing only, minted language=java, minted style=paraiso-dark,
     colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
     fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
-
 \definecolor{inline}{RGB}{187,57,82}
 \definecolor{bg}{RGB}{22,43,58}
 \setminted[java]{bgcolor=bg, fontfamily=fdm, fontsize=\footnotesize}
 
 \begin{document}
-
 \begin{javalst}
     public class ClassName {
             public static void main(String[] args) {
@@ -380,8 +376,10 @@ public class ClassName {
 \end{javalst}
 \end{document}
 \end{lstlisting}
+
 For lines numbering (last example):
-\begin{lstlisting}[numberstyle=\zebra{pink!15}{red!15},numbers=left,basicstyle=\ttfamily\tiny]{tex}
+
+\begin{lstlisting}[numberstyle=\zebra{pink!15}{red!15},numbers=left,basicstyle=\ttfamily\scriptsize]{tex}
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{listings}
