@@ -339,13 +339,13 @@ public class ClassName {
 }
 \end{javalstttt}
 monokai
-\begin{javalsttttt}
+\begin{python}
 public class ClassName {
         public static void main(String[] args) {
             System.out.println(args);
         }
 }
-\end{javalsttttt}
+\end{python}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -371,6 +371,34 @@ public class ClassName {
 
 \begin{document}
 
+\begin{javalst}
+    public class ClassName {
+            public static void main(String[] args) {
+                System.out.println(args);
+            }
+    }
+\end{javalst}
+\end{document}
+\end{lstlisting}
+For lines numbering:
+\begin{lstlisting}[numberstyle=\zebra{pink!15}{red!15},numbers=left,basicstyle=\ttfamily\tiny]{tex}
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{listings, minted, skins}
+\tcbset{listing engine=minted}
+\renewcommand{\theFancyVerbLine}{\textcolor[rgb]{1,1,1}{\texttt\footnotesize\arabic{FancyVerbLine}}}
+\newtcblisting{javalst}{listing only, minted language=java, minted style=paraiso-dark, colback=bg, enhanced,frame hidden,
+minted options={fontsize=\footnotesize, tabsize=2, breaklines, autogobble, linenos, numbersep=5pt,fontsize=\small,},
+overlay={\begin{tcbclipinterior}\fill[bg](frame.south west)rectangle([xshift=5mm]frame.north west);\end{tcbclipinterior}}}
+\definecolor{inline}{RGB}{187,57,82}
+\definecolor{bg}{RGB}{22,43,58}
+\setminted[java]{bgcolor=bg, fontfamily=fdm, fontsize=\footnotesize}
+
+\begin{document}
 \begin{javalst}
     public class ClassName {
             public static void main(String[] args) {

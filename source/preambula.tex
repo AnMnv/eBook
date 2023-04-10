@@ -519,9 +519,25 @@ fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
 \newtcblisting{javalstttt}{listing only, minted language=java, minted style=perldoc,
 colback=white, enhanced,  minted options={fontfamily=fdm, bgcolor=white,
 fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
-\newtcblisting{javalsttttt}{listing only, minted language=java, minted style=monokai,
-colback=bg, enhanced, frame hidden, minted options={fontfamily=fdm, 
-fontsize=\footnotesize, tabsize=2, breaklines, autogobble}}
+\renewcommand{\theFancyVerbLine}{\textcolor[rgb]{1,1,1}{\tiny\arabic{FancyVerbLine}}}
+\newtcblisting{python}{
+    listing only, 
+    minted language=java, 
+    minted style=paraiso-dark,
+    colback=bg, 
+    enhanced, 
+    frame hidden,
+    minted options={
+        fontsize=\tiny, 
+        tabsize=2, 
+        breaklines, 
+        autogobble,
+        linenos,
+        numbersep=5pt,
+        fontsize=\tiny,
+    },
+    overlay={\begin{tcbclipinterior}\fill[bg](frame.south west)rectangle([xshift=5mm]frame.north west);\end{tcbclipinterior}}
+}
 
 \definecolor{inline}{RGB}{187,57,82}
 \definecolor{bg}{RGB}{22,43,58}
