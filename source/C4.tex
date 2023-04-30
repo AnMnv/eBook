@@ -755,6 +755,49 @@ some text in the third box blabla
 \end{minipage}
 \end{tabular}
 %#################### 4.17 ####################
+\subsection{\hll{Vertically and horizontally align image inside table}}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+  \begin{tabular}{|p{1.5cm}|c|}
+    \hline
+    \textbf{Num.}   
+    &   \textbf{Images} \\ 
+    \hline
+    Nr. 1   &   \includegraphics[width=0.6\textwidth,margin=0pt 1ex 0pt 1ex,valign=m]{example-image}  \\
+    \hline
+    Nr. 2   &   \includegraphics[width=0.6\textwidth,margin=0pt 1ex 0pt 1ex,valign=m]{example-grid-100x100pt}  \\
+    \hline
+    \end{tabular}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\begin{document}
+\begin{table}[htbp]
+\centering
+\caption{My caption}
+\label{tab:mytab}
+\begin{tabular}{|p{1.5cm}|c|}
+\hline
+\textbf{Num.}   
+&   \textbf{Images} \\ 
+\hline
+Nr. 1   &   \includegraphics[width=0.8\textwidth,margin=0pt 1ex 0pt 1ex,valign=m]{example-image}  \\
+\hline
+Nr. 2   &   \includegraphics[width=0.8\textwidth,margin=0pt 1ex 0pt 1ex,valign=m]{example-grid-100x100pt}  \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
 %#################### 4.18 ####################
 %#################### 4.19 ####################
 
