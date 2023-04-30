@@ -76,4 +76,6 @@ Be sure to drop a <img src="images/star.png" alt="drawing" width="50"/> or <a hr
 ![](/images/eBook-54.png)
 ![](/images/eBook-55.png)
 ![](/images/eBook-56.png)
+![](/images/eBook-57.png)
+![](/images/eBook-58.png)
 
