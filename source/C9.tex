@@ -408,5 +408,72 @@ Good bye! \latexemoji{wave}
 \end{tabular}
 \end{table}
 %#################### 9.11####################
+\clearpage
+...
+\vspace{4cm}
+...
+\subsection{Confidential mark/ribbon top right of frontpage}
+\begin{tikzpicture}[
+  overlay, 
+  remember picture,
+  legend/.style={|<->|, gray, font = {\ttfamily}},
+  confidential/.style={anchor=center, rotate = -45, font={\sffamily\scshape}}
+]
+  \coordinate (A) at ($ (current page.north east) + (-\stripskip,0) $);
+  \coordinate (A') at ($(A) + (-\stripwidth,0) $);
+
+  \coordinate (B) at ($ (current page.north east) + (0,-\stripskip) $);
+  \coordinate (B') at ($(B) + (0,-\stripwidth) $);
+
+  \fill [red] (A) -- (A') -- (B') -- (B) -- cycle;
+
+  \coordinate (tempA) at ($(A)!.5!(A')$);
+  \coordinate (tempB) at ($(B)!.5!(B')$);
+
+  \node [confidential](text) at ($(tempA)!.5!(tempB)$) {\Huge Confidential};
+\end{tikzpicture}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+ Look at the top right of the page
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\ttfamily\scriptsize]
+\documentclass{article} 
+\documentclass{scrbook}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\stripskip}{5}
+\newcommand{\stripwidth}{3}
+
+\begin{document}
+    \begin{tikzpicture}[
+        overlay, 
+        remember picture,
+        legend/.style={|<->|, gray, font = {\ttfamily}},
+        confidential/.style={anchor=center, rotate = -45, font={\sffamily\scshape}}
+    ]
+        \coordinate (A) at ($ (current page.north east) + (-\stripskip,0) $);
+        \coordinate (A') at ($(A) + (-\stripwidth,0) $);
+
+        \coordinate (B) at ($ (current page.north east) + (0,-\stripskip) $);
+        \coordinate (B') at ($(B) + (0,-\stripwidth) $);
+
+        \fill [red] (A) -- (A') -- (B') -- (B) -- cycle;
+
+        \coordinate (tempA) at ($(A)!.5!(A')$);
+        \coordinate (tempB) at ($(B)!.5!(B')$);
+
+        \node [confidential](text) at ($(tempA)!.5!(tempB)$) {\Huge Confidential};
+    \end{tikzpicture}
+    \centering \Huge qqqqqqqqq
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %#################### 9.12 ####################
 %#################### 9.13 ####################
