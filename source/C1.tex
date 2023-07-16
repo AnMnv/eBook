@@ -236,36 +236,83 @@ $I-IV-V^{\begin{array}{c}6-4\\4-3\\ \end{array}}-I-cadence$
 \end{minipage}
 \end{tabular}
 
+
+
+
+
+
+
+
+
 %-------------------1.8
+
 \subsection{\hll{Aligning equations inbetween text}}
 \begin{tabular}{l | c}
 \begin{minipage}[m]{0.4\textwidth}
+\begin{tikzpicture}
+\node (0,0) {\begin{minipage}[m]{0.90\textwidth}
 \begin{tcblisting}{colback=white,colframe=white,comment style={frame hidden,scale=2.5}, comment only, pdf comment, freeze pdf, compilable listing, run pdflatex,}
-\documentclass[varwidth, border={10pt 10pt 10pt 10pt}]{standalone}
-\usepackage{amsmath}
+\documentclass[varwidth, border={0pt 0pt -50pt -10pt}]{standalone}
+\usepackage{mathtools}
+
 \begin{document}
-qqq
+\begin{align*}
+\intertext{TEXT 1}
+&K_I : {I -> 2R} \\
+&K_S : {R + M -> RM^*}
+\intertext{TEXT 2}
+&K_I : {I -> 2R} \\
+&K_S : {R + M -> RM^*}
+\end{align*}
 \end{document}
 \end{tcblisting}
-\end{minipage}
+\end{minipage}};
+\node [opacity=0.05] (0,0) {\scalebox{8.0}{\textcolor{red}{1.8}}};
+\end{tikzpicture}
+\end{minipage} 
 & \begin{minipage}[m]{0.55\textwidth}
 \renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
 \begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
 \documentclass{article}
-\usepackage{amsmath}
+\usepackage{mathtools}
 
 \begin{document}
-\begin{alignat*}{2}
-\intertext{Photochemical:}
-K_{UV} &: M[1]& &\ch{-> M^{*}}[1]
-\intertext{Catalyzed:}
-K_I &: I& &\ch{->} 2R \\
-K_S &: R + M [1]& &\ch{-> RM^{*}}[1]
-\end{alignat*}
-\end{document} 
+\begin{align*}
+\intertext{TEXT 1}
+&K_I : {I -> 2R} \\
+&K_S : {R + M -> RM^*}
+\intertext{TEXT 2}
+&K_I : {I -> 2R} \\
+&K_S : {R + M -> RM^*}
+\end{align*}
+\end{document}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 %-------------------1.9
 \subsection{\hll{Equation: boxed split inside align}}
@@ -354,6 +401,64 @@ $$\dfrac{x+1}{x} \xrightarrow{\twoline{Euclidean}{division}} 1+\dfrac{1}{x}$$
 \end{tabular}
 
 %-------------------1.11
+\subsection{\hll{Calculating scheme for a particular solution}}
+\begin{tabular}{l | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ 
+  \begin{equation*}
+    \resizebox{.9\textwidth}{!}{$
+    \begin{tblr}{colspec={rrrcl},
+      vline{3} = {magenta},
+      hline{4} = {magenta},
+      column{1} = {font={\color{magenta}}, rightsep=0pt},
+      column{2} = {font={\color{magenta}}, leftsep=0pt, rightsep+=4pt},
+      column{3} = {leftsep+=4pt, rightsep=0pt},
+      column{4} = {colsep=2pt},
+      column{5} = {leftsep=0pt},
+      row{3} = {belowsep+=4pt},
+      row{4} = {abovesep+=4pt}
+      }
+    6 & \times & y^* & = & Ate^{2t}+Be^{-2t}\\
+    -5 & \times & (y^*)' & = & A(1+2t)e^{2t}-2Be^{-2t}\\
+    1 & \times & (y^*)''& = & A(4+4t)e^{2t}+4Be^{-2t}\\
+    &e^{2t} &1 & = & 4A-5A=-A\\
+    &e^{-2t} & 1 & = & 4B+10B+6B=20B\\
+    \end{tblr}$}
+  \end{equation*}
+}{1.11}
+\end{minipage}
+& \begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{black!5}{blue!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tabularray}
+
+\begin{document}
+\[
+\begin{tblr}{colspec={rrrcl},
+vline{3} = {magenta},
+hline{4} = {magenta},
+column{1} = {font={\color{magenta}}, rightsep=0pt},
+column{2} = {font={\color{magenta}}, leftsep=0pt, rightsep+=4pt},
+column{3} = {leftsep+=4pt, rightsep=0pt},
+column{4} = {colsep=2pt},
+column{5} = {leftsep=0pt},
+row{3} = {belowsep+=4pt},
+row{4} = {abovesep+=4pt}
+}
+6 & \times & y^* & = & Ate^{2t}+Be^{-2t}\\
+-5 & \times & (y^*)' & = & A(1+2t)e^{2t}-2Be^{-2t}\\
+1 & \times & (y^*)''& = & A(4+4t)e^{2t}+4Be^{-2t}\\
+&e^{2t} &1 & = & 4A-5A=-A\\
+&e^{-2t} & 1 & = & 4B+10B+6B=20B\\
+\end{tblr}
+\]
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 %-------------------1.12
 %-------------------1.13
 %-------------------1.14
