@@ -1,17 +1,17 @@
 %#################### 7.1 ####################
 \subsection{\hll{Simple pie chart}}
-	\begin{table}[h!]
-	\begin{tabular}{c | c}
-	\begin{minipage}[m]{0.4\textwidth}
-	\enum{ 
-	\begin{tikzpicture}[thick,scale=0.6, every node/.style={transform shape}] 
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{ 
+\begin{tikzpicture}[thick,scale=0.6, every node/.style={transform shape}] 
 \pie{22.97/Los Angeles Lakers,
 22.97/Boston,
 8.11/Golden State,
 8.11/Chicago,
 6.76/San ,
 31.07/Other Teams}
-\end{tikzpicture}}{7.1}
+\end{tikzpicture}}{\thesubsection}
 	\end{minipage}
 	&
 	\begin{minipage}[m]{0.55\textwidth}
@@ -49,7 +49,7 @@
 \draw (70:1cm)  arc (70:-10:1cm) node[midway, right] {{\footnotesize 1}};
 \draw (-50:1cm) arc (-50:-130:1cm) node[midway, below] {{\footnotesize 1}};
 \draw (190:1cm) arc (190:110:1cm) node[midway, left] {{\footnotesize -1}};
-\end{tikzpicture}\end{center} }{7.2}
+\end{tikzpicture}\end{center}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -78,7 +78,7 @@
 	\begin{table}[h!]
 	\begin{tabular}{c | c}
 	\begin{minipage}[m]{0.4\textwidth}
-	\enum{   \includegraphics[width=1\linewidth]{7.3.pdf}   }{7.3}
+	\enum{\includegraphics[width=1\linewidth]{7.3.pdf}}{\thesubsection}
 	\end{minipage}
 	&
 	\begin{minipage}[m]{0.55\textwidth}
@@ -124,7 +124,7 @@ line width=0.4mm,scale=0.7,
 \skills{{\LaTeX/6}}\\
 \skills{{C++/2}}\\
 \skills{{Python/3}}\\
-}{7.4}
+}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -162,7 +162,7 @@ line width=0.4mm,scale=0.7,
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=1\linewidth]{7.5.png}}{7.5}
+\enum{\includegraphics[width=1\linewidth]{7.5.png}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -210,7 +210,7 @@ line width=0.4mm,scale=0.7,
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=0.85\linewidth]{7.6.png}}{7.6}
+\enum{\includegraphics[width=0.85\linewidth]{7.6.png}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -244,7 +244,7 @@ at (current page.north east)
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\center Find me}{7.7}
+\enum{\center Find me}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -311,7 +311,7 @@ at (current page.north east)
 			 child {node{ Josh}}
 			 child {node{ Sarah}}
 			};
-\end{tikzpicture}}{7.8}
+\end{tikzpicture}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -341,7 +341,7 @@ at (current page.north east)
 \end{table}
 %#################### 7.9 ####################
 \begin{landscape}
-\subsection{Mind map}
+\subsection{\hll{Mind map}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.59\textwidth}
@@ -367,7 +367,7 @@ at (current page.north east)
     }
     child[concept color=red] { node[concept] {aaa1} }
     child[concept color=orange] { node[concept] {bbb1} };
-\end{tikzpicture}}{7.9}
+\end{tikzpicture}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.5\textwidth}
@@ -413,7 +413,7 @@ at (current page.north east)
 \end{table}
 \end{landscape}
 %#################### 7.10 ####################
-\subsection{Gantt chart}
+\subsection{\hll{Gantt chart}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -437,7 +437,7 @@ at (current page.north east)
     label as pin if value below={4},
 }
 \pic at (0,-3) {simple gantt={A/1, B/3, C/9, D/10, E/20, F/25}};
-\end{tikzpicture}}{7.10}
+\end{tikzpicture}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -521,7 +521,7 @@ tick label/.append style={above},label as pin if value below={4}}
 \end{tabular}
 \end{table}
 %#################### 7.11 ####################
-\subsection{Drawing a stacked venn diagram}
+\subsection{\hll{Drawing a stacked venn diagram}}
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
@@ -537,7 +537,7 @@ tick label/.append style={above},label as pin if value below={4}}
     \draw[fill=\z] (0,{\y-4}) circle[radius={4-\y}];
     \node at (0,{-2*(4-\y)+1}) {\x};
 } 
-\end{tikzpicture}}{7.11}
+\end{tikzpicture}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -565,6 +565,80 @@ tick label/.append style={above},label as pin if value below={4}}
 \end{tabular}
 \end{table}
 %#################### 7.12 ####################
+\begin{landscape}
+\subsection{\hll{Ellipsis in Circuitikz}}
+%https://tex.stackexchange.com/questions/232924/ellipsis-in-circuitikz
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.65\textwidth}
+\enum{
+\begin{circuitikz}[line width=1pt]
+  \draw (0,2) to[L,l=$L'$,*-*] (2,2)
+        (2,0) to[C,l=$C'$,-*] (2,2)
+        (2,0) to[short,-*] (0,0)
+  ;
+  \begin{scope}[xshift=2cm]
+  \draw (0,2) to[L,l=$L'$,*-*] (2,2)
+        (2,0) to[C,l=$C'$,-*] (2,2)
+        (2,0) to[short,-*] (0,0)
+  ;
+  \end{scope}
+  \begin{scope}[xshift=4cm]
+  \draw (0,2) to[L,l=$L'$,*-*] (2,2)
+        (2,0) to[C,l=$C'$,-*] (2,2)
+        (2,0) to[short,-*] (0,0)
+  ;
+  \end{scope}
+  \begin{scope}[xshift=6cm]
+  \draw (0,2) --  (2,2)node[midway,scale=2,fill=white]{$\cdots$};
+  \draw (0,0) -- (2,0)node[midway,scale=2,fill=white]{$\cdots$};
+  \end{scope}
+  \draw (8,2) to[L,l=$L'$,-*] (10,2) to[short,-*] (11,2)
+        (10,0) to[C,l=$C'$,-*] (10,2)
+        (11,0) to[short,*-](10,0) to[short,*-] (8,0)
+  ;
+\end{circuitikz}}{\thesubsection}
+\end{minipage}
+&
+\begin{minipage}[m]{0.5\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article}
+\usepackage{circuitikz}
+\ctikzset{bipoles/thickness =1}
+\begin{document}
+\begin{circuitikz}[line width=1pt]
+  \draw (0,2) to[L,l=$L'$,*-*] (2,2)
+        (2,0) to[C,l=$C'$,-*] (2,2)
+        (2,0) to[short,-*] (0,0)
+  ;
+  \begin{scope}[xshift=2cm]
+  \draw (0,2) to[L,l=$L'$,*-*] (2,2)
+        (2,0) to[C,l=$C'$,-*] (2,2)
+        (2,0) to[short,-*] (0,0)
+  ;
+  \end{scope}
+  \begin{scope}[xshift=4cm]
+  \draw (0,2) to[L,l=$L'$,*-*] (2,2)
+        (2,0) to[C,l=$C'$,-*] (2,2)
+        (2,0) to[short,-*] (0,0)
+  ;
+  \end{scope}
+  \begin{scope}[xshift=6cm]
+  \draw (0,2) --  (2,2)node[midway,scale=2,fill=white]{$\cdots$};
+  \draw (0,0) -- (2,0)node[midway,scale=2,fill=white]{$\cdots$};
+  \end{scope}
+  \draw (8,2) to[L,l=$L'$,-*] (10,2) to[short,-*] (11,2)
+        (10,0) to[C,l=$C'$,-*] (10,2)
+        (11,0) to[short,*-](10,0) to[short,*-] (8,0)
+  ;
+\end{circuitikz}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
+\end{landscape}
 %#################### 7.13 ####################
 %#################### 7.14 ####################
 %#################### 7.15 ####################
