@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  11 APR 2023 00:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  3 SEP 2023 19:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -108,7 +108,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
 c:/Users/user/Desktop/eBook/source/C3.tex:6: Undefined control sequence.
 l.6 \enum
-         {\includegraphics[width=1\linewidth]{3.1.png}}{3.1}
+         {\includegraphics[width=1\linewidth]{3.1.png}}{\thesubsection}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -117,7 +117,7 @@ and I'll forget about whatever was undefined.
 
 c:/Users/user/Desktop/eBook/source/C3.tex:6: Undefined control sequence.
 l.6 \enum{\includegraphics
-                          [width=1\linewidth]{3.1.png}}{3.1}
+                          [width=1\linewidth]{3.1.png}}{\thesubsection}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -136,7 +136,7 @@ c:/Users/user/Desktop/eBook/source/C3.tex:6: Missing number, treated as zero.
 <to be read again> 
                    ]
 l.6 \enum{\includegraphics[width=1\linewidth]
-                                             {3.1.png}}{3.1}
+                                             {3.1.png}}{\thesubsection}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -145,7 +145,7 @@ c:/Users/user/Desktop/eBook/source/C3.tex:6: Illegal unit of measure (pt inserte
 <to be read again> 
                    ]
 l.6 \enum{\includegraphics[width=1\linewidth]
-                                             {3.1.png}}{3.1}
+                                             {3.1.png}}{\thesubsection}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -161,9 +161,15 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 1 in font nullfont!
+c:/Users/user/Desktop/eBook/source/C3.tex:6: Undefined control sequence.
+l.6 ...width=1\linewidth]{3.1.png}}{\thesubsection
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 c:/Users/user/Desktop/eBook/source/C3.tex:11: LaTeX Error: Environment lstlisting undefined.
 

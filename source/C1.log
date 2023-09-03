@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  16 JUL 2023 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  3 SEP 2023 19:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -106,16 +106,22 @@ two letters. (See Chapter 27 of The TeXbook.)
 Missing character: There is no ! in font nullfont!
 c:/Users/user/Desktop/eBook/source/C1.tex:7: Undefined control sequence.
 l.7 \dfrac
-          {x^3}{45a^9-23b}$}}{1.1}
+          {x^3}{45a^9-23b}$}}{\thesubsection}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 1 in font nullfont!
+c:/Users/user/Desktop/eBook/source/C1.tex:7: Undefined control sequence.
+l.7 \dfrac{x^3}{45a^9-23b}$}}{\thesubsection
+                                            }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 c:/Users/user/Desktop/eBook/source/C1.tex:11: LaTeX Error: Environment lstlisting undefined.
 

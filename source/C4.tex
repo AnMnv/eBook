@@ -8,7 +8,7 @@
 	\begin{center}\bf{333}\end{center}
 	\tcblower
 	\href{https://tools.ietf.org/doc/texlive-doc/latex/tcolorbox/tcolorbox.pdf}{Source}
-	\end{tcolorbox}}{4.1}
+	\end{tcolorbox}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -36,7 +36,7 @@
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\begin{mycolorbox}{Remarque}
 Some text inside
-\end{mycolorbox}}{4.4}
+\end{mycolorbox}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -74,7 +74,7 @@ Some text inside
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\begin{tcolorbox}
 \lettrine{S}{ome} text. \lipsum[1][1]\par
-\end{tcolorbox}}{4.5}
+\end{tcolorbox}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -103,7 +103,7 @@ Some text inside
 \enum{
 \includegraphics[width=1\linewidth]{4.5.png}
 \textit{a command was also created to make a new cell view in the table}
-}{4.4}
+}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -140,7 +140,7 @@ width={5cm},
 colback=white,
 overlay={\node at (frame.south east) {\includegraphics[scale=0.1]{example-image-a}};} ]
 Sample text here.
-\end{tcolorbox}}{4.5}
+\end{tcolorbox}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -168,7 +168,7 @@ Sample text here.
 \begin{table}[h!]
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\href{https://ctan.org/pkg/bclogo}{\img{1}{C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf}}}{4.6}
+\enum{\href{https://ctan.org/pkg/bclogo}{\img{1}{C:/Users/user/Desktop/eBook/images/4.5/4.5.pdf}}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -248,7 +248,7 @@ margin=0.5cm
 \enum{
 \begin{caja}[title=warning]
 Here is some text 
-\end{caja}}{4.7}
+\end{caja}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -287,8 +287,6 @@ The vertical alignment settings
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
 \enum{
-
- 
 \makegapedcells
     \begin{tabular}{|c|c|c| }
     \hline
@@ -297,8 +295,7 @@ are&centered&vertically\\ \hline
 and&horisontally&$\sum$\\ \hline
  
 \end{tabular}
- 
- }{4.8}
+ }{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -346,7 +343,7 @@ $d_{n+1}$ &         &                &   & = 0 \\
         & \multicolumn{3}{l|}{\dotfill}   &                  \\ 
         & $a_{1,1}$ & $\dots, a_{1,n}$ & 0 &                 \\ 
 \end{tabular}
- }{4.9}
+ }{\thesubsection}
 
 \end{minipage}
 &
@@ -382,7 +379,7 @@ $d_{n+1}$ &         &    &   & = $\pm 2ad_n$ = 0     \\
 \cellcolor{red}1& \cellcolor{green}1 & \cellcolor{black!10}EVERY\\\hline 
 \cellcolor{orange}1 & \cellcolor{red!35}1 & \cellcolor{brown!50}CELL \\ \hline
 \cellcolor{green!35}1 & \cellcolor{blue!45}1 & \cellcolor{yellow}CENTERED \\ \hline
-\end{NiceTabular}  }{4.10}
+\end{NiceTabular}  }{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -413,7 +410,7 @@ $d_{n+1}$ &         &    &   & = $\pm 2ad_n$ = 0     \\
 \subsection{\hll{Centered cells in \xmybox{longtable}}}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=1.\linewidth]{4.11.png}}{4.11}
+\enum{\includegraphics[width=1.\linewidth]{4.11.png}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -462,7 +459,7 @@ Group1 & 0.8   & 0.1   & 0.1  \\
 Group2 & 0.1   & 0.8   & 0.1  \\
 Group3 & 0.1   & 0.1   & 0.8  \\
 Group4 & 0.34  & 0.33  & 0.33 \\ \bottomrule
-\end{tabularx}}{4.12}
+\end{tabularx}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -510,7 +507,7 @@ text  text text
   &    &      \\ \hline
   &    &      \\ \hline
 \end{tabular}
-\end{minipage}}{4.13}
+\end{minipage}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -545,7 +542,7 @@ text text text
 \begin{minipage}[m]{0.4\textwidth}
 \enum{\begin{mytheo}{}{theoexample}
 some text
-\end{mytheo}}{4.14}
+\end{mytheo}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -624,7 +621,7 @@ content...
    
 %---
  \end{tikzpicture} 
-  \href{https://tex.stackexchange.com/questions/154842/using-pattern-inside-tikz-shapes-with-dropped-shadows}{*****} }{4.15}
+  \href{https://tex.stackexchange.com/questions/154842/using-pattern-inside-tikz-shapes-with-dropped-shadows}{*****} }{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
@@ -703,7 +700,7 @@ content...
 \subsection{\hll{Halfframed boxes}}
 \begin{tabular}{c | c}
 \begin{minipage}[m]{0.4\textwidth}
-\enum{\includegraphics[width=1\linewidth]{4.16.png}}{4.16}
+\enum{\includegraphics[width=1\linewidth]{4.16.png}}{\thesubsection}
 \end{minipage}
 &
 \begin{minipage}[m]{0.55\textwidth}
