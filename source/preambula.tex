@@ -558,3 +558,27 @@ fontsize=\scriptsize, tabsize=2, breaklines, autogobble}}
 \usepackage{circuitikz}
 \ctikzset{bipoles/thickness =1}
 
+\usepackage{needspace}
+%-----------------------------4.18
+\usepackage{gradient-text}
+ 
+\definecolor{myblue}{HTML}{1B1F23}
+\newtcbox{\cooltextbox}[1][myblue]{
+  tcbox width=auto limited,
+  fontupper=\Large\sffamily\bfseries,
+  colback=#1,
+  colframe=#1,
+  boxsep=0pt,
+  size=small,
+  arc=2mm,
+  boxrule=10.4pt,
+  top=2mm,
+  bottom=2mm,
+  right=2mm,
+  left=2mm,
+}
+\newcommand{\cooltext}[1]{%
+  \cooltextbox{%
+    \gradientRGB{#1}{72,107,234}{60,214,112}%
+  }%
+}

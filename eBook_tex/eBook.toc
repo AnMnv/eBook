@@ -45,55 +45,56 @@
 \contentsline {subsection}{\numberline {4.15}\hll {Text next to a table}}{27}{subsection.4.15}%
 \contentsline {subsection}{\numberline {4.16}\hll {Halfframed boxes}}{28}{subsection.4.16}%
 \contentsline {subsection}{\numberline {4.17}\hll {Vertically and horizontally align image inside table}}{29}{subsection.4.17}%
-\contentsline {section}{\numberline {5}Figures}{30}{section.5}%
-\contentsline {subsection}{\numberline {5.1}\hll {Comment to figure} }{30}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}\hll {Positioning 1 | 2}}{30}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}\hll {Placing image \xmybox [red!70!white]{anywhere} You want}}{30}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}\hll {Italic sabfigure references}}{31}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}\hll {Wrapfigure}}{31}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}\hll {Figures in landscape mode}}{32}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}\hll {Three figures in a row}}{32}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}\hll {Image as a background in a presentation}}{33}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Numbering, enumeration, itemizing}{34}{section.6}%
-\contentsline {subsection}{\numberline {6.1}\hll {Numbering in few columns}}{34}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}\hll {Enumeration environment with position number in the format (i, j)}}{34}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}\hll {Colored enumeration}}{35}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}\hll {Change footnote symbol}}{35}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}\hll {Leveled arabic enumeration}}{36}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}\hll {Bullets Style}}{36}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}\hll {Split itemize into multiple columns}}{36}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Plots, tikz, pie charts ...}{38}{section.7}%
-\contentsline {subsection}{\numberline {7.1}\hll {Simple pie chart}}{38}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}\hll {Circled arrows with text}}{38}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}\hll {Diamond with text}}{39}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}\hll {Levels of skills }}{39}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}\hll {Round levels of skills }}{39}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}\hll {Huge margin line}}{39}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}\hll {Aligning anything to a corer}}{40}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}\hll {Family tree}}{41}{subsection.7.8}%
-\contentsline {subsection}{\numberline {7.9}\hll {Mind map}}{43}{subsection.7.9}%
-\contentsline {subsection}{\numberline {7.10}\hll {Gantt chart}}{44}{subsection.7.10}%
-\contentsline {subsection}{\numberline {7.11}\hll {Drawing a stacked venn diagram}}{44}{subsection.7.11}%
-\contentsline {subsection}{\numberline {7.12}\hll {Ellipsis in Circuitikz}}{46}{subsection.7.12}%
-\contentsline {section}{\numberline {8}Highlighting}{47}{section.8}%
-\contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{47}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}\hll {Unusual words highlighting}}{47}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}\hll {Colored circles}}{48}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}\hll {Whole line colored}}{48}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}\hll {Circle text in points to other text}}{48}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}\hll {Keybutton}}{50}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}\hll {Colorful \xmyboxg {$\backslash $tableofcontents}}}{50}{subsection.8.7}%
-\contentsline {section}{\numberline {9}For Fun}{51}{section.9}%
-\contentsline {subsection}{\numberline {9.1}\hll {LaTeX Coffee Stains}}{51}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}\hll {Sticky notes}}{51}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}\hll {\fadingtext [scale=1, font=\bfseries ]{path picture shading=rainbow}{Rainbow text}}}{52}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}\hll {Single Watermark}}{53}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}\hll {Full page of Watermarks}}{53}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}\hll {Generating QR code}}{54}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}\hll {Gradient QR code}}{55}{subsection.9.7}%
-\contentsline {subsection}{\numberline {9.8}\hll {Lobsrets}}{55}{subsection.9.8}%
-\contentsline {subsection}{\numberline {9.9}\hll {Watermark over \textbf {everything}}}{56}{subsection.9.9}%
-\contentsline {subsection}{\numberline {9.10}\hll {Simple Emoji by \href {https://github.com/dilippuri/latexemoji}{dilippuri}}}{57}{subsection.9.10}%
-\contentsline {subsection}{\numberline {9.11}\hll {Confidential mark/ribbon top right of frontpage}}{58}{subsection.9.11}%
-\contentsline {section}{\numberline {10} Animation, videos, interaction}{59}{section.10}%
-\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{59}{subsection.10.1}%
+\contentsline {subsection}{\numberline {4.18}\hll {Box with \gradientRGB {nice gradient text}{72,107,234}{60,214,112}}}{30}{subsection.4.18}%
+\contentsline {section}{\numberline {5}Figures}{31}{section.5}%
+\contentsline {subsection}{\numberline {5.1}\hll {Comment to figure} }{31}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}\hll {Positioning 1 | 2}}{31}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}\hll {Placing image \xmybox [red!70!white]{anywhere} You want}}{31}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}\hll {Italic sabfigure references}}{32}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}\hll {Wrapfigure}}{32}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}\hll {Figures in landscape mode}}{33}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}\hll {Three figures in a row}}{33}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}\hll {Image as a background in a presentation}}{34}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Numbering, enumeration, itemizing}{35}{section.6}%
+\contentsline {subsection}{\numberline {6.1}\hll {Numbering in few columns}}{35}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}\hll {Enumeration environment with position number in the format (i, j)}}{35}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}\hll {Colored enumeration}}{36}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}\hll {Change footnote symbol}}{36}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}\hll {Leveled arabic enumeration}}{37}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}\hll {Bullets Style}}{37}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}\hll {Split itemize into multiple columns}}{37}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Plots, tikz, pie charts ...}{39}{section.7}%
+\contentsline {subsection}{\numberline {7.1}\hll {Simple pie chart}}{39}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}\hll {Circled arrows with text}}{39}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}\hll {Diamond with text}}{40}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}\hll {Levels of skills }}{40}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}\hll {Round levels of skills }}{40}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}\hll {Huge margin line}}{40}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}\hll {Aligning anything to a corer}}{41}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}\hll {Family tree}}{42}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}\hll {Mind map}}{44}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}\hll {Gantt chart}}{45}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}\hll {Drawing a stacked venn diagram}}{45}{subsection.7.11}%
+\contentsline {subsection}{\numberline {7.12}\hll {Ellipsis in Circuitikz}}{47}{subsection.7.12}%
+\contentsline {section}{\numberline {8}Highlighting}{48}{section.8}%
+\contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{48}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}\hll {Unusual words highlighting}}{48}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}\hll {Colored circles}}{49}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}\hll {Whole line colored}}{49}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}\hll {Circle text in points to other text}}{49}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}\hll {Keybutton}}{51}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}\hll {Colorful \xmyboxg {$\backslash $tableofcontents}}}{51}{subsection.8.7}%
+\contentsline {section}{\numberline {9}For Fun}{52}{section.9}%
+\contentsline {subsection}{\numberline {9.1}\hll {LaTeX Coffee Stains}}{52}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}\hll {Sticky notes}}{52}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}\hll {\fadingtext [scale=1, font=\bfseries ]{path picture shading=rainbow}{Rainbow text}}}{53}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}\hll {Single Watermark}}{54}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}\hll {Full page of Watermarks}}{54}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}\hll {Generating QR code}}{55}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}\hll {Gradient QR code}}{56}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}\hll {Lobsrets}}{56}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}\hll {Watermark over \textbf {everything}}}{57}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}\hll {Simple Emoji by \href {https://github.com/dilippuri/latexemoji}{dilippuri}}}{58}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}\hll {Confidential mark/ribbon top right of frontpage}}{59}{subsection.9.11}%
+\contentsline {section}{\numberline {10} Animation, videos, interaction}{60}{section.10}%
+\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{60}{subsection.10.1}%

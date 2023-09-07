@@ -796,6 +796,47 @@ Nr. 2   &   \includegraphics[width=0.8\textwidth,margin=0pt 1ex 0pt 1ex,valign=m
 \end{tabular}
 
 %#################### 4.18 ####################
+\subsection{\hll{Box with \gradientRGB{nice gradient text}{72,107,234}{60,214,112}}}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+Normal text Normal text\\
+
+\href{https://github.com/readme/featured/nasa-ingenuity-helicopter}{\enum{\cooltext{We wanted to make sure everyone was recognized for their 
+contributions to this incredible human achievement.}}{\thesubsection}}
+
+Normal text Normal text
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{gradient-text}
+\usepackage[many]{tcolorbox}
+\definecolor{backgroundd}{HTML}{232629}
+\definecolor{myblue}{HTML}{1B1F23}
+\newtcbox{\cooltextbox}[1][myblue]{
+tcbox width=auto limited,
+fontupper=\Large\sffamily\bfseries,
+colback=#1,colframe=#1,boxsep=0pt,
+size=small,arc=2mm,boxrule=10.4pt,
+top=2mm,bottom=2mm,right=2mm,left=2mm,
+}
+\newcommand{\cooltext}[1]{%
+\cooltextbox{%
+\gradientRGB{#1}{72,107,234}{60,214,112}%
+}}
+
+\begin{document}
+Normal text
+\cooltext{We wanted to make sure everyone was recognized for their 
+contributions to this incredible human achievement.}
+Normal text
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 %#################### 4.19 ####################
 
 
