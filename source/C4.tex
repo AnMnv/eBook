@@ -838,6 +838,61 @@ Normal text
 \end{minipage}
 \end{tabular}
 %#################### 4.19 ####################
+\subsection{\hll{One side dashed border}}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+This is \myboxfournine{the box} and what comes next.
+
+This is \myboxfournine[on line]{the same box but \texttt{on line}} and what comes
+next.
+
+\bigskip \noindent
+Variant based on \verb|\newtcolorbox|:
+\begin{myleftlineboxx}
+\lipsum[1]
+\end{myleftlineboxx}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{article}
+\usepackage{kantlipsum}         % for sample text
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\newtcbox{\mybox}[1][]{
+    enhanced, frame hidden, borderline west = {0.5pt}{0pt}{red,dashed}, #1
+}
+\newtcolorbox{myleftlinebox}[1][]{
+    enhanced, frame hidden, borderline west = {0.5pt}{0pt}{red,dashed}, #1
+}
+\begin{document}
+This is \mybox{the box} and what comes next.
+
+\bigskip
+This is \mybox[on line]{the same box but \texttt{on line}} and what comes
+next.
+
+\bigskip \noindent
+Variant based on \verb|\newtcolorbox|:
+\begin{myleftlinebox}
+  \kant[1]
+\end{myleftlinebox}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+
+%#################### 4.20 ####################
+%#################### 4.21 ####################
+%#################### 4.22 ####################
+%#################### 4.23 ####################
+%#################### 4.24 ####################
+%#################### 4.25 ####################
+%#################### 4.26 ####################
+%#################### 4.27 ####################
+%#################### 4.28 ####################
+
 
 
 

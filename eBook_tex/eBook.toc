@@ -22,11 +22,11 @@
 \contentsline {section}{\numberline {3}Code, listings, minted \dots }{13}{section.3}%
 \contentsline {subsection}{\numberline {3.1}\hll {Code listing using \xmyboxg {minted} in \xmyboxg {beamer}}}{13}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}\hll {"Zebra" style listing}}{13}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}\hll {Listing with russian language}}{15}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}\hll {Listing with \xmyboxg {minted}}}{15}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}\hll {Run LaTeX code inside and show result}}{16}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}\hll {Breaking code lines in a tcolorbox}}{17}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}\hll {Modern code listing using \xmyboxg {minted}}}{17}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.3}\hll {Listing with russian language}}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}\hll {Listing with \xmyboxg {minted}}}{14}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}\hll {Run LaTeX code inside and show result}}{15}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}\hll {Breaking code lines in a tcolorbox}}{16}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}\hll {Modern code listing using \xmyboxg {minted}}}{18}{subsection.3.7}%
 \contentsline {section}{\numberline {4}Tables, boxes and so on}{19}{section.4}%
 \contentsline {subsection}{\numberline {4.1}\hll {Nice tcolorbox}}{19}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}\hll {Color box with yellow border}}{19}{subsection.4.2}%
@@ -46,35 +46,36 @@
 \contentsline {subsection}{\numberline {4.16}\hll {Halfframed boxes}}{28}{subsection.4.16}%
 \contentsline {subsection}{\numberline {4.17}\hll {Vertically and horizontally align image inside table}}{29}{subsection.4.17}%
 \contentsline {subsection}{\numberline {4.18}\hll {Box with \gradientRGB {nice gradient text}{72,107,234}{60,214,112}}}{30}{subsection.4.18}%
-\contentsline {section}{\numberline {5}Figures}{31}{section.5}%
-\contentsline {subsection}{\numberline {5.1}\hll {Comment to figure} }{31}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}\hll {Positioning 1 | 2}}{31}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}\hll {Placing image \xmybox [red!70!white]{anywhere} You want}}{31}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}\hll {Italic sabfigure references}}{32}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}\hll {Wrapfigure}}{32}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}\hll {Figures in landscape mode}}{33}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}\hll {Three figures in a row}}{33}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}\hll {Image as a background in a presentation}}{34}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Numbering, enumeration, itemizing}{35}{section.6}%
-\contentsline {subsection}{\numberline {6.1}\hll {Numbering in few columns}}{35}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}\hll {Enumeration environment with position number in the format (i, j)}}{35}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}\hll {Colored enumeration}}{36}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}\hll {Change footnote symbol}}{36}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}\hll {Leveled arabic enumeration}}{37}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}\hll {Bullets Style}}{37}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}\hll {Split itemize into multiple columns}}{37}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Plots, tikz, pie charts ...}{39}{section.7}%
-\contentsline {subsection}{\numberline {7.1}\hll {Simple pie chart}}{39}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}\hll {Circled arrows with text}}{39}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}\hll {Diamond with text}}{40}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}\hll {Levels of skills }}{40}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}\hll {Round levels of skills }}{40}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}\hll {Huge margin line}}{40}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}\hll {Aligning anything to a corer}}{41}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}\hll {Family tree}}{42}{subsection.7.8}%
+\contentsline {subsection}{\numberline {4.19}\hll {One side dashed border}}{31}{subsection.4.19}%
+\contentsline {section}{\numberline {5}Figures}{32}{section.5}%
+\contentsline {subsection}{\numberline {5.1}\hll {Comment to figure} }{32}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}\hll {Positioning 1 | 2}}{32}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}\hll {Placing image \xmybox [red!70!white]{anywhere} You want}}{32}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}\hll {Italic sabfigure references}}{33}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}\hll {Wrapfigure}}{33}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}\hll {Figures in landscape mode}}{34}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}\hll {Three figures in a row}}{34}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}\hll {Image as a background in a presentation}}{35}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Numbering, enumeration, itemizing}{36}{section.6}%
+\contentsline {subsection}{\numberline {6.1}\hll {Numbering in few columns}}{36}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}\hll {Enumeration environment with position number in the format (i, j)}}{36}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}\hll {Colored enumeration}}{37}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}\hll {Change footnote symbol}}{37}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}\hll {Leveled arabic enumeration}}{38}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}\hll {Bullets Style}}{38}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}\hll {Split itemize into multiple columns}}{39}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Plots, tikz, pie charts ...}{40}{section.7}%
+\contentsline {subsection}{\numberline {7.1}\hll {Simple pie chart}}{40}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}\hll {Circled arrows with text}}{40}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}\hll {Diamond with text}}{41}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}\hll {Levels of skills }}{41}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}\hll {Round levels of skills }}{42}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}\hll {Huge margin line}}{42}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}\hll {Aligning anything to a corer}}{43}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}\hll {Family tree}}{43}{subsection.7.8}%
 \contentsline {subsection}{\numberline {7.9}\hll {Mind map}}{44}{subsection.7.9}%
 \contentsline {subsection}{\numberline {7.10}\hll {Gantt chart}}{45}{subsection.7.10}%
-\contentsline {subsection}{\numberline {7.11}\hll {Drawing a stacked venn diagram}}{45}{subsection.7.11}%
+\contentsline {subsection}{\numberline {7.11}\hll {Drawing a stacked venn diagram}}{46}{subsection.7.11}%
 \contentsline {subsection}{\numberline {7.12}\hll {Ellipsis in Circuitikz}}{47}{subsection.7.12}%
 \contentsline {section}{\numberline {8}Highlighting}{48}{section.8}%
 \contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{48}{subsection.8.1}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  3 SEP 2023 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  8 SEP 2023 14:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -86,22 +86,22 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 
-c:/Users/user/Desktop/eBook/source/C3.tex:3: LaTeX Error: Environment table undefined.
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--3
+[]
+ []
+
+
+c:/Users/user/Desktop/eBook/source/C3.tex:4: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 \begin{table}
-                 [h!]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.4 \begin{tabular}
+                   {c | c}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no ] in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -2273,6 +2273,6 @@ Here is how much of TeX's memory you used:
  23084 multiletter control sequences out of 15000+600000
  512455 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,9n,66p,355b,2529s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 68i,9n,66p,355b,2527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex:16:  ==> Fatal error occurred, no output PDF file produced!
