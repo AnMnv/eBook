@@ -10,13 +10,9 @@
 \usepackage[table]{xcolor}
 \usepackage{color}
 \usepackage{lipsum}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{subcaption}
-	\hypersetup{%
-		colorlinks=true,
-		linkbordercolor= red,
-		urlbordercolor=green,
-    }%for hyperrefs
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
 
 %----------------------------- for spacing
 \linespread{1.1}
@@ -590,7 +586,41 @@ fontsize=\scriptsize, tabsize=2, breaklines, autogobble}}
     enhanced, frame hidden, borderline west = {0.5pt}{0pt}{red,dashed}, #1
 }
 %-----------------------------
-%-----------------------------
+
+\usepackage{afterpage}
+\usepackage{anyfontsize}
+
+%\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+%-----------------------------7.13
+\usetikzlibrary{decorations.text}
+\definecolor{mygray}{RGB}{208,208,208}
+\definecolor{mymagenta}{RGB}{226,0,116}
+\newcommand*{\mytextstyle}{\sffamily\Large\bfseries\color{black!85}}
+\newcommand{\arcarrow}[3]{%
+% inner radius, middle radius, outer radius, start angle,
+% end angle, tip protusion angle, options, text
+\pgfmathsetmacro{\rin}{1.7}
+\pgfmathsetmacro{\rmid}{2.2}
+\pgfmathsetmacro{\rout}{2.7}
+\pgfmathsetmacro{\astart}{#1}
+\pgfmathsetmacro{\aend}{#2}
+\pgfmathsetmacro{\atip}{5}
+\fill[mygray, very thick] (\astart+\atip:\rin)
+arc (\astart+\atip:\aend:\rin)
+-- (\aend-\atip:\rmid)
+-- (\aend:\rout)   arc (\aend:\astart+\atip:\rout)
+-- (\astart:\rmid) -- cycle;
+\path[
+decoration = {
+text along path,
+text = {|\mytextstyle|#3},
+text align = {align = center},
+raise = -1.0ex
+},
+decorate
+](\astart+\atip:\rmid) arc (\astart+\atip:\aend+\atip:\rmid);
+}
 
 %-----------------------------
 

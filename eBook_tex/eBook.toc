@@ -1,101 +1,102 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Math Tips}{5}{section.1}%
-\contentsline {subsection}{\numberline {1.1}\hll {Auto-resizing equation}}{5}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}\hll {Form for simplest calculation}}{5}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}\hll {Equation in the form of steps}}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}\hll {One number for multiline equation}}{6}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}\hll {Matrix in \textbf {standalone} documentclass}}{7}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}\hll {Multiple lines, one centered label}}{7}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}\hll {Array as a fraction}}{7}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}\hll {Aligning equations inbetween text}}{8}{subsection.1.8}%
-\contentsline {subsection}{\numberline {1.9}\hll {Equation: boxed split inside align}}{8}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}\hll {Multiline text above arrow or relation symbol}}{8}{subsection.1.10}%
-\contentsline {subsection}{\numberline {1.11}\hll {Calculating scheme for a particular solution}}{9}{subsection.1.11}%
-\contentsline {section}{\numberline {2}Text, Symbols}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1}\hll {Ornaments from \xmyboxg {$\backslash $pgfornament}}}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}\hll {Wireframe rendering}}{10}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}\hll {Justifyed text}}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}\hll {Text under an underline}}{11}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}\hll {Various types of underlining}}{11}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}\hll {Bullets Style}}{12}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}\hll {Change the title of \xmyboxg {$\backslash $tableofcontents}}}{12}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Code, listings, minted \dots }{13}{section.3}%
-\contentsline {subsection}{\numberline {3.1}\hll {Code listing using \xmyboxg {minted} in \xmyboxg {beamer}}}{13}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}\hll {"Zebra" style listing}}{13}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}\hll {Listing with russian language}}{14}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}\hll {Listing with \xmyboxg {minted}}}{14}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}\hll {Run LaTeX code inside and show result}}{15}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}\hll {Breaking code lines in a tcolorbox}}{16}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}\hll {Modern code listing using \xmyboxg {minted}}}{18}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Tables, boxes and so on}{19}{section.4}%
-\contentsline {subsection}{\numberline {4.1}\hll {Nice tcolorbox}}{19}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}\hll {Color box with yellow border}}{19}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}\hll {A drop capital in a tcolorbox}}{19}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}\hll {\textit {Table with the desired length. }}}{20}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}\hll {Photo positioning}}{20}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}\hll {bclogo – Creating colourful boxes with logos}}{21}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}\hll {Warning banner}}{22}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}\hll {Absolutely centered cells (vertically and horisontally)}}{22}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}\hll {Martix made of table}}{23}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}\hll {Centering cells with \xmybox {NiceTabular}}}{23}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}\hll {Centered cells in \xmybox {longtable}}}{24}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}\hll {If table is not wide enough}}{24}{subsection.4.12}%
-\contentsline {subsection}{\numberline {4.13}\hll {Text next to a table}}{25}{subsection.4.13}%
-\contentsline {subsection}{\numberline {4.14}\hll {Hand Drawn tcolorbox}}{26}{subsection.4.14}%
-\contentsline {subsection}{\numberline {4.15}\hll {Text next to a table}}{27}{subsection.4.15}%
-\contentsline {subsection}{\numberline {4.16}\hll {Halfframed boxes}}{28}{subsection.4.16}%
-\contentsline {subsection}{\numberline {4.17}\hll {Vertically and horizontally align image inside table}}{29}{subsection.4.17}%
-\contentsline {subsection}{\numberline {4.18}\hll {Box with \gradientRGB {nice gradient text}{72,107,234}{60,214,112}}}{30}{subsection.4.18}%
-\contentsline {subsection}{\numberline {4.19}\hll {One side dashed border}}{31}{subsection.4.19}%
-\contentsline {section}{\numberline {5}Figures}{32}{section.5}%
-\contentsline {subsection}{\numberline {5.1}\hll {Comment to figure} }{32}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}\hll {Positioning 1 | 2}}{32}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}\hll {Placing image \xmybox [red!70!white]{anywhere} You want}}{32}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}\hll {Italic sabfigure references}}{33}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}\hll {Wrapfigure}}{33}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}\hll {Figures in landscape mode}}{34}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}\hll {Three figures in a row}}{34}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}\hll {Image as a background in a presentation}}{35}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Numbering, enumeration, itemizing}{36}{section.6}%
-\contentsline {subsection}{\numberline {6.1}\hll {Numbering in few columns}}{36}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}\hll {Enumeration environment with position number in the format (i, j)}}{36}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}\hll {Colored enumeration}}{37}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}\hll {Change footnote symbol}}{37}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}\hll {Leveled arabic enumeration}}{38}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}\hll {Bullets Style}}{38}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}\hll {Split itemize into multiple columns}}{39}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Plots, tikz, pie charts ...}{40}{section.7}%
-\contentsline {subsection}{\numberline {7.1}\hll {Simple pie chart}}{40}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}\hll {Circled arrows with text}}{40}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}\hll {Diamond with text}}{41}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}\hll {Levels of skills }}{41}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}\hll {Round levels of skills }}{42}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}\hll {Huge margin line}}{42}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}\hll {Aligning anything to a corer}}{43}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}\hll {Family tree}}{43}{subsection.7.8}%
-\contentsline {subsection}{\numberline {7.9}\hll {Mind map}}{44}{subsection.7.9}%
-\contentsline {subsection}{\numberline {7.10}\hll {Gantt chart}}{45}{subsection.7.10}%
-\contentsline {subsection}{\numberline {7.11}\hll {Drawing a stacked venn diagram}}{46}{subsection.7.11}%
-\contentsline {subsection}{\numberline {7.12}\hll {Ellipsis in Circuitikz}}{47}{subsection.7.12}%
-\contentsline {section}{\numberline {8}Highlighting}{48}{section.8}%
-\contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{48}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}\hll {Unusual words highlighting}}{48}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}\hll {Colored circles}}{49}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}\hll {Whole line colored}}{49}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}\hll {Circle text in points to other text}}{49}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}\hll {Keybutton}}{51}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}\hll {Colorful \xmyboxg {$\backslash $tableofcontents}}}{51}{subsection.8.7}%
-\contentsline {section}{\numberline {9}For Fun}{52}{section.9}%
-\contentsline {subsection}{\numberline {9.1}\hll {LaTeX Coffee Stains}}{52}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}\hll {Sticky notes}}{52}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}\hll {\fadingtext [scale=1, font=\bfseries ]{path picture shading=rainbow}{Rainbow text}}}{53}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}\hll {Single Watermark}}{54}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}\hll {Full page of Watermarks}}{54}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}\hll {Generating QR code}}{55}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}\hll {Gradient QR code}}{56}{subsection.9.7}%
-\contentsline {subsection}{\numberline {9.8}\hll {Lobsrets}}{56}{subsection.9.8}%
-\contentsline {subsection}{\numberline {9.9}\hll {Watermark over \textbf {everything}}}{57}{subsection.9.9}%
-\contentsline {subsection}{\numberline {9.10}\hll {Simple Emoji by \href {https://github.com/dilippuri/latexemoji}{dilippuri}}}{58}{subsection.9.10}%
-\contentsline {subsection}{\numberline {9.11}\hll {Confidential mark/ribbon top right of frontpage}}{59}{subsection.9.11}%
-\contentsline {section}{\numberline {10} Animation, videos, interaction}{60}{section.10}%
-\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{60}{subsection.10.1}%
+\contentsline {section}{\numberline {1}Math Tips}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}\hll {Auto-resizing equation}}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}\hll {Form for simplest calculation}}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}\hll {Equation in the form of steps}}{7}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}\hll {One number for multiline equation}}{7}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}\hll {Matrix in \textbf {standalone} documentclass}}{8}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}\hll {Multiple lines, one centered label}}{8}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}\hll {Array as a fraction}}{8}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}\hll {Aligning equations inbetween text}}{9}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}\hll {Equation: boxed split inside align}}{9}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}\hll {Multiline text above arrow or relation symbol}}{9}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}\hll {Calculating scheme for a particular solution}}{10}{subsection.1.11}%
+\contentsline {section}{\numberline {2}Text, Symbols}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\hll {Ornaments from \xmyboxg {$\backslash $pgfornament}}}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}\hll {Wireframe rendering}}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}\hll {Justifyed text}}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}\hll {Text under an underline}}{12}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}\hll {Various types of underlining}}{12}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}\hll {Bullets Style}}{13}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}\hll {Change the title of \xmyboxg {$\backslash $tableofcontents}}}{13}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Code, listings, minted \dots }{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}\hll {Code listing using \xmyboxg {minted} in \xmyboxg {beamer}}}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}\hll {"Zebra" style listing}}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}\hll {Listing with russian language}}{15}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}\hll {Listing with \xmyboxg {minted}}}{15}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}\hll {Run LaTeX code inside and show result}}{16}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}\hll {Breaking code lines in a tcolorbox}}{17}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}\hll {Modern code listing using \xmyboxg {minted}}}{19}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Tables, boxes and so on}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}\hll {Nice tcolorbox}}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}\hll {Color box with yellow border}}{20}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}\hll {A drop capital in a tcolorbox}}{20}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}\hll {\textit {Table with the desired length. }}}{21}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}\hll {Photo positioning}}{21}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}\hll {bclogo – Creating colourful boxes with logos}}{22}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}\hll {Warning banner}}{23}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}\hll {Absolutely centered cells (vertically and horisontally)}}{23}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}\hll {Martix made of table}}{24}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}\hll {Centering cells with \xmybox {NiceTabular}}}{24}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}\hll {Centered cells in \xmybox {longtable}}}{25}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}\hll {If table is not wide enough}}{25}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}\hll {Text next to a table}}{26}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}\hll {Hand Drawn tcolorbox}}{27}{subsection.4.14}%
+\contentsline {subsection}{\numberline {4.15}\hll {Text next to a table}}{28}{subsection.4.15}%
+\contentsline {subsection}{\numberline {4.16}\hll {Halfframed boxes}}{29}{subsection.4.16}%
+\contentsline {subsection}{\numberline {4.17}\hll {Vertically and horizontally align image inside table}}{30}{subsection.4.17}%
+\contentsline {subsection}{\numberline {4.18}\hll {Box with \gradientRGB {nice gradient text}{72,107,234}{60,214,112}}}{31}{subsection.4.18}%
+\contentsline {subsection}{\numberline {4.19}\hll {One side dashed border}}{32}{subsection.4.19}%
+\contentsline {section}{\numberline {5}Figures}{33}{section.5}%
+\contentsline {subsection}{\numberline {5.1}\hll {Comment to figure} }{33}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}\hll {Positioning 1 | 2}}{33}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}\hll {Placing image \xmybox [red!70!white]{anywhere} You want}}{33}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}\hll {Italic sabfigure references}}{34}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}\hll {Wrapfigure}}{34}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}\hll {Figures in landscape mode}}{35}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}\hll {Three figures in a row}}{35}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}\hll {Image as a background in a presentation}}{36}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Numbering, enumeration, itemizing}{37}{section.6}%
+\contentsline {subsection}{\numberline {6.1}\hll {Numbering in few columns}}{37}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}\hll {Enumeration environment with position number in the format (i, j)}}{37}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}\hll {Colored enumeration}}{38}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}\hll {Change footnote symbol}}{38}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}\hll {Leveled arabic enumeration}}{39}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}\hll {Bullets Style}}{39}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}\hll {Split itemize into multiple columns}}{40}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Plots, tikz, pie charts ...}{41}{section.7}%
+\contentsline {subsection}{\numberline {7.1}\hll {Simple pie chart}}{41}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}\hll {Circled arrows with text}}{41}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}\hll {Diamond with text}}{42}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}\hll {Levels of skills }}{42}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}\hll {Round levels of skills }}{43}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}\hll {Huge margin line}}{43}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}\hll {Aligning anything to a corer}}{44}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}\hll {Family tree}}{44}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}\hll {Mind map}}{45}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}\hll {Gantt chart}}{46}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}\hll {Drawing a stacked venn diagram}}{47}{subsection.7.11}%
+\contentsline {subsection}{\numberline {7.12}\hll {Ellipsis in Circuitikz}}{48}{subsection.7.12}%
+\contentsline {subsection}{\numberline {7.13}\hll {Drawing a stacked venn diagram}}{49}{subsection.7.13}%
+\contentsline {section}{\numberline {8}Highlighting}{50}{section.8}%
+\contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{50}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}\hll {Unusual words highlighting}}{50}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}\hll {Colored circles}}{51}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}\hll {Whole line colored}}{51}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}\hll {Circle text in points to other text}}{51}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}\hll {Keybutton}}{53}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}\hll {Colorful \xmyboxg {$\backslash $tableofcontents}}}{53}{subsection.8.7}%
+\contentsline {section}{\numberline {9}For Fun}{54}{section.9}%
+\contentsline {subsection}{\numberline {9.1}\hll {LaTeX Coffee Stains}}{54}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}\hll {Sticky notes}}{54}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}\hll {\fadingtext [scale=1, font=\bfseries ]{path picture shading=rainbow}{Rainbow text}}}{55}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}\hll {Single Watermark}}{56}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}\hll {Full page of Watermarks}}{56}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}\hll {Generating QR code}}{57}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}\hll {Gradient QR code}}{58}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}\hll {Lobsrets}}{58}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}\hll {Watermark over \textbf {everything}}}{59}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}\hll {Simple Emoji by \href {https://github.com/dilippuri/latexemoji}{dilippuri}}}{60}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}\hll {Confidential mark/ribbon top right of frontpage}}{61}{subsection.9.11}%
+\contentsline {section}{\numberline {10} Animation, videos, interaction}{62}{section.10}%
+\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{62}{subsection.10.1}%

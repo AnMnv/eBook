@@ -14,31 +14,37 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
-\tikzstyle{every picture}+=[remember picture]
-\tikzstyle{na} = [baseline=-.5ex]
-%--------------COVER_PAGE
-\begin{titlepage}
-\newgeometry{top=1in,bottom=1in,right=0in,left=0in}
-\thispagestyle{empty}
-\begin{center}
-\pagecolor{titlepagecolor}
-\color{white}
-\nbvspace[0.5]
-\noindent
-\resizebox{0.4\linewidth}{!}{\itshape LaTeX eBook}
-\nbvspace[2]
-\vskip\baselineskip
-\includegraphics[width=\paperwidth]{day1.png}
-\vskip\baselineskip
-\nbvspace[2]
-\resizebox{0.3\linewidth}{!}{\itshape \forcover{\textcolor{black}{Examples}}}
-\nbvspace[0.5]
-\end{center}
-\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+\afterpage{
+\newgeometry{margin=0.5in}
+\vspace*{-2.2cm}
+\begin{tcolorbox}[colback=applegreen,colframe=applegreen,boxsep=0mm,arc=0mm,left=0mm,right=0mm,top=5mm,bottom=2mm,]
+    { }
+\end{tcolorbox}
+ 
+\vspace*{16.5cm}
+
+\begin{tcolorbox}[colback=applegreen,colframe=white,
+boxsep=5mm,arc=0mm,left=0mm,right=0mm,top=5mm,bottom=5mm,
+enhanced,
+overlay={
+\node at ([yshift=11.5cm,xshift=-6cm]frame.east) {\includegraphics[width=0.6\linewidth]{m.png}};},
+title=\huge \textbf{\texttt{\href{https://github.com/Anmnv/eBook}{Anton Mn $|$\, \begin{tikzpicture}[remember picture,overlay]
+    \node [xshift=0cm,yshift=0.2cm]{\includegraphics[width=0.04\linewidth]{github.png}};
+\end{tikzpicture}\, \underline{See more on GitHub}}}},
+attach boxed title to bottom right={yshift=-10mm},
+boxed title style={colback=darkorange,top=1mm,bottom=1mm,arc=0mm,}]
+\textbf{\fontsize{60}{60}\selectfont \textcolor{white}{LaTeX}  \\[.5cm] \textcolor{white}{by examples}} 
+\end{tcolorbox}
+\restoregeometry
+}
+\end{titlepage}
 \clearpage
+
 %-------------------------------------------------------------------------------------------------------
 %\vfill
 %\doclicenseThis
