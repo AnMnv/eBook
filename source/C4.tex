@@ -884,6 +884,54 @@ Variant based on \verb|\newtcolorbox|:
 \end{tabular}
 
 %#################### 4.20 ####################
+\subsection{\hll{Multilevel Colored Boxes (multi)\xmyboxg{$\backslash$tcblower}}}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\begin{tcolorbox}[colback=red!5,colframe=red!75!black,title=My nice heading]
+This is another \textbf{tcolorbox}.
+
+\tcblower
+
+Here, you see the lower part of the box.
+
+\DrawLine
+
+and some more
+\end{tcolorbox}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\footnotesize] 
+\documentclass{report}
+\usepackage{tikz,tcolorbox}
+\makeatletter
+\newcommand{\DrawLine}{%
+\begin{tikzpicture}
+\path[use as bounding box] (0,0) -- (\linewidth,0);
+\draw[color=red!75!black,dashed,dash phase=2pt]
+(0-\kvtcb@leftlower-\kvtcb@boxsep,0)--
+(\linewidth+\kvtcb@rightlower+\kvtcb@boxsep,0);
+\end{tikzpicture}%
+}
+\makeatother
+
+\begin{document}
+\begin{tcolorbox}[colback=red!5,colframe=red!75!black,title=My nice heading]
+This is another \textbf{tcolorbox}.
+
+\tcblower
+
+Here, you see the lower part of the box.
+
+\DrawLine
+
+and some more
+\end{tcolorbox}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 %#################### 4.21 ####################
 %#################### 4.22 ####################
 %#################### 4.23 ####################
