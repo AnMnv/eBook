@@ -477,5 +477,33 @@ Good bye! \latexemoji{wave}
 \end{minipage}
 \end{tabular}
 \end{table}
+
+\clearpage
 %#################### 9.12 ####################
+\subsection{\hll{Text in different shapes}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\shapepar{\heartshape}{\small Happy families are all alike; every unhappy family is unhappy in its own way. Happy families are all alike; every unhappy family is unhappy in its own way.}}{\thesubsection}
+
+
+Available shapes: hexagonshape, heartshape,diamondshape, nutshape, starshape
+
+
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\ttfamily\scriptsize]
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{shapepar}
+
+\begin{document}
+\shapepar{\heartshape}{\blindtext[1]}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
 %#################### 9.13 ####################

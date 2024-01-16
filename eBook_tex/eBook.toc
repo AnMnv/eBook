@@ -99,5 +99,6 @@
 \contentsline {subsection}{\numberline {9.9}\hll {Watermark over \textbf {everything}}}{60}{subsection.9.9}%
 \contentsline {subsection}{\numberline {9.10}\hll {Simple Emoji by \href {https://github.com/dilippuri/latexemoji}{dilippuri}}}{61}{subsection.9.10}%
 \contentsline {subsection}{\numberline {9.11}\hll {Confidential mark/ribbon top right of frontpage}}{62}{subsection.9.11}%
-\contentsline {section}{\numberline {10} Animation, videos, interaction}{63}{section.10}%
-\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{63}{subsection.10.1}%
+\contentsline {subsection}{\numberline {9.12}\hll {Text in different shapes}}{63}{subsection.9.12}%
+\contentsline {section}{\numberline {10} Animation, videos, interaction}{64}{section.10}%
+\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{64}{subsection.10.1}%
