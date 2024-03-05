@@ -506,4 +506,76 @@ Available shapes: hexagonshape, heartshape,diamondshape, nutshape, starshape
 \end{minipage}
 \end{tabular}
 \end{table}
-%#################### 9.13 ####################
+%#################### 9.13 #################### https://tex.stackexchange.com/questions/712250/drawing-3d-dice
+
+\subsection{\hll{Drawing 3D dice}}
+\begin{table}[h!]
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\href{https://tex.stackexchange.com/questions/712250/drawing-3d-dice}{\includegraphics[width=1.\linewidth]{9.13.pdf}}}{\thesubsection}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\ttfamily\scriptsize]
+  \documentclass[tikz, border=1cm]{standalone}
+  \usepackage{tikz-3dplot}
+  \begin{document}
+  \newcommand{\dicenum}[1]{%
+  \pgfmathparse{#1==2 || #1==4 || #1==5 || #1==6}\ifnum\pgfmathresult>0\relax%
+  \fill[black] (0.5,0.5) circle[radius=1/6];    % top left
+  \fill[black] (-0.5,-0.5) circle[radius=1/6];\fi % bottom right
+  \pgfmathparse{#1==3 || #1==4 || #1==5 || #1==6}\ifnum\pgfmathresult>0\relax%
+  \fill[black] (-0.5,0.5) circle[radius=1/6];    % top right
+  \fill[black] (0.5,-0.5) circle[radius=1/6];\fi % bottom left
+  \pgfmathparse{#1==1 || #1==3 || #1==5}\ifnum\pgfmathresult>0\relax%
+  \fill[black] (0,0) circle[radius=1/6]; \fi % center
+  \ifnum#1=6\relax%
+  \fill[black] (0.5,0) circle[radius=1/6];     % middle left
+  \fill[black] (-0.5,0) circle[radius=1/6];\fi % middle right
+  }
+  \newcounter{currnum}
+  \setcounter{currnum}{1}
+  \begin{tikzpicture}
+  \newcommand{\dice}[5]{
+  \tdplotsetmaincoords{#3}{#4}
+  \begin{scope}[shift={(#1,#2)}, tdplot_main_coords, rounded corners=#5, fill=brown!50!white]
+  \begin{scope}[canvas is xy plane at z=-1]
+  \filldraw (-1,-1) rectangle (1,1);
+  \end{scope}
+  \begin{scope}[canvas is xz plane at y=-1]
+  \filldraw (-1,-1) rectangle (1,1);
+  \end{scope}
+  \begin{scope}[canvas is yz plane at x=-1]
+  \filldraw (-1,-1) rectangle (1,1);
+  \end{scope}
+  \begin{scope}[canvas is xy plane at z=1]
+  \filldraw (-1,-1) rectangle (1,1);
+  \dicenum{\value{currnum}}
+  \stepcounter{currnum}
+  \ifnum\value{currnum}>6\relax\setcounter{currnum}{1}\fi
+  \end{scope}
+  \begin{scope}[canvas is xz plane at y=1]
+  \filldraw (-1,-1) rectangle (1,1);
+  \dicenum{\value{currnum}}
+  \stepcounter{currnum}
+  \ifnum\value{currnum}>6\relax\setcounter{currnum}{1}\fi
+  \end{scope}
+  \begin{scope}[canvas is yz plane at x=1]
+  \filldraw (-1,-1) rectangle (1,1);
+  \dicenum{\value{currnum}}
+  \stepcounter{currnum}
+  \ifnum\value{currnum}>6\relax\setcounter{currnum}{1}\fi
+  \end{scope}
+  \end{scope}
+  }
+  \dice{0}{0}{70}{110}{0.3cm};
+  \dice{2}{2}{70}{110}{0.5cm};
+  \dice{5}{3}{40}{130}{0.3cm};
+  \dice{5}{-1}{40}{160}{0.6cm};
+  \end{tikzpicture}
+  \end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
+\end{table}
