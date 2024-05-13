@@ -102,5 +102,6 @@
 \contentsline {subsection}{\numberline {9.12}\hll {Text in different shapes}}{62}{subsection.9.12}%
 \contentsline {subsection}{\numberline {9.13}\hll {Drawing 3D dice}}{63}{subsection.9.13}%
 \contentsline {subsection}{\numberline {9.14}\hll {Animals}}{64}{subsection.9.14}%
-\contentsline {section}{\numberline {10} Animation, videos, interaction}{65}{section.10}%
-\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{65}{subsection.10.1}%
+\contentsline {subsection}{\numberline {9.15}\hll {Skill icons \photosymbol {Git} \photosymbol {LaTeX-Dark} \photosymbol {Linux-Light} \photosymbol {Github-Dark} \photosymbol {VSCode-Light}}}{65}{subsection.9.15}%
+\contentsline {section}{\numberline {10} Animation, videos, interaction}{67}{section.10}%
+\contentsline {subsection}{\numberline {10.1}\hll {Video in PDF (okular as a .pdf viewer was used)}}{67}{subsection.10.1}%

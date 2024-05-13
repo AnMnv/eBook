@@ -1,0 +1,14 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{skillicons}[2024/05/12 Package for including photos as symbols]
+
+\RequirePackage{graphicx}
+
+ 
+
+\newcommand{\photosymbol}[2][1]{%
+    \raisebox{\dimexpr 0.5\fontcharht\font`T - 0.5\height - 0.5\fontchardp\font`q}{%
+        \includegraphics[height=\dimexpr#1\fontcharht\font`T+1.5\fontchardp\font`q]{skill-icons/#2}%
+    }%
+}
+
+\endinput
