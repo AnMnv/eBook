@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {1.7}\hll {Array as a fraction}}{9}{subsection.1.7}%
 \contentsline {subsection}{\numberline {1.8}\hll {Aligning equations inbetween text}}{10}{subsection.1.8}%
 \contentsline {subsection}{\numberline {1.9}\hll {Equation: boxed split inside align}}{10}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}\hll {Multiline text above arrow or relation symbol}}{10}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.10}\hll {Multiline text above the arrow or relation symbol}}{10}{subsection.1.10}%
 \contentsline {subsection}{\numberline {1.11}\hll {Calculating scheme for a particular solution}}{11}{subsection.1.11}%
 \contentsline {section}{\numberline {2}Text, Symbols}{12}{section.2}%
 \contentsline {subsection}{\numberline {2.1}\hll {Ornaments from \xmyboxg {$\backslash $pgfornament}}}{12}{subsection.2.1}%
@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {4.5}\hll {Photo positioning}}{21}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}\hll {bclogo – Creating colourful boxes with logos}}{22}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}\hll {Warning banner}}{23}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}\hll {Absolutely centered cells (vertically and horisontally)}}{23}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.8}\hll {Absolutely centered cells (vertically and horizontally)}}{23}{subsection.4.8}%
 \contentsline {subsection}{\numberline {4.9}\hll {Martix made of table}}{24}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}\hll {Centering cells with \xmybox {NiceTabular}}}{24}{subsection.4.10}%
 \contentsline {subsection}{\numberline {4.11}\hll {Centered cells in \xmybox {longtable}}}{25}{subsection.4.11}%
@@ -77,8 +77,9 @@
 \contentsline {subsection}{\numberline {7.9}\hll {Mind map}}{46}{subsection.7.9}%
 \contentsline {subsection}{\numberline {7.10}\hll {Gantt chart}}{47}{subsection.7.10}%
 \contentsline {subsection}{\numberline {7.11}\hll {Drawing a stacked venn diagram}}{48}{subsection.7.11}%
-\contentsline {subsection}{\numberline {7.12}\hll {Ellipsis in Circuitikz}}{49}{subsection.7.12}%
-\contentsline {subsection}{\numberline {7.13}\hll {A cycle diagram}}{50}{subsection.7.13}%
+\contentsline {subsection}{\numberline {7.12}\hll {Three Dimensional Plotting}}{48}{subsection.7.12}%
+\contentsline {subsection}{\numberline {7.13}\hll {Ellipsis in Circuitikz}}{49}{subsection.7.13}%
+\contentsline {subsection}{\numberline {7.14}\hll {A cycle diagram}}{50}{subsection.7.14}%
 \contentsline {section}{\numberline {8}Highlighting}{51}{section.8}%
 \contentsline {subsection}{\numberline {8.1}\hll {Words highlighting \xmybox {1}}}{51}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}\hll {Unusual words highlighting}}{51}{subsection.8.2}%

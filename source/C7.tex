@@ -567,7 +567,40 @@ tick label/.append style={above},label as pin if value below={4}}
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
+%#################### 7.14 ####################
+\subsection{\hll{Three Dimensional Plotting}}
 
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\href{https://latexdraw.com/three-dimensional-plotting-in-latex/}{\includegraphics[width=1\linewidth]{7.14.pdf}}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass [border = .2cm] {standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[colormap/cool, colorbar horizontal]
+
+\addplot3 [
+    domain=-5:5,
+    domain y=-5:5,
+    samples=50,
+    samples y=50,
+    surf,
+    shader=interp,
+] {sin(deg(sqrt(x^2+y^2)))};
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 %#################### 7.12 ####################
 \begin{landscape}
 \subsection{\hll{Ellipsis in Circuitikz}}
@@ -714,7 +747,7 @@ align = center
 \end{lstlisting}
 \end{minipage}
 \end{tabular}
-%#################### 7.14 ####################
+
 %#################### 7.15 ####################
 %#################### 7.16 ####################
 %#################### 7.17 ####################

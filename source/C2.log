@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  3 SEP 2023 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.28)  20 MAY 2024 19:57
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -75,22 +75,27 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 
-c:/Users/user/Desktop/eBook/source/C2.tex:4: LaTeX Error: Environment table undefined.
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--4
+[]
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 2--4
+\OMS/cmsy/m/n/10 n$ 
+ []
+
+
+c:/Users/user/Desktop/eBook/source/C2.tex:5: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \begin{table}
-                 [h!]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.5 \begin{tabular}
+                   {c | c}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no [ in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no ! in font nullfont!
-Missing character: There is no ] in font nullfont!
 
 c:/Users/user/Desktop/eBook/source/C2.tex:7: LaTeX Error: Environment tcblisting undefined.
 
@@ -3114,6 +3119,6 @@ Here is how much of TeX's memory you used:
  23861 multiletter control sequences out of 15000+600000
  512287 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,118p,439b,3518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,118p,439b,3516s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex:281:  ==> Fatal error occurred, no output PDF file produced!
