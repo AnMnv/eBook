@@ -933,6 +933,73 @@ and some more
 \end{minipage}
 \end{tabular}
 %#################### 4.21 ####################
+\subsection{\hll{Table with rounded corners}}
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\href{https://tex.stackexchange.com/questions/10224/table-with-rounded-corners}{\img{1}{C:/Users/user/Desktop/eBook/images/4.21.pdf}}}{\thesubsection}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{green!15}{yellow!15},numbers=left,basicstyle=\ttfamily\scriptsize] 
+\documentclass{article}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{array}
+\usepackage{environ}
+\usepackage{tikz}
+
+\newsavebox{\tablebox}
+\definecolor{tablecolor}{named}{ForestGreen}
+
+\NewEnviron{rndtable}[1]{%
+\addtolength{\extrarowheight}{1ex}%
+\rowcolors{2}{tablecolor!20}{tablecolor!40}%
+\savebox{\tablebox}{%
+\begin{tabular}{#1}%
+\BODY%
+\end{tabular}}%
+\begin{tikzpicture}
+\begin{scope}
+\clip[rounded corners=1ex] (0,-\dp\tablebox) -- (\wd\tablebox,-\dp\tablebox) -- (\wd\tablebox,\ht\tablebox) -- (0,\ht\tablebox) -- cycle;
+\node at (0,-\dp\tablebox) [anchor=south west,inner sep=0pt]{\usebox{\tablebox}};
+\end{scope}
+\draw[rounded corners=1ex] (0,-\dp\tablebox) -- (\wd\tablebox,-\dp\tablebox) -- (\wd\tablebox,\ht\tablebox) -- (0,\ht\tablebox) -- cycle;
+\end{tikzpicture}
+}
+
+\begin{document}
+\begin{rndtable}{l|l}
+\multicolumn{2}{c}{\cellcolor{tablecolor}\color{white} Team Sheet} \\ \hline
+GK & Paul Robinson \\
+LB & Lucus Radebe \\
+DC & Michael Duberry \\
+DC & Dominic Matteo \\
+RB & Didier Domi \\
+MC & David Batty \\
+MC & Eirik Bakke \\
+MC & Jody Morris \\
+FW & Jamie McMaster \\
+ST & Alan Smith \\
+ST & Mark Viduka \\
+\hline
+\multicolumn{2}{c}{\cellcolor{tablecolor}\color{white} Substitutes} \\ \hline
+GK & Nigel Martyn \\
+DF & Danny Mills \\
+MF & Jason Wilcox \\
+MF & Olivier Dacourt \\
+FW & Robbie Keane \\
+\hline
+\multicolumn{2}{c}{\cellcolor{tablecolor}\color{white} Coaching Staff} \\ \hline
+Manager & David O'Leary \\
+Assistant Manager & Eddie Gray \\
+Fitness Coach & Dean Riddle \\
+Goalkeeping Coach & Andy Rhodes \\
+Physiotherapist & Dave Hancock \\
+\end{rndtable}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 %#################### 4.22 ####################
 %#################### 4.23 ####################
 %#################### 4.24 ####################
