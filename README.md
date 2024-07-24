@@ -60,7 +60,7 @@
 
 
 
-
+[![Download eBook](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/latex-book/files/latest/download) [![Download eBook](https://img.shields.io/sourceforge/dt/latex-book.svg)](https://sourceforge.net/projects/latex-book/files/latest/download)
 
 
 
