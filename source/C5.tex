@@ -306,7 +306,51 @@ qqqqqqq
  
 
 %-------------------5.9
- 
+\subsection{\hll{Cover Design for Journal or Report}}
+
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\enum{\centering\includegraphics[width=1\linewidth]{5.9.pdf}}{\thesubsection}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{green!15},numbers=left,basicstyle=\ttfamily\scriptsize]
+\documentclass[11pt]{article}
+\usepackage[top=1in,bottom=1in,left=1.5in,right=1.5in]{geometry}
+\usepackage{graphicx, soul, tikz}
+
+\begin{document}
+\thispagestyle{empty}
+\newgeometry{top=0.5cm, bottom=0.5cm, left=0.5cm,right=0.5cm}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.85]
+\path[fill=white] (-10,-20) to[out=45,in=270] (4,10) -- (-10,10);
+\path[fill=white!75!teal] (-10,-19) to[out=50,in=270] (2,10) -- (-10,10);
+\path[fill=white!50!teal] (-10,-20) to[out=55,in=270] (0,10) -- (-10,10);
+\path[fill=green!67!blue] (-10,-20) to[out=60,in=270] (-2,10) -- (-10,10);
+\path[fill=teal!75!black] (-10,-20) to[out=65,in=270] (-4,10) -- (-10,10);
+\path[fill=black!60!teal] (-10,-20) to[out=70,in=270] (-6,10) -- (-10,10);
+\path[fill=white] (-10,-20) to[out=45,in=180] (14,-4.5) -- (14,-15);
+\path[fill=white!75!teal] (-10,-20) to[out=40,in=180] (14,-6.5) -- (14,-15);
+\path[fill=white!50!teal] (-10,-20) to[out=35,in=180] (14,-8.5) -- (14,-15);
+\path[fill=green!67!blue] (-10,-20) to[out=35,in=180] (14,-10.5) -- (14,-15);
+\path[fill=teal!75!black] (-10,-20) to[out=30,in=180] (14,-12.5) -- (14,-15);
+\path[fill=black!60!teal] (-10,-20) to[out=25,in=180] (14,-14.5) -- (14,-20) -- (-10,-20);
+\draw[thick] (-10,-20) to[out=45,in=270] (4,10);
+\draw[thick] (-10,-20) to[out=45,in=180] (14,-4.5);
+\node[black] at (8.5,4) {{\Huge \sc Title of work}};
+\node[black] at (8.5,2) {{\Huge \sc Year}};
+\node[black] at (8.5,0) {{\huge \sc Name of Author}};
+\node[white] at (10.5,-19.5) {{\large \sc Affiliation if necesarry}};
+\end{tikzpicture}
+\end{figure}
+\restoregeometry
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
 %-------------------5.10
 %-------------------5.11
 
