@@ -1,6 +1,11 @@
  
 
 # Be sure to drop a <img src="images/star.png" alt="drawing" width="50"/> if you like the project! <img align="right" width="100" height="100" src="https://github.com/AnMnv/eBook/blob/main/images/bmc_qr.png">
+
+| Crypto | Wallet | 
+|:-------------:|:-------------:|
+|<img align="center" src="https://github.com/Cryptofonts/cryptoicons/blob/master/64/ton.png?raw=true" width="32"/>| ```UQCtXPZuntYpwuSN-E7cXBeSsl91RkSMxccfJbRIeJhE68Rx``` |
+|<img align="center" src="https://github.com/Cryptofonts/cryptoicons/blob/master/64/usdt.png?raw=true" width="32"/> TRC20| ```TH8JgwqL5YUD1Lah972BC3GkfY1hof5rNx``` |
  <br />
  
  ## 🚧 This project currently in progress 🚧
@@ -13,7 +18,7 @@
   :arrow_up:  :arrow_up: :book: :arrow_up:  :arrow_up: 
  </h2>
  
- 
+
 
 
 
