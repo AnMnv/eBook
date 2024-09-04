@@ -866,3 +866,48 @@ SEE FULL INSTRUCTION OF USING  \xmyboxg{skillicons} package here:
 \href{https://github.com/AnMnv/latex-skill-icons}{https://github.com/AnMnv/latex-skill-icons}
 \end{minipage}
 \end{tabular}
+
+%#################### 9.16 ####################
+\subsection{\hll{Worldflags}}
+ 
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\href{https://ctan.javinator9889.com/graphics/pgf/contrib/worldflags/doc/worldflags.pdf}{The source}\\
+
+
+\begin{multicols}{2}%change to have more columns
+\begin{enumerate}
+\item[]\worldflag[length=22.5mm]{US}
+\item[]\worldflag[length=22.5mm]{CH}
+\item[]\worldflag[length=22.5mm]{MH}
+\item[]\worldflag[length=22.5mm]{LT}
+\item[]\worldflag[length=22.5mm]{GB}
+\item[]\worldflag[length=22.5mm]{EU}
+\item[]\worldflag[length=22.5mm]{JollyRoger}
+\item[]\worldflag[length=22.5mm]{VN}
+\item[]\worldflag[length=22.5mm]{YE}
+\item[]\worldflag[length=22.5mm]{TG}
+\end{enumerate}
+\end{multicols}
+
+
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{orange!15}{red!15},numbers=left,basicstyle=\ttfamily\small]
+\documentclass{article}
+\usepackage{worldflags}
+
+\begin{document}
+\section*{Flags of the World}
+\worldflag[length=22.5mm]{US}
+\worldflag[length=22.5mm]{CH}
+\worldflag[length=22.5mm]{MH}
+\worldflag[length=22.5mm]{LT}
+\worldflag[length=22.5mm]{GB}
+\worldflag[length=22.5mm]{EU}
+\end{document}
+\end{lstlisting}
+\end{minipage}
+\end{tabular}
