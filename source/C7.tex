@@ -749,6 +749,80 @@ align = center
 \end{tabular}
 
 %#################### 7.15 ####################
+\subsection{\hll{Rotated polygons}}
+
+\begin{tabular}{c | c}
+\begin{minipage}[m]{0.4\textwidth}
+\vspace{-1cm}
+\enum{\centering\includegraphics[width=0.88\linewidth]{7.15.pdf}}{\thesubsection}
+\end{minipage}
+&
+\begin{minipage}[m]{0.55\textwidth}
+\renewcommand\textminus{\mbox{-}}%<<<<<<<<<<<
+\begin{lstlisting}[numberstyle=\zebra{red!15}{yellow!15},numbers=left,basicstyle=\scriptsize]
+\documentclass{article}
+\usepackage[usenames,dvipsnames,pdftex]{xcolor}
+\usepackage{tikz, ifthen}
+\newcounter{density}
+
+\newcommand{\square}[2]{
+\setcounter{density}{20}
+\begin{tikzpicture}[scale=#1]
+\def\couleur{#2}
+\path[coordinate] (0,0)  coordinate(A)
+++( 90:12cm) coordinate(B)
+++(0:12cm) coordinate(C)
+++(-90:12cm) coordinate(D);
+\draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) --(D) -- cycle;
+\foreach \x in {1,...,50}{%
+\pgfmathsetcounter{density}{\thedensity+20}
+\setcounter{density}{\thedensity}
+\path[coordinate] coordinate(X) at (A){};
+\path[coordinate] (A) -- (B) coordinate[pos=.10](A)-- (C) coordinate[pos=.10](B)-- (D) coordinate[pos=.10](C)-- (X) coordinate[pos=.10](D);
+\draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;}
+\end{tikzpicture}}
+
+\newcommand{\pentagon}[2]{
+\setcounter{density}{20}
+\begin{tikzpicture}[scale=#1]
+\def\couleur{#2}
+\path[coordinate] (0,0)  coordinate(A)
+++( 144:10cm) coordinate(B)++(72:10cm) coordinate(C)
+++(0:10cm) coordinate(D)++(-72:10cm) coordinate(E);
+\draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) --(D) -- (E) --  cycle;
+\foreach \x in {1,...,80}{%
+\pgfmathsetcounter{density}{\thedensity+10}
+\setcounter{density}{\thedensity}
+\path[coordinate] coordinate(X) at (A){};
+\path[coordinate] (A) -- (B) coordinate[pos=.10](A)-- (C) coordinate[pos=.10](B)-- (D) coordinate[pos=.10](C)-- (E) coordinate[pos=.10](D)-- (X) coordinate[pos=.10](E);
+\draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) --(E)  -- cycle;}
+\end{tikzpicture}}
+
+\newcommand{\trianglee}[2]{
+\begin{tikzpicture}[scale=#1]
+\def\couleur{#2}
+\path[coordinate] (-1,0) coordinate(A)++(0:6cm) coordinate(B)++(120:6cm) coordinate(C);
+\pgfmathsetcounter{density}{20}
+\setcounter{density}{\thedensity}
+\draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
+\foreach \x in {1,...,40}{%
+\pgfmathsetcounter{density}{\thedensity + 7} 
+\setcounter{density}{\thedensity}
+\path[coordinate] (A) -- (B) coordinate[pos=.1](A)-- (C) coordinate[pos=.1](B)
+-- cycle coordinate[pos=.1](C);
+\draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;}
+\end{tikzpicture}}
+
+\begin{document}
+\square{0.3}{OrangeRed}
+\pentagon{0.3}{LimeGreen}
+\trianglee{0.5}{Violet}
+\end{document}
+\end{lstlisting}
+Source: \href{https://texample.net//tikz/examples/rotated-polygons/}{https://texample.net//tikz/examples/rotated-polygons/}
+\end{minipage}
+\end{tabular}
+
 %#################### 7.16 ####################
 %#################### 7.17 ####################
 
