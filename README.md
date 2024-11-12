@@ -65,5 +65,11 @@
 
 
 
+# How to compile this book?
+## Linux (Debian)
+requiremets ```sudo apt-get install texlive-full```
 
-
+```git clone https://github.com/AnMnv/eBook.git
+cd eBook/eBook_tex
+pdflatex -shell-escape eBook.tex
+```
