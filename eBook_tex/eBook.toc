@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {5.1}\hll {Comment to figure} }{35}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}\hll {Positioning 1 | 2}}{35}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}\hll {Placing image \xmybox [red!70!white]{anywhere} You want}}{35}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}\hll {Italic sabfigure references}}{36}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}\hll {Italic subfigure references}}{36}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}\hll {Wrapfigure}}{36}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}\hll {Figures in landscape mode}}{37}{subsection.5.6}%
 \contentsline {subsection}{\numberline {5.7}\hll {Three figures in a row}}{37}{subsection.5.7}%
